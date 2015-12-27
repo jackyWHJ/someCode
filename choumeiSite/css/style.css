@@ -1,0 +1,578 @@
+@charset "utf-8";
+/* Global Style Settings */
+
+*{margin:0; padding:0;}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0; font-family:"微软雅黑"; font-size:14px;}
+html{padding: 0;}
+h1,h2,h3,h4,h5,h6 {font-size:14px; font-weight:normal;}
+a{color: #363636; text-decoration:none;}
+/*a:link{color: #ff4B93; text-decoration:none;}*/
+a:hover{color: #f54142; }
+a:active{color: #f54142;}
+li{list-style-type:none;}
+img{vertical-align:top; border:0; }
+.clear{clear:both; font-size:0; line-height:0; overflow:hidden}
+.line{width:100%;height:0;clear:both;border: 0 solid #D8D8D8;border-top-width: 1px;font-size:0; line-height:0; overflow:hidden}
+.header{
+    width: 1024px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0;
+    background: #fff;
+}
+.logo{
+    margin: 22px 0 8px 40px;
+    width: 74px;
+    height: 36px;
+    background: url("../images/choumei-font1.png?v=2015-4-28") no-repeat;
+    float: left;
+}
+.nav-ul{
+    float: right;
+    margin: 48px 20px 0 0;
+}
+.nav-ul ul li{
+    float: left;
+    font: normal 16px '微软雅黑';
+}
+.nav-ul ul li img{
+    height: 20px;
+}
+.nav-li{
+    width: 115px;
+    text-align: center;
+
+}
+.nav-ul ul li a{
+    color: #363636;
+    font-weight: 500;
+    text-decoration:none;
+}
+.nav-ul ul li a:hover{
+    color: #f54142 !important;
+}
+.nav-ul ul li a:active{
+    color: #f54142 !important;
+}
+.active{
+    color: #f54142 !important;
+}
+
+.main > div{
+    width: 984px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    cursor: pointer;
+}
+.main{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.pt-perspective {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    perspective: 1200px;
+}
+
+/*.pt-page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}*/
+/*******page1*******/
+.pt-page-current{
+    visibility: visible;
+    z-index: 1;
+}
+.pt-page-ontop {
+    z-index: 999;
+}
+/*slide*/
+.swiper-container {
+    position: absolute;
+    width:500px;
+    height:580px;
+    left: 45px;
+    bottom: 265px;
+    z-index:100;
+}
+.pagination {
+  position: absolute;
+  left:0;
+  text-align: center;
+  bottom:90px;
+  width: 600px;
+  z-index:2;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width:10px;
+  height:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  background:rgba(255,255,255,.4);
+  margin:0 5px;
+  cursor: pointer;
+}
+.swiper-active-switch {
+    background-color: #fff;
+}
+.pmc-left{
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+    width:596px;
+}
+.pmc-left img{
+    width:100%;
+    position: absolute;
+    bottom:-5px;
+    left:0;
+}
+.pmc-right{
+    position: absolute;
+    width:470px;
+    right: 0;
+    bottom: 350px;
+}
+.pmcr-download{
+    width:460px;
+    height:180px;
+}
+.pmcrd-btn{
+    width:260px;
+    height:100%;
+    float:left;
+    margin:5px 20px 0 0;
+    z-index: 999;
+}
+.pmcr-text{
+    width:268px;
+    height:119px;
+    margin-bottom: 60px;
+}
+.android-download{
+    display: block;
+    width:250px;
+    height:70px;
+    margin-bottom:20px;
+    text-align: center;
+    line-height: 70px;
+    font-size:26px;
+    color:#fff!important;
+    border:2px solid #fff;
+    border-radius:6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -o-border-radius:6px;
+}
+.pmcrd-qcorde{
+    float:left;
+    width:180px;
+    height:180px;
+}
+
+/* Text Styles, Colors, Backgrounds */
+#indexPage{
+    width: 100%;
+    overflow: hidden;
+}
+#indexPage > div{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0;
+}
+#indexPage > div > div.pt-page{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1024px;
+    height: 100%;
+    min-height: 850px !important;
+    margin: 0 auto;
+}
+.index-page-1{
+    background: #F86667;
+}
+.index-page-2{
+    background: #F0BA5A;
+}
+.index-page-3{
+    background: #43C0CE;
+}
+.index-page-4{
+    background: #53D2B4;
+}
+.index-page-5{
+    background: #F86667;
+}
+.index-page-6{
+    background: #32B9B2;
+}
+.pt-page-1{
+
+}
+.pt-page-2 {
+}
+.page2-img-1{
+    left: 270px;
+    bottom: 680px;
+}
+.page2-p{
+    left: 0;
+    bottom: 640px;
+}
+.page2-img-2{
+    left: 190px;
+    bottom: 0;
+}
+.page2-img-3{
+    left: 500px;
+    bottom: 0;
+}
+.page2-img-4{
+    right: 100px;
+    bottom: 0;
+}
+.page2-img-5{
+    left:110px;
+    bottom: 300px;
+}
+.page2-img-6{
+    left:85px;
+    bottom: 180px;
+}
+.page2-img-7{
+    left:110px;
+    bottom: 45px;
+}
+.pt-page-3 {
+
+}
+.page3-p{
+    left: 0;
+    top: 170px;
+}
+.page3-img-1{
+    left: 10px;
+    top: 50px;
+}
+.page3-img-2{
+    right: 100px;
+    top: 100px;
+}
+.page3-img-3{
+    right: 30px;
+    top: 45px;
+}
+.page3-img-4{
+    left: 130px;
+    bottom: 40px;
+    z-index: 115;
+}
+.page3-img-5{
+    left: 200px;
+    bottom: 40px;
+    z-index: 110;
+}
+.page3-img-6{
+    right: 150px;
+    bottom: 0;
+    z-index: 111;
+}
+.scissor-div{
+    position: absolute;
+    left: 557px;
+    bottom:480px;
+    width: 56px;
+    height: 65px;
+    background: url("../images/scissor-open.png");
+    background-size: cover;
+    z-index: 111;
+}
+.scissor-animations{
+    background: url("../images/scissor-close.png");
+    background-size: cover;
+}
+.pt-page-4 {
+
+}
+.page4-img-1{
+    top: 100px;
+    left: 160px;
+}
+.page4-img-2{
+    left: 330px;
+    bottom:80px;
+    z-index: 100;
+}
+.page4-p{
+    top: 175px;
+    left: 0;
+}
+.background-map{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+.background-map img{
+    width: 100%;
+}
+.pt-page-5 {
+
+}
+.page5-img-1{
+    top: 100px;
+    left: 100px;
+}
+.page5-img-2{
+    right: 200px;
+    bottom: 130px;
+    z-index: 110;
+}
+.page5-img-3{
+    left: 120px;
+    bottom: 0;
+    z-index: 112;
+}
+.page5-img-4{
+    left: 240px;
+    bottom: 40px;
+    z-index: 111;
+}
+.page5-img-5{
+    right: 270px;
+    bottom: 0;
+    z-index: 105;
+}
+.page5-p{
+    top: 175px;
+    left: 0;
+}
+.pt-page-6{
+
+}
+.page6-img-1{
+    left: 240px;
+    bottom: 730px;
+}
+.page6-img-2{
+    left: 30px;
+    bottom: 0;
+}
+.page6-img-3{
+    left:290px;
+    bottom: 0;
+}
+.page6-img-4{
+    right: 0px;
+    bottom: 0;
+}
+.page6-p{
+    left: 0;
+    bottom: 690px;
+}
+.pt-page{
+    min-height: 768px;
+}
+#indexPage .pt-page p{
+    position: absolute;
+    width: 100%;
+    color: #fff ;
+    text-align: center;
+}
+.pt-page > img,
+.pt-page > div{
+    position: absolute;
+    text-align: center;
+}
+.small-font{
+    font-size: 30px;
+}
+.middle-font{
+    font-size: 38px;
+}
+/*.downloadDiv{
+    width: 200px;
+    height: 200px;
+    padding-top:530px ;
+    padding-left: 20px;
+}
+.downloadDiv > a > image{
+    margin: 10px auto;
+}*/
+.main p{
+    font:normal 18px '微软雅黑';
+    color: #666666;
+    line-height: 30px;
+}
+.about-choumei p{
+    margin: 40px 40px;
+}
+.intro > div{
+     text-align: center;
+     line-height: 30px;
+ }
+.intro > div:nth-child(1){
+    width: 80%;
+    margin: 0 auto;
+    color: #666666;
+    font: normal 18px '微软雅黑';
+    padding-bottom: 40px;
+}
+.intro > div:nth-child(2){
+    color: #363636;
+    font:bold  24px '微软雅黑';
+}
+.intro > div:nth-child(3){
+    color: #f54142;
+    font: normal 24px '微软雅黑';
+}
+.jobs{
+    margin: 60px auto;
+}
+.jobs >div{
+    margin: 20px;
+}
+.job-detail > div{
+    color: #363636;
+    font:bold  22px '微软雅黑';
+}
+.job-detail p{
+    margin: 40px 0;
+}
+.footer {
+    width: 100%;
+    height: 260px;
+    background-color: #FFF;
+    border: 0 solid #D4D4D4;
+    border-top-width: 1px;
+}
+.footer > div{
+    margin: 10px auto;
+}
+.about{
+    width: 50%;
+    height: 190px;
+}
+.about > div {
+    float: left;
+    text-align: left;
+}
+.about > div:nth-child(1){
+    width: 17%;
+    margin-left: 8%;
+}
+.about > div:nth-child(2){
+    width: 18%;
+    margin-left: 5%;
+}
+.about > div:nth-child(3){
+    width: 25%;
+    text-align: center;
+}
+.about > div:nth-child(4){
+    width: 25%;
+    text-align: center;
+}
+.about > div >div{
+    margin: 10px 0;
+}
+.about-title{
+    margin: 15px 0 !important;
+    font: bold 16px "微软雅黑";
+}
+
+.about > div span{
+    font: normal 14px '微软雅黑';
+    margin: 5px 0;
+    color: #656565;
+}
+.about > div img{
+    margin-top: 3px;
+}
+.copyright{
+    width: 70%;
+}
+.copyright div{
+    margin-top: -10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height:50px;
+}
+.copyright div span,
+.copyright div a{
+    font: normal 14px '微软雅黑';
+    margin: 0 10px;
+    color: #656565;
+}
+.copyright div a:hover,.about-title div a:hover{color: #f54142;}
+.copyright div a:active,.about-title div a:active{color: #f54142;}
+.gov-icon{
+    width: 40px;
+    margin-left: 15px;
+}
+
+.pt-message {
+    display: none;
+    position: absolute;
+    z-index: 99999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f54142;
+    color: #fff;
+    text-align: center;
+}
+
+.pt-message p {
+    margin: 0;
+    line-height: 60px;
+    font-size: 26px;
+}
+
+.no-cssanimations .pt-message {
+    display: block;
+}
+
+.rot1{
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+.rot2{
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+.rot3{
+    -moz-transform:rotate(270deg);
+    -webkit-transform:rotate(270deg);
+    transform:rotate(270deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}

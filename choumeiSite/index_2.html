@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn" class="no-js">
+<head>
+    <title>臭美</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="臭美发型--制作你自己的发型" />
+    <meta name="description" content="臭美发型!你的私人发型订制！" />
+    <link rel="icon" href="./images/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="css/animations.css" />-->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2.min.js"></script>
+    <!--<script src="js/modernizr.custom.js"></script>-->
+</head>
+
+<body>
+<div data-role="page" data-fullscreen="true" id="indexPage" data-ajax="true" >
+    <div class="header">
+        <div class="logo"></div>
+        <div class="nav-ul">
+            <ul>
+                <li class="nav-li">
+                    <a href="#indexPage" data-transition="slide" class="active">首页</a>
+                </li>
+                <li><img src="./images/navline.png"></li>
+                <li class="nav-li">
+                    <a href="#aboutPage" data-transition="slide">关于臭美</a>
+                </li>
+                <li><img src="./images/navline.png"></li>
+                <li class="nav-li">
+                    <a href="#addressPage" data-transition="slide">联系我们</a>
+                </li>
+                <li><img src="./images/navline.png"></li>
+                <li class="nav-li">
+                    <a href="#joinPage" data-transition="slide">加入我们</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="pt-main" class="main">
+        <div class="pt-page-1">
+            <div class="downloadDiv">
+                <a href="http://android.myapp.com/myapp/detail.htm?apkName=com.app.choumei.hairstyle"
+                   target="_blank">
+                    <img src="images/android-download.png">
+                </a>
+                <a href="https://itunes.apple.com/cn/app/chou-mei-fa-xing-fa-xing-shi/id599493074?mt=8"
+                   target="_blank">
+                    <img src="images/iPhone-download.png">
+                </a>
+            </div>
+        </div>
+
+        <div class="pt-page-2"></div>
+        <div class="pt-page-3"></div>
+        <div class="pt-page-4"></div>
+        <div class="pt-page-5"></div>
+        <!--<div class="pt-page pt-page-6"></div>-->
+    </div>
+    <div class="clear" style="height: 30px;"></div>
+    <div class="footer">
+        <div class="clear"></div>
+        <div class="about">
+            <div>
+                <div class="about-title">关于我们</div>
+                <div><a href="#aboutPage" data-transition="slide"><span>关于臭美</span></a></div>
+                <div><a href="#addressPage" data-transition="slide"><span>联系我们</span></a></div>
+                <div><a href="#joinPage" data-transition="slide"><span>加入臭美</span></a></div>
+            </div>
+            <div>
+                <div class="about-title">关注我们</div>
+                <div>
+                    <a href="http://weibo.com/choumeicn" target="_blank">
+                        <img src="images/sinaweibo.png" width="20px"><span>新浪微博</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://user.qzone.qq.com/1210420312" target="_blank">
+                        <img src="images/QQzone.png" width="20px"><span>QQ空间</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://t.qq.com/choumeicn" target="_blank">
+                        <img src="images/tencetweibo.png" width="20px"><span>腾讯微博</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="about-title">臭美发型微信服务号</div>
+                <div><img src="images/erweima.png"></div>
+            </div>
+            <div>
+                <div class="about-title">臭美发型客户端下载</div>
+                <div>
+                    <img  src="images/appdownload.png">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <img src="images/selline.png" width="100%">
+            <div></div>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" data-fullscreen="true" id="aboutPage" data-ajax="true" >
+    <div class="header">
+        <div class="logo"></div>
+        <div class="nav-ul">
+            <ul>
+                <li class="nav-li">
+                    <a href="#indexPage" data-transition="slide">首页</a>
+                </li>
+                <li><img src="./images/navline.png"></li>
+                <li class="nav-li">
+                    <a href="#aboutPage" data-transition="slide" class="active">关于臭美</a>
+                </li>
+                <li><img src="./images/navline.png"></li>
+                <li class="nav-li">
+                    <a href="#addressPage" data-transition="slide">联系我们</a>
+                </li>
+                <li><img src="./images/navline.png"></li>
+                <li class="nav-li">
+                    <a href="#joinPage" data-transition="slide">加入我们</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="main">
+        <div class="about-choumei">
+            <div style="font: bold 24px '微软雅黑';color:#363636">关于臭美发型</div>
+            <p style="margin: 40px 0;">
+                <span style="width: 40px;height: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                “臭美发型”是深圳市臭美文化传播公司旗下的一款移动APP，定位是以发型为切入点，打造为女性用户提供美的解决方案移动入口平台，
+                并构建全新的美容美发行业O2O模式。 截止目前，PC端用户已累计超过3800万，移动端用户超过1200万。
+            </p>
+            <p> 关于发型，臭美最懂你！</p>
+            <div style="font: bold 24px '微软雅黑';color:#363636;margin-top: 50px;">公司介绍</div>
+            <p>
+                深圳市臭美文化传播有限公司，成立于2011年，是一家专注于开放平台及移动互联网应用开发的高科技企业。
+            </p>
+            <p> 2011年获得腾讯开放平台“用户价值突破奖”，<br>
+                2012年成为腾讯开放平台标杆开发企业，<br>
+                2013年获腾讯合作伙伴大会“十佳应用”大奖，并得到了CCTV-2财经频道到公司采访和报道。<br>
+                2014年初，公司获得了1000万A轮的融资。</p>
+            <div style="margin-top:60px;text-align: center;">
+                <img src="./images/picshow.png">
+            </div>
+        </div>
+
+    </div>
+    <div class="clear" style="height: 30px;"></div>
+    <div class="footer">
+        <div class="clear"></div>
+        <div class="about">
+            <div>
+                <div class="about-title">关于我们</div>
+                <div><a href="#aboutPage" data-transition="slide"><span>关于臭美</span></a></div>
+                <div><a href="#addressPage" data-transition="slide"><span>联系我们</span></a></div>
+                <div><a href="#joinPage" data-transition="slide"><span>加入臭美</span></a></div>
+            </div>
+            <div>
+                <div class="about-title">关注我们</div>
+                <div>
+                    <a href="http://weibo.com/choumeicn" target="_blank">
+                        <img src="images/sinaweibo.png" width="20px"><span>新浪微博</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://user.qzone.qq.com/1210420312" target="_blank">
+                        <img src="images/QQzone.png" width="20px"><span>QQ空间</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://t.qq.com/choumeicn" target="_blank">
+                        <img src="images/tencetweibo.png" width="20px"><span>腾讯微博</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="about-title">臭美发型微信服务号</div>
+                <div><img src="images/erweima.png"></div>
+            </div>
+            <div>
+                <div class="about-title">臭美发型客户端下载</div>
+                <div>
+                    <img src="images/appdownload.png">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <img src="images/selline.png" width="100%">
+            <div></div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(".main").bind("click",function(){
+                var winHight = $(window).height(),nScrollHight = $(document).height(),
+                        scrollTop = $(document).scrollTop(),scroll_offset = (Math.floor(scrollTop/800) + 1)*800 + 98;
+                if(scrollTop + winHight >= nScrollHight){
+                    scroll_offset = 0;
+                }
+                $("body").animate({
+                    scrollTop:scroll_offset  //让body的scrollTop等于pos的top，就实现了滚动
+                },500);
+            });
+        });
+    </script>
+</div>
+
+<div data-role="page" data-fullscreen="true" id="addressPage" data-ajax="true" >
+    <div class="header">
+        <div class="logo"></div>
+        <div class="nav-ul">
+            <ul>
+                <li class="nav-li">
+                    <a href="#indexPage" data-transition="slide">首页</a>
+                </li>
+                <li><img src="./images/navline.png"></li>
+                <li class="nav-li">
+                    <a href="#aboutPage" data-transition="slide">关于臭美</a>
+                </li>
+                <li><img src="./images/navline.png"></li>
+                <li class="nav-li">
+                    <a href="#addressPage" data-transition="slide" class="active">联系我们</a>
+                </li>
+                <li><img src="./images/navline.png"></li>
+                <li class="nav-li">
+                    <a href="#joinPage" data-transition="slide">加入我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="main">
+        <div class="content">
+            <img src="./images/connect.png" width="100%">
+        </div>
+    </div>
+    <div class="clear" style="height: 30px;"></div>
+    <div class="footer">
+        <div class="clear"></div>
+        <div class="about">
+            <div>
+                <div class="about-title">关于我们</div>
+                <div><a href="#aboutPage" data-transition="slide"><span>关于臭美</span></a></div>
+                <div><a href="#addressPage" data-transition="slide"><span>联系我们</span></a></div>
+                <div><a href="#joinPage" data-transition="slide"><span>加入臭美</span></a></div>
+            </div>
+            <div>
+                <div class="about-title">关注我们</div>
+                <div>
+                    <a href="http://weibo.com/choumeicn" target="_blank">
+                        <img src="images/sinaweibo.png" width="20px"><span>新浪微博</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://user.qzone.qq.com/1210420312" target="_blank">
+                        <img src="images/QQzone.png" width="20px"><span>QQ空间</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://t.qq.com/choumeicn" target="_blank">
+                        <img src="images/tencetweibo.png" width="20px"><span>腾讯微博</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="about-title">臭美发型微信服务号</div>
+                <div><img src="images/erweima.png"></div>
+            </div>
+            <div>
+                <div class="about-title">臭美发型客户端下载</div>
+                <div>
+                    <img id="appDownLoad" src="images/appdownload.png">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <img src="images/selline.png" width="100%">
+            <div></div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(".main").bind("click",function(){
+                var winHight = $(window).height(),nScrollHight = $(document).height(),
+                        scrollTop = $(document).scrollTop(),scroll_offset = (Math.floor(scrollTop/800) + 1)*800 + 98;
+                if(scrollTop + winHight >= nScrollHight){
+                    scroll_offset = 0;
+                }
+                $("body").animate({
+                    scrollTop:scroll_offset  //让body的scrollTop等于pos的top，就实现了滚动
+                },500);
+            });
+        });
+    </script>
+</div>
+
+<div data-role="page" data-fullscreen="true" id="joinPage" data-ajax="true" >
+    <div class="header">
+        <div class="logo"></div>
+        <div class="nav-ul">
+            <ul>
+                <li class="nav-li">
+                    <a href="#indexPage" data-transition="slide">首页</a>
+                </li>
+                <li><img src="./images/navline.png"></li>
+                <li class="nav-li">
+                    <a href="#aboutPage" data-transition="slide">关于臭美</a>
+                </li>
+                <li><img src="./images/navline.png"></li>
+                <li class="nav-li">
+                    <a href="#addressPage" data-transition="slide">联系我们</a>
+                </li>
+                <li><img src="./images/navline.png"></li>
+                <li class="nav-li">
+                    <a href="#joinPage" data-transition="slide" class="active">加入我们</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="main">
+        <div class="join-content">
+            <dv class="intro">
+                <div><p>在这里，你将拥有愉悦、平等的工作环境，你将收获友爱、尊重、温暖的创业伙伴，更重要的是，你有可能实现自己最大的价值。</p></div>
+                <div>简历投递</div>
+                <div>ql@choumei.cn</div>
+            </dv>
+            <div class="jobs">
+                <div class="job-detail">
+                    <div class="job-title">APP运营推广</div>
+                    <p>
+                        岗位职责：<br>
+                        1、负责公司APP产品在各大软件下载平台、苹果商店、安卓应用市场等各类渠道的发布管理工作；<br>
+                        2、负责各种发布渠道的数据监控和反馈跟踪，对数据进行分析，及时调整发布策略优化排名提高下载量；<br>
+                        3、负责与各大热门APP、广告平台和应用市场等进行资源合作，整合各类线上、线下渠道和资源进行APP推广，实现激活量、注册量等目标；<br>
+                        4、负责产品上线推广及活动，进行事件营销、口碑营销等推广方案的策划和组织执行；<br>
+                        5、负责拓展行业内有价值的营销渠道资源，建立和维护资源合作伙伴关系。
+                    </p>
+                    <p>
+                        岗位要求:<br>
+                        1、至少2年以上互联网、无线任意一个行业的运营、营销、数据分析、数据运营任意一个岗位的工作经验。<br>
+                        2、熟悉各大软件下载平台、苹果商店、安卓应用市场的APP推广工作，并拥有一定的人脉资源；<br>
+                        3、熟悉iOS和Android平台及App产品，对App的推广和运营有自己的认识；<br>
+                        4、对互联网事物，网络营销事件高度敏感，熟悉微博营销操作手法与互联网语言；<br>
+                        5、善于观察、挖掘数据核心本质，数据敏感度高；<br>
+                        6、工作积极主动，认真、细致，踏实，有耐心，有良好的团队合作意识。
+                    </p>
+                </div>
+                <div class="job-detail">
+                    <div class="job-title">PHP开发工程师</div>
+                    <p>
+                        岗位职责：<br>
+                        1、网站各功能模块的开发；<br>
+                        2、各种api相关接口的开发；<br>
+                        3、配合产品需求以及测试，高质量地完成项目；<br>
+                        4、相关技术文档的编写及整理工作；<br>
+                        5、web服务器处理及数据库优化。<br>
+                    </p>
+                    <p>
+                        岗位要求:<br>
+                        1、熟悉互联网行业，具备3年以PHP程序开发经验，本科以上学历；<br>
+                        2、熟悉Linux/UNIX等操作系统及web服务器搭建，了解Shell；<br>
+                        3、熟悉标准SQL和数据库设计，具备MySql数据库设计及性能优化经验;<br>
+                        4、熟练掌握HTML、JavaScript、css；<br>
+                        5、熟悉面向对象思想，使用各种缓存技术对网站性能进行优化；<br>
+                        6、有过公司内部管理系统的开发经验者优先考虑；<br>
+                        7、良好的代码书写、注释和单元测试习惯，能写出高质量的代码，对自己开发的代码负责；<br>
+                    </p>
+                </div>
+                <div class="clear" style="width: 100%"></div>
+                <div class="job-detail">
+                    <div class="job-title">发型咨询师</div>
+                    <p>
+                        工作职责：<br>
+                        1、负责臭美发型APP“看发型”版块点评咨询工作；<br>
+                        2、负责社区“发型咨询”的粉丝互动与发型问题解答；<br>
+                        3、参与发型师专家团队频道的建设及发型师沙龙活动的策划。
+                    </p>
+                    <p>
+                        任职资格：<br>
+                        1、形象气质佳，思维敏捷，热爱互联网行业，对新鲜事物较强的观察力和敏锐度；<br>
+                        2、超强审美观，对发型、色彩搭配等有独到见解；<br>
+                        3、首席、总监级发型师、色彩搭配师、整体形象顾问、培训机构/导师优先；<br>
+                    </p>
+
+                </div>
+
+                <div class="job-detail">
+                    <div class="job-title">社区编辑</div>
+                    <p>
+                        工作职责：<br>
+                        1、负责臭美发型社区内容搜集、整理、编辑、发布等工作；<br>
+                        2、负责社区专题、活动策划，挖掘热点话题，提高社区访问量、用户活跃度；<br>
+                        3、收集、研究和处理用户的意见和反馈信息；<br>
+                        4、跟踪社区运营数据，配合上级领导优化运营方案。<br>
+                    </p>
+                    <p>
+                        任职资格：<br>
+                        1、有2年以上的社区运营工作经验；<br>
+                        2、有较好文字撰写能力，擅长网络交流和社交；<br>
+                        3、对社区有深刻理解，具备的网站活动策划、实施能力；<br>
+                        4、掌握基础的PS图片编辑处理能力；<br>
+                        5、工作积极、主动、充满激情，有良好的沟通能力及团队精神<br>
+                    </p>
+
+                </div>
+                <div class="clear" style="width: 100%"></div>
+                <div class="job-detail">
+                    <div class="job-title">测试工程师（移动端）</div>
+                    <p>
+                        岗位职责：<br>
+                        1、主要负责移动（Android、iOS）客户端的测试；<br>
+                        2、设计、编写测试用例及测试执行，及时反馈bug；<br>
+                        3、整理测试数据及测试总结；<br>
+                        4、不断改进测试工作的流程和方法，提高工作效率。<br>
+                    </p>
+                    <p>
+                        岗位要求:<br>
+                        1、工作勤奋踏实，认真细致，责任心强，良好的理解能力；<br>
+                        2、有较强的逻辑分析能力,善于发现问题,不放过细节；<br>
+                        3、有较强的责任心，能够高效率、高质量的完成任务；<br>
+                        4、有编程经验优先考虑。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="clear" style="height: 30px;"></div>
+    <div class="footer">
+        <div class="clear"></div>
+        <div class="about">
+            <div>
+                <div class="about-title">关于我们</div>
+                <div><a href="#aboutPage" data-transition="slide"><span>关于臭美</span></a></div>
+                <div><a href="#addressPage" data-transition="slide"><span>联系我们</span></a></div>
+                <div><a href="#joinPage" data-transition="slide"><span>加入臭美</span></a></div>
+            </div>
+            <div>
+                <div class="about-title">关注我们</div>
+                <div>
+                    <a href="http://weibo.com/choumeicn" target="_blank">
+                        <img src="images/sinaweibo.png" width="20px"><span>新浪微博</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://user.qzone.qq.com/1210420312" target="_blank">
+                        <img src="images/QQzone.png" width="20px"><span>QQ空间</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://t.qq.com/choumeicn" target="_blank">
+                        <img src="images/tencetweibo.png" width="20px"><span>腾讯微博</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="about-title">臭美发型微信服务号</div>
+                <div><img src="images/erweima.png"></div>
+            </div>
+            <div>
+                <div class="about-title">臭美发型客户端下载</div>
+                <div>
+                    <img src="images/appdownload.png">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <img src="images/selline.png" width="100%">
+            <div></div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(".main").bind("click",function(){
+                var winHight = $(window).height(),nScrollHight = $(document).height(),
+                        scrollTop = $(document).scrollTop(),scroll_offset = (Math.floor(scrollTop/800) + 1)*800 + 98;
+                if(scrollTop + winHight >= nScrollHight){
+                    scroll_offset = 0;
+                }
+                $("#body").animate({
+                    scrollTop:scroll_offset  //让body的scrollTop等于pos的top，就实现了滚动
+                },500);
+            });
+        });
+    </script>
+</div>
+<!--<script src="js/pagetransitions.js"></script>-->
+<script src="js/index.js"></script>
+</body>
+</html>

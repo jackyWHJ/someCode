@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>更多</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美平台--臭美优惠券" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="userStyle.min.css">
+</head>
+<body>
+<div class="mb-cover-box" id="coverBox">
+    <div class="mb-cover-bg"></div>
+    <div class="complain">
+         <a href="tel:400-9933-800" class="complain-btn call-btn" id="callBtn">呼叫400-9933-800</a>
+         <a href="javascript:void(0)" class="complain-btn cancel-btn" id="cancelBtn">取消</a>
+    </div>
+</div>
+<section id="moreBox">
+	<header class="header">更多</header>
+    <div class="mb-logo">
+        <img src="../../images/logo@2x.png" alt="">
+        <p>臭美 v6.0</p>
+    </div>
+    <ul class="more-box">
+        <li><a href="suggestionFeedback.html">意见反馈</a></li>
+        <li><a href="userproto.html">软件服务协议</a></li>
+    </ul>
+    <a href="javascript:void(0)" class="more-service-tel" id="serviceTel">客服电话：400-9933-800</a>
+</section>
+  <script src="../../libs/require.min.js"></script>
+    <script src="../../config/sysConfig.js"></script>
+<script>
+requirejs(['module/user/more'],function (more) {
+            more.init();
+        });
+</script>
+</body>  
+</html>

@@ -1,0 +1,351 @@
+body {
+    overflow-x: hidden;
+}
+
+.section {
+    position: relative;
+    background: white;
+    margin-bottom: 15px;
+}
+
+.section h3 {
+    position: relative;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 15px 15px;
+}
+
+#description {
+    padding: 0rem 15px 15px 15px;
+    font-size: 1.3rem;
+}
+
+.service-number {
+    background: white;
+    padding: 15px 15px;
+}
+
+#service-number-people {
+    margin-left: 30px;
+    margin-right: 5px;
+    font-size: 2rem;
+}
+
+.star-wrap {
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+}
+
+.left-icon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    background: url('../../images/fashion/tongyong_zuo_icon_normal.png') no-repeat center;
+    -webkit-background-size: 50%;
+    background-size: 50%;
+}
+
+.star-wrap .star-name {
+    display: inline-block;
+    font-size: 1.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 15rem;
+    vertical-align: middle;
+}
+
+.star-wrap .star-qualifications {
+    background: #fd7692;
+    height: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 1px 7px;
+    line-height: 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.star-wrap .star-say-decription {
+    font-size: 1.3rem;
+    margin-top: 5px;
+    word-break: break-all;
+}
+
+.personal-introduction {
+
+}
+
+.personal-introduction h3 {
+    margin: 10px 15px;
+}
+
+.personal-introduction .nationality {
+    background: white;
+    padding: 15px 15px;
+    padding-right: 0;
+    padding-bottom: 1px;
+}
+
+.personal-introduction .nationality div {
+    margin-bottom: 15px;
+}
+
+.personal-introduction .nationality-country {
+    margin-right: 30px;
+    vertical-align: middle;
+}
+
+.personal-introduction .nationality-name {
+    vertical-align: middle;
+}
+
+.personal-introduction .nationality-name img {
+    position: relative;
+    top: -3px;
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+.personal-introduction .qualification {
+    padding-right: 15px;
+}
+
+.personal-introduction .qualification .gray {
+    display: block;
+    margin: 15px 0px 10px 0px;
+}
+
+.personal-introduction .qualification .gray-big {
+    font-size: 1.4rem;
+}
+
+.personal-introduction .experience {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+
+.personal-introduction .experience .gray {
+    display: block;
+    margin: 15px 0px 10px 0px;
+}
+
+.personal-introduction .experience .gray-big {
+    font-size: 1.4rem;
+}
+
+.section .price {
+    padding: 15px 20px;
+    border: 1px solid #dddddd;
+}
+
+.section .price b {
+    font-weight: bold;
+    color: #333;
+}
+
+.section .price > span {
+    color: #999999;
+    font-size: 1.3rem;
+}
+
+.section .detail {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-top: 18px;
+    padding-right: 30px;
+    font-size: 1.3rem;
+    color: #e4e4e4;
+}
+
+.section .detail:after {
+    content: '';
+    position: absolute;
+    left: 56px;
+    top: 21px;
+    width: 15px;
+    height: 11px;
+    background: url('../../images/home/next_normal@2x.png') no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.guaranteed {
+    padding: 15px 20px;
+}
+
+.guaranteed .grid-block-item {
+    padding-left: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.guaranteed .grid-block-item:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: url('../../images/fashion/dingzhuang_baozhang_icon@3x.png');
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.right-icon {
+    right: 15px;
+    top: 28px;
+}
+
+.head-people-liked {
+    position: absolute;
+    top: 22%;
+    right: 5%;
+    width: auto;
+    font-size: 1.2rem;
+}
+
+#praise {
+    background: white;
+    height: 15px;
+    margin-right: 5px;
+    padding: 1px 10px;
+    line-height: 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+.head-people-liked img {
+    position: relative;
+    top: -2px;
+    width: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.grid-block-item {
+    position: relative;
+    width: 33.33%;
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.grid-block-item:nth-of-type(n+4) {
+    padding-bottom: 0px;
+}
+
+.head-img, .needle-shop {
+    position: relative;
+    display: block;
+    height: 220px;
+    background: no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.equipment-address {
+}
+
+.equipment-address h3 {
+    font-size: 1.7rem;
+    margin: 25px 0px 15px;
+    padding-left: 15px;
+    border-left: 4px solid #f83b5f;
+}
+
+.equipment-address .wrap {
+    border: 1px solid #ddd;
+    margin: 15px 10px 10px 10px;
+    background: white;
+}
+
+.equipment-address .wrap > section {
+    position: relative;
+    background: white;
+    padding: 15px 10px;
+}
+
+.equipment-address .wrap > section h4 {
+    font-size: 1.5rem;
+}
+
+.equipment-address address {
+    padding-top: 5px;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+.equipment-address .address {
+
+}
+
+.equipment-introduction {
+    background: white;
+    padding: 15px 15px 15px;
+}
+
+.equipment-introduction h3 {
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+}
+
+.equipment-introduction p {
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+}
+
+.equipment-introduction img {
+    width: 100%;
+}
+
+.service-introduction {
+    padding-bottom: 50px;
+}
+
+.grid-block {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.grid-block-item {
+    width: 31%;
+    margin-bottom: 15px;
+}
+
+.grid-block-item img {
+    min-height: auto;
+}
+
+#address {
+    margin: 15px 10px;
+    padding: 0;
+    margin-top: 0;
+}
+
+#confirm_ok_button {
+    position: relative;
+}
+
+#confirm_ok_button a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}

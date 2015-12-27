@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>臭美-发型师主页</title>
+        <meta name="keywords" content="臭美"/>
+        <meta name="description" content="臭美，超爽的美发新体验"/>
+        <link rel="icon" href="../../images/logo16.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+        <link rel="stylesheet" href="../../libs/plugins/swiper/swiper.min.css" />
+        <link rel="stylesheet" type="text/css" href="salon.min.css">
+        <link rel="stylesheet" type="text/css" href="stylist.min.css">
+    </head>
+    <body>
+        <header class="header dark-bg">
+           <span class="stylist-name">发型师主页</span>
+        </header>
+        <div class="stylist-info">
+            <div class="desc dark-bg">
+                <div class="row full center">
+                    <div class="col col-33 tar"><i class="icon icon-gallery" id="salon-gallery"></i> </div>
+                    <div class="col col-33"><img src="../../images/salon/zaoxingshi_touxiang@2x.png" alt="" class="avatar" id="avatar" onerror="this.src='../../images/user/gerenziliao_touxiang@2x.png'"/></div>
+                    <div class="col col-33 tal"><i class="icon icon-heart badge" id="stylist-follow"><span class="fr" id="stylist-follower">0</span></i> </div>
+                </div>
+                <p class="name center"><span id="stylist-name"></span>-<span id="stylist-rank"></span></p>
+                <p class="introduce center mb2"><span id="stylist-signature"></span></p>
+                <div class="row full center datas">
+                <div class="col"><p class="number assertive" id="stylist-appointedNum">0</p><p class="grey">被约次数</p></div>
+                <div class="col"><p class="number assertive" id="stylist-satisfaction">0%</p><p class="grey">好评度</p></div>
+               </div>
+            </div>
+            <div class="row profile light-grey-bg">
+                <div class="cell cell-icon cell-icon-left">
+                    <i class="icon icon-small icon-personal"></i>关于我
+                </div>
+                <p class="cell content" id="stylist-desc"></p>
+                <div id="viewComment" class="cell cell-icon cell-icon-left cell-clickable mb2">
+                    <i class="icon icon-small  icon-comment"></i>
+                    看看他的评价
+                </div>
+                <div class="cell cell-icon cell-icon-left cell-clickable">
+                    <i class="icon icon-small icon-salon"></i>
+                    <span id="salon-name"></span>
+                </div>
+                <div class="light-line"></div>
+                <div id="jonBaiDu" class="cell cell-clickable mb2">
+                    <p id="salon-addr"></p>
+                    <p class="salon-area-dist "><span id="salon-area">区域</span> <span>|</span> <span id="salon-dist">距离</span></p>
+                </div>
+                <div class="cell cell-icon cell-icon-left">
+                    <i class="icon icon-small  icon-hairDrier"></i>他的作品
+                    <span id="noWorks" class="noWorks">暂无作品</span>
+                </div>
+                <div class="light-line"></div>
+                <div id="stylist-works" class="mb5">
+                <!-- 静态展示 -->
+                     <!--<div class="cell-gallery">
+                          <p class="contents">dsfhjsdhfkjsdhjk</p>
+                          <div class="gallery">
+                               <div class="photo fl"></div>
+                               <div class="photo fl" style="background: url('./tmp/tmpHead2.png') no-repeat center;background-size: cover;"></div>
+                               <div class="photo fl" style="background: url('./tmp/tmpHead1.png') no-repeat center;background-size: cover;"></div>
+                               <div class="photo fl" style="background: url('./tmp/tmpHead2.png') no-repeat center;background-size: cover;"></div>
+                               <div class="clean"></div>
+                          </div>
+                          <p class="date light-grey">2015年09月22日</p>
+                     </div>
+                     <div class="light-line"></div>
+                     <div class="cell-gallery">
+                         <p class="contents">dsfhjsdhfkjsdhjk</p>
+                         <div class="gallery">
+                             <div class="photo photo-large fl"><img src="tmp/tmpHead1.png" alt=""></div>
+                             <div class="clean"></div>
+                         </div>
+                         <p class="date light-grey">2015年09月22日</p>
+                     </div>-->
+                </div>
+                 <!--end works-->
+            </div>
+        </div>
+        <div id="swiper-containerWrap">
+        </div>
+    </body>
+    <script src="../../libs/require.min.js"></script>
+    <script src="../../config/sysConfig.js"></script>
+    <script>
+        requirejs(['module/salon/stylist.min'],function (stylist) {
+            stylist.init();
+        });
+    </script>
+</html>

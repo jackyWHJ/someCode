@@ -1,0 +1,646 @@
+/********no content tips*********/
+.no-content-tips{
+    display: none; 
+    margin:30% auto;
+}
+.no-content-tips>img{
+    width:34%;
+    margin: 0 auto;
+    display: block;
+}
+.no-content-tips>p{
+    margin-top:15px;
+    text-align: center;
+    color:#aaa;
+    font-size:1.2rem;
+    line-height:18px;
+}
+#noRefundsTips>img{
+    width:109px;
+    height:88px;
+}
+/******************my ticket page*******************************/
+.my-ticket-box{
+    overflow:hidden;
+    padding-bottom:15px;
+}
+
+.mtb-list{
+    margin-top:15px;
+    background-color:rgb(255,255,255);
+    border-top:1px  solid #dadada;
+    border-bottom:1px  solid #dadada;
+    position: relative;
+}
+.mtbl-info{
+    padding:10px 15px;
+    position:relative;
+}
+.mtbli-img{
+    width:39px;
+    height:39px;
+    float:left;
+    margin-top:16px;
+    background-position:-207px 0;
+}
+.mtbl-info:after{
+    content:'';
+    width:8px;
+    height:15px;
+    position:absolute;
+    top:44%;
+    right:15px;
+    background: url(../../images/sprite-img.png) no-repeat;
+    background-size: 246px;
+    background-position:-120px 0;
+}
+.mtbli-text{
+    margin-left:50px;
+}
+.mtbli-text>p{
+    width:85%;
+    margin-bottom:2px; 
+}
+.mtblit-salon-name{
+    font-size:1.6rem;
+    color:#2c2c2c;
+}
+.mtblit-item-name{
+    font-size:1.4rem;
+    color:#2c2c2c;
+}
+.mtblit-valid-time{
+    color:#aaa;
+    font-size:12px;
+    margin-top:10px;
+}
+.mtbl-bottom{
+    padding:0 15px;
+    background-color:#f5f5f5;
+    border-top:1px dashed #e0e0e0;
+    position:relative;
+    height:40px;
+    line-height:36px;
+}
+.mtbl-bottom:before,.mtbl-bottom:after{
+    content: '';
+    width:18px;
+    height:18px;
+    border:1px solid #ddd;
+    -webkit-border-radius:18px;
+    border-radius:18px;
+    background-color: #f3eeec;
+    position:absolute;
+    top:-10px;
+}
+.mtbl-bottom:before{
+    left:-10px;
+}
+.mtbl-bottom:after{
+    right:-10px;
+}
+.mtbl-ticket-status{
+   color:#e83260;
+   font-size:1.3rem;
+   color:#e83260;
+}
+.mtbl-ticketno-text{
+    float:right;
+    font-size:1.2rem;
+    color:#b9b9b9;
+}
+.ticket-no{
+    font-size:1.8rem;
+    position:relative;
+    top:2px;
+    margin-left:8px;
+    color:#e83260;
+}
+.overdue-ticket .mtbli-img{
+     background-position:-162px 0;;
+}
+.overdue-ticket .mtbl-ticket-status,.overdue-ticket .ticket-no{
+    color:#aaa;
+}
+#myRefundsBox .ticket-no{
+    color:#aaa;
+}
+/*special price icon*/
+.special-price:after{
+    content:'';
+    display:block;
+    position: absolute;
+    top:-3px;
+    right: 16px;
+    width:28px;
+    height:29px;
+    background: url(../../images/sprite-img.png) no-repeat;
+    background-size:245px;
+    background-position:-130px 0;
+}
+
+/******************ticket detail page******************************/
+.ticket-detail-box{
+    margin-bottom:20px;
+}
+.tdb-item{
+    padding:12px 0 12px 15px;
+    margin-top:15px;
+    background-color:rgb(255,255,255);
+    position: relative;
+}
+.tdbi-img{
+    width:75px;
+    height:75px;
+    float:left;
+}
+.tbdi-info{
+    height:75px;
+    margin-left:85px;
+    position:relative;
+}
+.tbdi-info:after{
+    content: '';
+    position: absolute;
+    top:45%;
+    right:15px;
+    width:8px;
+    height:15px;
+    background:url(../../images/sprite-img.png) no-repeat;
+    background-size:246px;
+    background-position:-120px 0px;
+}
+.tbdii-price{
+    position:absolute;
+    bottom:0;
+    font-size:1.3rem;
+}
+#priceDis{
+    margin-right:10px;
+}
+.tdbi-title{
+    height:35px; 
+    padding-bottom: 2px;
+    margin-top: -4px;
+}
+.tdbi-title>span{
+    display:inline-block;
+    margin-top:5px;
+    color:#aaa;
+    position: relative;
+}
+.tdbit-ticket,.tdbit-servicetitle,.tdbit-ordertitle{
+    margin-left:25px;
+}
+.tdbit-ticket:after,.tdbit-servicetitle:after,.tdbit-ordertitle:after{
+    content: '';
+    position: absolute;
+    left:-25px;
+    top:1px;
+    background: url(../../images/sprite-img.png) no-repeat;
+    background-size:246px;
+}
+.tdbit-ticket:after{
+    width:17px;
+    height:13px;
+    top:3px;
+    background-position:0 0px;
+}
+.tdbit-servicetitle:after{
+    width:15px;
+    height:17px;
+    background-position:-45px -22px;
+}
+.tdbit-ordertitle:after{
+    width:15px;
+    height:16px;
+    background-position:-61px -22px;
+}
+.tdbi-btn{
+    float:right;
+    display: inline-block;
+    margin:0 10px 0 0;
+    padding:4px 6px;
+    color:#666;
+    border:1px solid #666;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    text-align:center;
+    font-size:1.4rem;
+}
+.tdbi-ticket-info,.tdbi-service-detail,.tdbi-order-detail{
+    padding:10px 15px 0 0;
+    border-top:1px solid #dadada;
+    position: relative;
+    font-size:1.4rem;
+}
+.tdbi-ticket-info:after{
+    content: '';
+    position: absolute;
+}
+.tdbi-ticket-info>p,.tdbi-order-detail>p{
+    height:22px;
+    font-size:1.3rem;
+    color:#aaa;
+}
+#tdbiodRules,#modelingDivision,#detailEndtime,#tdbiTicketNo,#orderNumber,#payTime,#payMoney,#couponsMoney{
+    color:#2c2c2c;
+    font-size:1.4rem;
+}
+#ticketStatus{
+    float:right;
+    margin:4px 0 0 0;
+    font-size:1.4rem;
+}
+.tdbit-img{
+    width:34px;
+    height:34px;
+    -webkit-border-radius:34px;
+    border-radius:34px;
+    float:left;
+    margin-right:5px;
+}
+#tdbitSalonName{
+    width:55%;
+    color:#2c2c2c;
+    margin-top:5px;
+}
+.tdbi-num{
+    margin:10px 0 15px;
+    color:#aaa;
+    font-size:1.3rem;
+}
+.tdbi-num>span{
+    margin-left:5px;
+}
+#tdbiAddr{
+    margin-right:15px;
+    font-size:1.4rem;
+}
+#tdbiCommentNum{
+    margin-right:20px;
+}
+.tdbi-distance{
+   color:#aaa;
+   float: right;
+   font-size:13px;
+   margin:5px 12px 0 0;
+   position: relative;
+}
+.tdbi-distance>span{
+    float:left;
+    width:14px;
+    height:14px;
+    background-position:-2px -20px;
+    margin-right:5px;
+}
+#tdbiDis{
+  float:left; 
+  margin-top:-2px;
+}
+
+.tdbi-service-detail:after{
+    content: '';
+    position: absolute;
+}
+.tdbi-special-tips{
+    border-top:1px dashed #dadada;
+    margin-top:10px;
+    height: 20px;
+    line-height:30px;
+    font-size:1.3rem;
+    text-indent:20px;
+    position: relative;
+}
+.tdbi-special-tips:after{
+    content:'';
+    width:12px;
+    height:17px;
+    position:absolute;
+    left: 0px;
+    top:7px;
+    background: url(../../images/sprite-img.png) no-repeat;
+    background-size:246px;
+    background-position:-67px 0px; 
+}
+
+/*************apply refunds**********************/
+.apply-refunds-form{
+    width:100%;
+    /*border-bottom:1px solid #dadada;*/
+}
+.arf-tips{
+    width: 100%;
+    height:34px;
+    line-height:30px;
+    font-size:1.3rem;
+    color:#fff;
+    text-align: center;
+    background:url(../../images/user/tuikuang_tishi_bg@2x.png) no-repeat center;
+    background-size:100% 34px;
+}
+.arf-title{
+    width: 100%;
+    height:40px;
+    line-height:40px;
+    color:#2c2c2c;
+    font-size:1.5rem;
+    text-indent:15px;
+    border-top:1px solid #dadada;
+    border-bottom:1px solid #dadada;
+}
+.arf-title:first-of-type{
+    border-top:none;
+}
+.arf-ticket-num{
+    height:40px;
+    line-height: 40px;
+    color:#2c2c2c;
+    font-size:1.6rem;
+    font-weight:bold;
+}
+.color-999{
+    color:#999;
+}
+#refundAmount{
+    color:#f64141;
+}
+#arfAmount{
+    font-size:1.6rem;
+}
+.arf-area{
+    padding:0 15px;
+    background-color: #fff;
+}
+.refunds-remark{
+    color:#999;
+    font-size:1.3rem;
+    margin-left:5px;
+}
+.arfa-text{
+    height:auto;
+    line-height:40px;
+    color:#2c2c2c;
+    font-weight:normal;
+    font-size:1.4rem;
+    position:relative;
+    border-bottom:1px solid #e0e0e0;
+}
+.arfa-text:last-of-type{
+    border-bottom:none;
+}
+.select-normal:after{
+    content:'';
+    width:24px;
+    height:24px;
+    border:1px solid #e0e0e0;
+    position:absolute;
+    right:-1%;
+    top:7px;
+    -webkit-border-radius:26px;
+    border-radius:26px;
+}
+.select-current:after{
+    content:'';
+    width:24px;
+    height:24px;
+    position:absolute;
+    right:-1%;
+    top:7px;
+    background:url(../../images/sprite-img.png) no-repeat;
+    background-size:246px;
+    background-position:-100px -15px;
+}
+.btn-funds{
+    display:block;
+    padding:10px 0;
+    text-align: center;
+    color:#fff;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    font-size:1.6rem;
+    margin:20px 15px;
+    background-color:#e83260;
+}
+/**
+***reservation refunds***
+***/
+.reservation-refunds-box .arf-tips{
+    background-color:#fff6e0;
+    color:#d78900;
+    background-image:none;
+}
+.reservation-refunds-box .arf-title{
+    background-color:#ddd;
+}
+.arfa-textarea{
+    color:#2c2c2c;
+    font-weight:normal;
+    font-size:1.4rem;
+    position:relative;
+    border-top:1px solid #ddd;
+}
+.arfa-textarea>p{
+    margin-top:10px;
+}
+.arfa-textarea>textarea{
+    border:none;
+    width:100%;
+    height:60px;
+    margin:5px 0;
+}
+.arfa-textarea>textarea::-webkit-input-placeholder{
+    font-size:1.3rem;
+}
+/**************refunds detail***************************/
+.refund-description{
+    margin-top:15px;
+    padding-left:15px;
+    background-color: #fff;
+}
+.rd-alipay{
+    padding:12px 0;
+    border-bottom:1px solid #e0e0e0;
+}
+.rda-title{
+    color:#444;
+    font-size:1.5rem;
+    font-weight:bold;
+    position:relative;
+    padding-left:27px;
+}
+.rda-title:after{
+    content:'';
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:18px;
+    height:18px;
+    background:url(../../images/user/user-sprite-img.png) no-repeat;
+    background-size:193px;
+    background-position:-175px -73px; 
+}
+.rda-money-text{
+    color:#999;
+    font-size:1.3rem;
+    margin:5px 0 0 28px;
+}
+#rdaMoney{
+    color:#444;
+    font-size:14px;
+    font-weight:bold;
+}
+.rd-flow{
+    padding:15px 0 20px 0;
+}
+.rdf-title{
+    color:#666;
+    font-size:1.3rem;
+    margin-bottom: 10px;
+}
+.rd-flow dl{
+    padding:0 0 0 10px;
+}
+.rd-flow dl .icon{
+    left: -0.6rem;
+    z-index: 99;
+}
+.rd-flow dl dt{
+    font-size:1.5rem;
+    color: #444;
+    position: relative;
+    padding-left:20px;
+    margin-bottom:-10px;
+}
+.rd-flow dl:last-of-type dd{
+    padding-bottom:0;
+    border-left:0;
+}
+
+.rd-flow dl:first-of-type dt{
+    margin-bottom:-5px;
+    color:#000;
+}
+
+.rd-flow dl dd{
+    font-size:1.2rem;
+    color: #999;
+    border-left:2px solid #e83260;
+    padding: 10px 10px 15px 16px;
+    position: relative;
+}
+.rd-flow dl dt>span{
+    position:relative;
+    top:-4px;
+}
+.rd-flow dl:first-of-type dt>span{
+    top:0;
+}
+
+.freeze{
+    opacity: .6;
+}
+/*.rd-flow dl dt:after{
+    content:'2';
+    position: absolute;
+    top:0;
+    left:-7px;
+    z-index:3;
+    width:16px;
+    height:16px;
+    -webkit-border-radius:16px;
+    border-radius: 16px;
+    background-color:#e83260; 
+    color:#fff;
+    font-size:1.2rem;
+    text-align:center;
+}
+*/
+
+/*icons start*/
+.item-icon-left{
+    padding:1.5rem 1rem 1.5rem 5rem;
+    position: relative;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+
+.item-icon-left .icon{
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    margin-top: -1rem;
+}
+
+.icon-sequence{
+
+}
+
+.icon-circle{
+  -webkit-border-radius:100%;
+  border-radius: 100%
+}
+
+.icon-small{
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+}
+
+/*icons end*/
+
+/*bar start*/
+.bar-assertive{
+    background-color: #e83260;
+    color:#fff;
+}
+
+.bar-grey{
+    background-color: #c8c8c8;
+    color:#fff;
+}
+
+.border-grey{
+    border-color: #c8c8c8 !important;
+    color: #fff;
+}
+.border-assertive{
+    border-color: #e83260 !important;
+    color: #fff;
+}
+
+.grey {
+    color:#c8c8c8;
+}
+/*bar end*/
+
+/*.rd-flow dl:first-of-type dt:after{
+    content: '1';
+    position: absolute;
+    top:1px;
+    left:-6px;
+    z-index:3;
+    width:16px;
+    height:16px;
+    -webkit-border-radius:16px;
+    border-radius:16px;
+    background-color: #e83260;
+    color:#fff;
+    font-size:1.2rem;
+    text-align:center;
+}*/
+#rdf-success-descript{
+    font-size: 1.2rem;
+    line-height:18px;
+    margin:-6px 0 0 0;
+}
+/*臭美审核成功并未退款成功*/
+.audit-success:after{
+    background-color:#c8c8c8!important;
+}
+.audit-success-border{
+    border-color:#c8c8c8!important;
+}

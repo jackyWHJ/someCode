@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>个人资料</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美平台--个人页面" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="userStyle.min.css">
+</head>
+<body>
+<section  id="setNameBox" class="set-name-box">
+    <header class="header">修改昵称</header>
+    <div class="snb-content">
+        <div class="snbc-text">
+            <input type="text" class="text" name="nickName" id="nickNameInput" value="" placeholder="昵称" autocomplete="off" autofocus="autofocus" required="required">
+            <a href="javascript:void(0)" class="sprite-img" id="cleanBtn"></a>
+        </div>
+        <p class="snb-tips">昵称不能超过10个汉字或20个英文字符，支持中英文、数字、下划线</p>
+    </div>
+    <a href="javascript:void(0)" id="changeNameBtn" class="checkBtn">提交</a>
+</section>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script>
+    requirejs(['module/user/setName.min'],function (setName) {
+        setName.init();
+    });
+</script>
+</body>
+</html>

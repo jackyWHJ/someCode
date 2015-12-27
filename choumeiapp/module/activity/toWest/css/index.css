@@ -1,0 +1,1189 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-transition: all 1000ms ease 0s;
+  -moz-transition: all 1000ms ease 0s;
+  -ms-transition: all 1000ms ease 0s;
+  -o-transition: all 1000ms ease 0s;
+  transition: all 1000ms ease 0s;
+}
+.certer-vertical {
+  margin: 0 auto;
+}
+@-webkit-keyframes guideTop {
+  0% {
+    -webkit-transform: translateY(42px);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translateY(12px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    opacity: 0;
+  }
+}
+@keyframes guideTop {
+  0% {
+    -webkit-transform: translateY(42px);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translateY(12px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#load {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #dad3cc url(../../../../images/activity/toWest/loading20.png) no-repeat center;
+  background-size: 40%;
+  z-index: 999;
+}
+#arrow {
+  position: absolute;
+  left: 0;
+  bottom: 2%;
+  display: none;
+  width: 100%;
+  height: 50px;
+  background: url(../../../../images/activity/toWest/arrowBlue.png) no-repeat center;
+  background-size: 5%;
+  -webkit-animation: guideTop 1.5s infinite;
+  -webkit-transform-origin: 0px 0px 0px;
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  z-index: 888;
+}
+#audio_btn {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  display: none;
+  width: 40px;
+  height: 60px;
+  text-align: center;
+  z-index: 99;
+}
+#audio_btn .play_yinfu {
+  width: 40px;
+  height: 40px;
+  background: url(http://m.choumei.cn/images/activity/520love/music.gif) no-repeat 50% 50%;
+  background-size: 40px 40px;
+}
+#audio_btn .rotate {
+  -webkit-animation: rotating 1.2s linear infinite;
+  animation: rotating 1.2s linear infinite;
+}
+#audio_btn .off {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%;
+  background-image: url(http://m.choumei.cn/images/activity/520love/music_off.png);
+}
+.main {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+.title {
+  opacity: 0;
+}
+#one {
+  background-color: #141c3c;
+}
+#one .wrap {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+#one .wrap .earth {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  display: block;
+  width: 100%;
+  height: 400px;
+  background: url(../../../../images/activity/toWest/one1.png) no-repeat center;
+  background-size: 100%;
+}
+#one .wrap .earth-font {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  display: block;
+  width: 100%;
+  height: 400px;
+  background: url(../../../../images/activity/toWest/one3.png) no-repeat center;
+  background-size: 50%;
+}
+#one .wrap .logo {
+  position: absolute;
+  left: 0;
+  bottom: 8%;
+  width: 100%;
+  height: 127px;
+  background: url(../../../../images/activity/toWest/one2.png) no-repeat center;
+  background-size: 44%;
+}
+#one .wrap img {
+  width: 80%;
+}
+@-webkit-keyframes slideToTitle {
+  from {
+    -webkit-transform: translate3d(0, 1000px, 0);
+    transform: translate3d(0, 1000px, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+#two {
+  background-color: #4d9bd4;
+}
+#two .wrap {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+#two .wrap .suggestion-font {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: url(../../../../images/activity/toWest/two1.png) no-repeat center;
+  background-size: 70%;
+}
+#two .wrap .suggestion-people {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  display: block;
+  width: 100%;
+  height: 150px;
+  background: url(../../../../images/activity/toWest/two2.png) no-repeat center;
+  background-size: 62%;
+}
+#two .wrap .suggestion-cont1 {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  height: 350px;
+  background: url(../../../../images/activity/toWest/two3-2.png) no-repeat center;
+  background-size: 66%;
+}
+#two .wrap .suggestion-cont2 {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  height: 400px;
+  background: url(../../../../images/activity/toWest/two3-1.png) no-repeat center;
+  background-size: 66%;
+  opacity: 0;
+  -webkit-transition: all 1000ms ease 600ms;
+  -moz-transition: all 1000ms ease 600ms;
+  -ms-transition: all 1000ms ease 600ms;
+  -o-transition: all 1000ms ease 600ms;
+  transition: all 1000ms ease 600ms;
+}
+#two .wrap .suggestion-cont3 {
+  position: absolute;
+  left: 0;
+  top: 37%;
+  width: 100%;
+  height: 350px;
+  background: url(../../../../images/activity/toWest/two3-3.png) no-repeat center;
+  background-size: 58%;
+  opacity: 0;
+  -webkit-transition: all 1000ms ease 1000ms;
+  -moz-transition: all 1000ms ease 1000ms;
+  -ms-transition: all 1000ms ease 1000ms;
+  -o-transition: all 1000ms ease 1000ms;
+  transition: all 1000ms ease 1000ms;
+}
+#two.active .wrap .suggestion-cont2 {
+  opacity: 1 ;
+  visibility: visible;
+}
+#two.active .wrap .suggestion-cont3 {
+  opacity: 1 ;
+  visibility: visible ;
+}
+#three {
+  background-color: #90d2c5;
+}
+#three .laoxue-font {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: url(../../../../images/activity/toWest/three1.png) no-repeat center;
+  background-size: 45%;
+}
+#three .laoxue-head {
+  position: absolute;
+  left: 0;
+  top: 22%;
+  display: block;
+  width: 100%;
+  height: 290px;
+  background: url(../../../../images/activity/toWest/three2.png) no-repeat center;
+  background-size: 64%;
+}
+#three .laoxue-foot {
+  position: absolute;
+  left: 0;
+  top: 70%;
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: url(../../../../images/activity/toWest/three3.png) no-repeat center;
+  background-size: 50%;
+}
+#four .welcome-font {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  display: block;
+  width: 100%;
+  height: 240px;
+  background: url(../../../../images/activity/toWest/four2.png) no-repeat 43% center;
+  background-size: 56%;
+  z-index: 10;
+}
+#four .welcome-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../images/activity/toWest/four1.png) no-repeat center;
+  background-size: cover;
+}
+#five .monkey-font {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  display: block;
+  width: 100%;
+  height: 240px;
+  background: url(../../../../images/activity/toWest/five2.png) no-repeat center;
+  background-size: 66%;
+  z-index: 10;
+}
+#five .monkey-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../images/activity/toWest/five1.png) no-repeat center;
+  background-size: cover;
+}
+#six .tangsheng-font {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  display: block;
+  width: 100%;
+  height: 240px;
+  background: url(../../../../images/activity/toWest/six1.png) no-repeat center;
+  background-size: 45%;
+  z-index: 10;
+}
+#six .tangsheng-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../images/activity/toWest/six2.png) no-repeat center;
+  background-size: cover;
+}
+@-webkit-keyframes go_rain_after {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  50.01% {
+    opacity: 0;
+  }
+}
+@keyframes go_rain_after {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  50.01% {
+    opacity: 0;
+  }
+}
+#seven .hair-font {
+  position: absolute;
+  left: 0;
+  bottom: 2%;
+  display: block;
+  width: 100%;
+  height: 240px;
+  background: url(../../../../images/activity/toWest/seven2.png) no-repeat center;
+  background-size: 45%;
+  z-index: 10;
+}
+#seven .hair-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../images/activity/toWest/seven1.png) no-repeat center;
+  background-size: cover;
+}
+#seven .girl {
+  position: absolute;
+  right: 10%;
+  top: 39%;
+  display: block;
+  width: 150px;
+  height: 150px;
+  background: url(../../../../images/activity/toWest/seven-girl.png) no-repeat center;
+  background-size: 59%;
+  z-index: 20;
+}
+#seven .girl-star {
+  position: absolute;
+  right: 16%;
+  top: 34%;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url(../../../../images/activity/toWest/seven-girl-star.png) no-repeat center;
+  background-size: 100%;
+  -webkit-animation: go_rain_after 1s ease-in-out infinite;
+}
+#eight .shaheshang-font {
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  display: block;
+  width: 100%;
+  height: 240px;
+  background: url(../../../../images/activity/toWest/eight1.png) no-repeat center;
+  background-size: 49%;
+  z-index: 10;
+}
+#eight .shaheshang-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../images/activity/toWest/eight2.png) no-repeat center;
+  background-size: cover;
+}
+#nine .bailongma-font {
+  position: absolute;
+  left: 0;
+  bottom: 7%;
+  display: block;
+  width: 100%;
+  height: 240px;
+  background: url(../../../../images/activity/toWest/nine1.png) no-repeat center;
+  background-size: 58%;
+  z-index: 10;
+}
+#nine .bailongma-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../images/activity/toWest/nine2.png) no-repeat center;
+  background-size: cover;
+}
+#ten .west-font {
+  position: absolute;
+  left: 0;
+  top: 15%;
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: url(../../../../images/activity/toWest/ten2.png) no-repeat center;
+  background-size: 70%;
+  z-index: 10;
+}
+#ten .west-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../images/activity/toWest/ten1.png) no-repeat center;
+  background-size: cover;
+}
+#ten .west-people {
+  position: absolute;
+  left: 0;
+  top: 33%;
+  display: block;
+  width: 100%;
+  height: 330px;
+  background: url(../../../../images/activity/toWest/ten3.png) no-repeat center;
+  background-size: 90%;
+  z-index: 10;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+#eleven .big-brother-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../../../../images/activity/toWest/eleven1.png") no-repeat center center;
+  background-size: cover;
+}
+#eleven .big-brother-monkey {
+  position: absolute;
+  left: 0;
+  top: 14%;
+  display: block;
+  width: 100%;
+  height: 240px;
+  background: url("../../../../images/activity/toWest/eleven4.png") no-repeat 20% center;
+  background-size: 50%;
+  opacity: 0;
+  z-index: 10;
+}
+#eleven .big-brother-monkey-say {
+  position: absolute;
+  left: 0;
+  top: 7%;
+  display: block;
+  width: 100%;
+  height: 200px;
+  background: url("../../../../images/activity/toWest/eleven2.png") no-repeat 100% center;
+  background-size: 65%;
+  opacity: 0;
+  z-index: 8;
+}
+#eleven .brother-pig {
+  position: absolute;
+  left: 0;
+  top: 62%;
+  display: block;
+  width: 100%;
+  height: 200px;
+  background: url("../../../../images/activity/toWest/eleven5.png") no-repeat 95% center;
+  background-size: 45%;
+  opacity: 0;
+  z-index: 10;
+}
+#eleven .brother-pin-say {
+  position: absolute;
+  left: 0;
+  top: 52%;
+  display: block;
+  width: 100%;
+  height: 200px;
+  background: url("../../../../images/activity/toWest/eleven3.png") no-repeat 0% center;
+  background-size: 65%;
+  opacity: 0;
+  z-index: 8;
+}
+#twelve .big-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../../../../images/activity/toWest/twelve1.png") no-repeat center center;
+  background-size: cover;
+}
+#twelve .big-brother-sha {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  display: block;
+  width: 100%;
+  height: 240px;
+  background: url("../../../../images/activity/toWest/twelve4.png") no-repeat 78% center;
+  background-size: 50%;
+  z-index: 10;
+  opacity: 0;
+}
+#twelve .big-brother-sha-say {
+  position: absolute;
+  left: 0;
+  top: 7%;
+  display: block;
+  width: 100%;
+  height: 200px;
+  background: url("../../../../images/activity/toWest/twelve2.png") no-repeat 3% center;
+  background-size: 63%;
+  z-index: 8;
+  opacity: 0;
+}
+#twelve .brother-long {
+  position: absolute;
+  left: 0;
+  top: 53%;
+  display: block;
+  width: 100%;
+  height: 250px;
+  background: url("../../../../images/activity/toWest/twelve5.png") no-repeat 5% center;
+  background-size: 42%;
+  z-index: 10;
+  opacity: 0;
+}
+#twelve .brother-long-say {
+  position: absolute;
+  left: 0;
+  top: 49%;
+  display: block;
+  width: 100%;
+  height: 200px;
+  background: url("../../../../images/activity/toWest/twelve3.png") no-repeat 95% center;
+  background-size: 65%;
+  z-index: 8;
+  opacity: 0;
+}
+#thirteen {
+  background-color: #33bdd4;
+}
+#thirteen .favourable-font {
+  position: absolute;
+  left: 0;
+  top: 7%;
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: url("../../../../images/activity/toWest/thirteen2.png") no-repeat center center;
+  background-size: 50%;
+}
+#thirteen .favourable-say {
+  position: absolute;
+  left: 0;
+  top: 24%;
+  display: block;
+  width: 100%;
+  height: 200px;
+  background: url("../../../../images/activity/toWest/thirteen4.png") no-repeat center center;
+  background-size: 55%;
+  z-index: 10;
+}
+#thirteen .favourable-say-white {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
+  border-radius: 50%;
+  background-color: white;
+}
+#thirteen .favourable-time {
+  position: absolute;
+  left: 0;
+  top: 55%;
+  display: block;
+  width: 100%;
+  height: 240px;
+  background: url("../../../../images/activity/toWest/thirteen3.png") no-repeat center center;
+  background-size: 50%;
+}
+#thirteen .favourable-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../../../../images/activity/toWest/thirteen1.png") no-repeat bottom center;
+  background-size: cover;
+  background-size: auto;
+}
+#fourteen {
+  background-color: #204296;
+}
+#fourteen .appointment-font {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: url("../../../../images/activity/toWest/fourteen2.png") no-repeat center center;
+  background-size: 50%;
+  z-index: 10;
+}
+#fourteen .appointment-places {
+  position: absolute;
+  bottom: 32%;
+  width: 250px;
+  height: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: 5px;
+  background: url("../../../../images/activity/toWest/fourteen3.png") center no-repeat;
+  background-size: 85%;
+  background-color: white;
+  margin: 0 auto;
+  z-index: 10;
+  left: 50%;
+  margin-left: -125px;
+  opacity: 0;
+}
+#fourteen .appointment-places a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#fourteen .favourable-download {
+  position: absolute;
+  bottom: 22%;
+  width: 250px;
+  height: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: 5px;
+  background: url("../../../../images/activity/toWest/fourteen4.png") center no-repeat;
+  background-size: 85%;
+  background-color: white;
+  margin: 0 auto;
+  z-index: 10;
+  left: 50%;
+  margin-left: -125px;
+  opacity: 0;
+}
+#fourteen .favourable-download a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#fourteen .appointment-map {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: url("../../../../images/activity/toWest/fourteen5.png") no-repeat center;
+  background-size: 50%;
+  z-index: 10;
+  opacity: 0;
+}
+#fourteen .appointment-map a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#fourteen .appointment-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../../../../images/activity/toWest/fourteen1.png") no-repeat bottom center;
+  background-size: cover;
+  background-size: 100%;
+}
+/*iPhone4����*/
+@media only screen and (min-width: 320px) and (max-width: 340px) and (max-height: 429px) and (orientation: portrait) {
+  #one .wrap .earth {
+    top: -11%;
+  }
+  #one .wrap .earth-font {
+    top: -8%;
+  }
+  #one .wrap .logo {
+    bottom: 0%;
+    background-size: 34%;
+  }
+  #two .wrap .suggestion-font {
+    top: 0%;
+  }
+  #two .wrap .suggestion-people {
+    top: 10%;
+  }
+  #two .wrap .suggestion-cont1 {
+    top: 17%;
+    background-size: 60%;
+  }
+  #two .wrap .suggestion-cont2 {
+    top: 10%;
+    background-size: 60%;
+  }
+  #two .wrap .suggestion-cont3 {
+    top: 17%;
+    background-size: 50%;
+  }
+  #three .wrap .laoxue-font {
+    top: 0%;
+  }
+  #three .wrap .laoxue-head {
+    top: 10%;
+    background-size: 45%;
+  }
+  #three .wrap .laoxue-foot {
+    top: 65%;
+  }
+  #four .wrap .welcome-font {
+    top: 0%;
+    background: url(../../../../images/activity/toWest/four2.png) no-repeat 43% center;
+    background-size: 50%;
+  }
+  #five .wrap .monkey-font {
+    bottom: 10%;
+    height: 120px;
+    background-size: 55%;
+    background-position: center;
+  }
+  #six .tangsheng-font {
+    bottom: 7%;
+    height: 140px;
+    background-size: 40%;
+    background-position: center;
+  }
+  #seven .wrap .hair-font {
+    height: 140px;
+    bottom: 8%;
+    background-size: 40%;
+  }
+  #seven .wrap .girl {
+    top: 30%;
+    background-size: 42%;
+  }
+  #seven .wrap .girl-star {
+    top: 25%;
+  }
+  #eight .wrap .shaheshang-font {
+    height: 140px;
+    bottom: 8%;
+    background-size: 39%;
+    background-position: center;
+  }
+  #nine .wrap .bailongma-font {
+    height: 140px;
+    bottom: 8%;
+    background-size: 45%;
+    background-position: center;
+  }
+  #ten .wrap .west-font {
+    top: 0%;
+    background-size: 60%;
+  }
+  #ten .wrap .west-people {
+    top: 20%;
+    height: 230px;
+    background-size: 80% ;
+  }
+  #eleven .big-brother-monkey {
+    top: 10%;
+    height: 165px;
+    background-size: 43%;
+  }
+  #eleven .big-brother-monkey-say {
+    left: -5%;
+    top: -3%;
+    background-size: 55%;
+  }
+  #eleven .brother-pig {
+    top: 52%;
+    height: 140px;
+    background-size: 40%;
+  }
+  #eleven .brother-pin-say {
+    top: 40%;
+    left: 5%;
+    background-size: 55%;
+  }
+  #twelve .big-brother-sha {
+    top: 5%;
+    height: 140px;
+    background-size: 40%;
+  }
+  #twelve .big-brother-sha-say {
+    top: 0%;
+    background-size: 55%;
+  }
+  #twelve .brother-long {
+    top: 49%;
+    height: 160px;
+    background-size: 35%;
+  }
+  #twelve .brother-long-say {
+    top: 40%;
+    background-size: 55%;
+  }
+  #thirteen .wrap .favourable-font {
+    top: 3%;
+  }
+  #thirteen .wrap .favourable-say-white {
+    top: 27%;
+    width: 140px;
+    height: 140px;
+    margin-left: -70px;
+  }
+  #thirteen .wrap .favourable-say {
+    top: 21%;
+    background-size: 45%;
+  }
+  #thirteen .wrap .favourable-time {
+    top: 47%;
+    background-size: 38%;
+  }
+  #fourteen .wrap .appointment-map {
+    bottom: 13%;
+  }
+  #fourteen .wrap .appointment-places {
+    width: 240px;
+    height: 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: 5px;
+    background-size: 58%;
+    bottom: 36%;
+  }
+  #fourteen .wrap .favourable-download {
+    width: 240px;
+    height: 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: 5px;
+    background-size: 58%;
+    bottom: 25%;
+  }
+}
+@media only screen and (min-width: 355px) and (max-width: 365px) and (min-height: 510px) and (max-height: 575px) and (orientation: portrait) {
+  #one .wrap .earth {
+    top: 10%;
+  }
+}
+/*iPhone5s����*/
+@media only screen and (min-width: 310px) and (max-width: 330px) and (min-height: 430px) and (max-height: 510px) and (orientation: portrait) {
+  #one .wrap .earth {
+    top: -2%;
+  }
+  #one .wrap .earth-font {
+    top: 0%;
+  }
+  #one .wrap .logo {
+    bottom: 2%;
+    background-size: 36%;
+  }
+  #two .wrap .suggestion-font {
+    top: 5%;
+  }
+  #two .wrap .suggestion-people {
+    top: 15%;
+  }
+  #two .wrap .suggestion-cont1 {
+    top: 25%;
+  }
+  #two .wrap .suggestion-cont2 {
+    top: 20%;
+  }
+  #two .wrap .suggestion-cont3 {
+    top: 23%;
+  }
+  #three .wrap .laoxue-head {
+    top: 17%;
+    background-size: 45%;
+  }
+  #four .wrap .welcome-font {
+    top: 5%;
+  }
+  #five .wrap .monkey-font {
+    bottom: 2%;
+  }
+  #six .tangsheng-font {
+    bottom: 2%;
+  }
+  #seven .wrap .girl {
+    right: 5%;
+    top: 37%;
+    background-size: 48%;
+  }
+  #seven .wrap .girl-star {
+    right: 13%;
+    top: 32%;
+    background-size: 82%;
+  }
+  #seven .wrap .hair-font {
+    bottom: -1%;
+    height: 220px;
+  }
+  #eight .wrap .shaheshang-font {
+    bottom: 2%;
+  }
+  #nine .wrap .bailongma-font {
+    bottom: 1%;
+  }
+  #thirteen .wrap .favourable-say-white {
+    top: 30%;
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin-left: -80px;
+  }
+  #fourteen .wrap .appointment-map {
+    bottom: 11%;
+  }
+  #fourteen .wrap .appointment-places {
+    width: 250px;
+    height: 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: 5px;
+    background-size: 70%;
+  }
+  #fourteen .wrap .favourable-download {
+    width: 250px;
+    height: 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: 5px;
+    background-size: 70%;
+  }
+}
+@media screen and (min-width: 370px) and (max-width: 667px) and (orientation: portrait) {
+  #one .wrap .earth {
+    top: 9%;
+  }
+  #one .wrap .earth-font {
+    top: 10%;
+  }
+  #three .wrap .laoxue-head {
+    top: 24%;
+    background-size: 53%;
+  }
+  #seven .hair-font {
+    bottom: 2%;
+  }
+}
+/**
+** animate.css
+*/
+@-webkit-keyframes bounceIn {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes bounceIn {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.shake {
+  -webkit-animation-duration: 3000ms;
+}
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+}
+@media screen and (min-height: 510px) and (max-height: 520px) and (orientation: portrait) {
+  #one .wrap .logo {
+    bottom: 4%;
+  }
+  #two .wrap .suggestion-cont2 {
+    top: 30%;
+  }
+  #three .wrap .laoxue-head {
+    background-size: 50%;
+  }
+  #four .wrap .welcome-font {
+    top: 10%;
+  }
+  #five .wrap .monkey-font {
+    bottom: 6%;
+  }
+  #six .wrap .tangsheng-font {
+    bottom: 6%;
+  }
+  #nine .wrap .bailongma-font {
+    bottom: 6%;
+  }
+}

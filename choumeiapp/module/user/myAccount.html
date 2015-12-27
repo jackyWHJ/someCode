@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>个人资料</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美平台--个人页面" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="userStyle.min.css">
+</head>
+<body>
+<section id="myAccountBox">
+    <header class="header">个人资料</header>
+    <div class="mab-content">
+        <div id="photo" class="mab-info-item">
+            <em class="mabii-text">头像</em>
+            <div class="mabii-value-box">
+                <div id="userImg" style="background-image: url(../../images/user/gerenziliao_touxiang@2x.png);">
+                </div>
+            </div>
+        </div>
+        <div id="nickNameBtn" class="mab-info-item">
+            <em class="mabii-text">昵称</em>
+            <div class="mabii-value-box" id="nickName"></div>
+        </div>
+        <div id="sex" class="mab-info-item">
+            <em class="mabii-text">性别</em>
+            <div class="mabii-value-box" id="sex-span"></div>
+            <select id="sexSelect">
+                <option value="1">女</option>
+                <option value="2">男</option>
+            </select>
+        </div>
+        <div id="hair" class="mab-info-item">
+            <em class="mabii-text">头发类型</em>
+            <div class="mabii-value-box" id="hair-span"></div>
+            <select id="hairSelect" >
+                <option value="1">长发</option>
+                <option value="2">中发</option>
+                <option value="3">短发</option>
+            </select>
+        </div>       
+        <div id="area" class="mab-info-item">
+            <em class="mabii-text">常住地区</em>
+            <div class="mabii-value-box">
+                <div class="mabiivb-address">
+                    <span>
+                        <span id="province-span">省</span>
+                        <select id="provinceSelect"></select>
+                    </span>
+                    <span>,</span>
+                    <span>
+                        <span id="city-span" >市/区</span>
+                        <select id="citySelect"></select>
+                    </span>
+                    <span class="country-split">,</span>
+                    <span class="country-wrap"> 
+                        <span id="country-span" style="padding: 0 5px;">县</span>
+                        <select id="countrySelect" ><<option value="-1">不选</option></select>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="birthday" class="mab-info-item">
+            <em class="mabii-text">生日</em>
+            <div class="mabii-value-box date-input-box">
+                <span id="dateVal">年-月-日</span>
+                <input type="date" id="dateInput"/>
+            </div>
+        </div>
+        <div class="mab-info-item">
+            <em class="mabii-text">已绑定手机</em>
+            <div class="mabii-value-box" id="mabBindTel"></div>
+        </div> 
+    </div>
+    <a href="javascript:void(0)" id="loginOutBtn" class="loginOutBtn">退出当前账号</a>
+</section>
+<section  id="setNameBox" class="set-name-box" style="display:none">
+    <header class="header">修改昵称</header>
+    <div class="snb-content">
+        <div class="snbc-text">
+            <input type="text" class="text" name="nickName" id="nickNameInput" value="" placeholder="昵称" autocomplete="off">
+            <a href="javascript:void(0)" class="sprite-img" id="cleanText"></a>
+        </div>
+        <p class="snb-tips">昵称不能超过10个汉字或20个英文字符，支持中英文、数字、下划线</p>
+    </div>
+    <a href="javascript:void(0)" id="changeNameBtn" class="checkBtn">提交</a>
+</section>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script>
+    requirejs(['module/user/myAccount.min'],function (myAccount) {
+        myAccount.init();
+    });
+</script>
+</body>
+</html>

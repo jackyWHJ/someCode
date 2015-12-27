@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的臭美券</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美平台--臭美优惠券" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="myTicket.min.css">
+</head>
+<body>
+<!-- no pay detail page-->
+<header class="header">臭美券详情</header>
+<section  class="ticket-detail-box">
+    <div class="tdb-item" id="itemDetailInfo">
+        <img class="tdbi-img" src="../../images/default_img.png" onerror="this.src='../../images/default_img.png'">
+        <div class="tbdi-info">
+            <div id="itemName" class="main-color"></div>
+            <p class="tbdii-price">
+                <span id="tbdiipDis">臭美价：<em id="priceDis" class="main-color">￥0</em></span>
+                <span id="tbdiipOri" style="display:none">原价：<em id="priceOrigin">￥0</em></span>
+            </p>
+        </div>
+        <p class="tdbi-special-tips" id="tdbiSpecialTips" style="display:none"></p>
+    </div>
+    <div class="tdb-item clearfix">
+        <h2 class="tdbi-title">
+            <span class="tdbit-ticket">臭美券</span>
+            <a href="javascript:void(0)" class="tdbi-btn" id="btnApplyRefunds" style="display:none">申请退款</a>
+        </h2>
+        <div class="tdbi-ticket-info">
+            <p>规格：<span id="tdbiodRules"></span></p>
+            <p>有效期至：<span id="detailEndtime"></span></p>
+            <p>密码：<span id="tdbiTicketNo"></span><em id="ticketStatus" class="main-color"></em></p>
+        </div>
+    </div>
+    <div class="tdb-item clearfix">
+        <h2 class="tdbi-title">
+            <img class="tdbit-img" src="../../images/default_img.png" onerror="this.src='../../images/default_img.png'">
+            <span id="tdbitSalonName" class="text-overflow"></span>
+            <a href="javascript:void(0)" class="tdbi-btn" id="btnViewStore">进店看看</a>
+        </h2>
+        <p class="tdbi-num">
+            评价数<span id="tdbiCommentNum" class="main-color"></span>
+            满意度<span id="tdbiSatisfyNum" class="main-color"></span>
+        </p>
+        <p id="tdbiAddr"></p>
+        <p class="tdbi-distance" id="tdbiDistance"><span class="sprite-img"></span><em id="tdbiDis"></em></p>
+    </div>
+    <div class="tdb-item clearfix">
+        <h2 class="tdbi-title">
+            <span class="tdbit-servicetitle">服务详情</span>
+        </h2>
+        <div class="tdbi-service-detail" id="serviceDetail"></div>
+    </div>
+    <div class="tdb-item clearfix">
+        <h2 class="tdbi-title">
+            <span class="tdbit-ordertitle">订单信息</span>
+        </h2>
+        <div class="tdbi-order-detail" id="orderDetail">
+            <p>订单号：<span id="orderNumber"></span></p>
+            <p>支付时间：<span id="payTime"></span></p>
+            <p>支付金额：<span id="payMoney"></span></p>
+            <p>现金券抵用金额：<span id="couponsMoney"></span></p>
+        </div>
+    </div>
+</section>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+ <script>
+        requirejs(['module/user/ticketDetail'],function (ticketDetail) {
+                    ticketDetail.init();
+                });
+    </script>
+</body>
+</html>
+

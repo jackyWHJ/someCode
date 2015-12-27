@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* 
+* @Author: ypl
+* @Date:   2015-04-14 15:58:58
+* @Last Modified by:   anchen
+* @Last Modified time: 2015-07-22 14:40:52
+
+
+body{
+  background-color: #ffffff;
+}*/
+
+.header-box{
+  position:relative;
+  width:100%;
+  box-sizing: border-box;
+}
+
+.sp-search-box{
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  margin: 15px 0px 8px 15px;
+  padding:0 32px;
+  position: relative;
+  border: 1px solid #dadada;
+  width: 75%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.sp-search-box input{
+  padding: 0 5px;
+  font-size: 1.5rem;
+  border: 0;
+  height: 34px;
+  width: 90%;
+  background-color: #f0f0f0;
+}
+
+.sp-search-box:after{
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 9px;
+  width: 17px;
+  height: 17px;
+  background: url(../../images/salon/dianpu_search@2x.png) no-repeat center;
+  background-size: cover;
+}
+
+.keywords-clear-btn{
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 9px;
+  right: 14px;
+  background: url(../../images/salon/tongyong_shanchu_normal@2x.png) no-repeat center;
+  background-size: cover;
+  font-weight: bold;
+}
+
+.sp-search-btn-box{
+  display:inline-block;
+  box-sizing: border-box;
+  width:15%;
+  line-height: 25px;
+  text-align: center;
+}
+
+.search-salon-btn{
+	width:50px;
+	height:30px;
+	color: #2c2c2c;
+	font-size: 1.4rem;
+	border-radius:6px;
+	display:inline-block;
+}
+
+.select-search-box ul li div{
+  height: 50px;
+  margin-left: 15px;
+  border-bottom: 1px solid #e6e6e6;
+  vertical-align: middle;
+  line-height: 50px;
+  color: #2c2c2c;
+  font-size: 1.5rem;
+  overflow: hidden;
+  word-spacing: normal;
+}
+
+#keywordsInput{
+  font-size: 1.3rem;
+}
+
+
+
+

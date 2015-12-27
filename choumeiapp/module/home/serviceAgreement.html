@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>服务承诺</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美，美发，团购，O2O,微信公众号" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <style>
+        body{
+            background:#F3eeec;
+            margin:0;
+        }
+        .header{
+            height:24px;
+            background-color: #FFF;
+            padding: 8px 0;
+            line-height: 24px;
+            border: none;
+            text-align: center;
+            font-size:16px;
+            font-weight: bold;
+            color:#313131;
+            position: relative;
+        }
+        .sa-content{
+            padding:10px 15px;
+        }
+        .sa-content p{
+            color: #313131;
+            font-size:15px;
+            font-family: "微软雅黑";
+            margin-bottom: 45px;
+        }
+        .sa-content .title{
+            color: #E83260;
+            font-size:17px;
+            margin:5px 0;
+        }
+        .cover-box{
+            width:100%;
+            height:100%;
+            position: fixed;
+            z-index:2;
+            display: none;
+        }
+        .cover-bg{
+            width:100%;
+            height:500px;
+            background-color:rgba(0,0,0,.5);
+        }
+        .complain{
+            position: absolute;
+            width:100%;
+            bottom:0;
+            background-color:#fff;
+        }
+        .complain-btn{
+            display: block;
+            background-color:#fff;
+            color:#E83260;
+            text-align: center;
+            padding:10px;
+            text-decoration: none;
+            -webkit-border-radius:4px;
+            border-radius:4px;
+            font-weight:bold;
+            letter-spacing:1px;
+        }
+        .call-btn{
+            background-color:#E83260;
+            color:#fff;
+            margin:15px;
+        }
+        .cancel-btn{
+            border:1px solid #666;
+            -webkit-border-radius:4px;
+            border-radius:4px;
+            color:#666;
+            margin:15px;
+        }
+    </style>
+</head>
+<body>
+<div class="cover-box" id="coverBox">
+    <div class="cover-bg"></div>
+    <div class="complain">
+         <a href="tel:400-9933-800" class="complain-btn call-btn" id="callBtn">呼叫400-9933-800</a>
+         <a href="javascript:void(0)" class="complain-btn cancel-btn" id="cancelBtn">取消</a>
+    </div>
+</div>
+<!--<header class="header">服务承诺</header>-->
+<section id="serviceAgreement" class="sa-content">
+    <p class="title">不办卡</p>
+    <p>臭美代你充值享特价。&nbsp;开心</p>
+    <p class="title">不推销</p>
+    <p>享受全程无推销服务。&nbsp;舒心</p>
+    <p class="title">包满意</p>
+    <p>发型不满意7天重做。 &nbsp;贴心</p>
+    <p class="title">明标价</p>
+    <p>APP定价，消费透明。&nbsp;安心</p>
+    <p class="title">全正品</p>
+    <p>假货一分不用付。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放心</p>
+    <a href="javascript:void(0)" class="complain-btn" id="complainBtn">我要投诉</a>
+</section>
+<script src="../../libs/jquery-2.1.3.min.js"></script>
+<script>
+    $(function(){
+        var $coverBox = $('#coverBox');
+        $('#complainBtn').on('click',function(){
+            $coverBox.show();
+        });
+        $('#cancelBtn,#callBtn').on('click',function(){
+            $coverBox.hide();
+        });
+    })
+</script>
+</body>  
+</html>

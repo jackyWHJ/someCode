@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>集团欢迎页</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美--找到适合你的发型" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="group.css">
+    <style>
+        .common-content img{
+            display: block;
+            max-width: 100%;
+        }
+        .group-logo{
+            width:78%;
+            margin:14% auto;
+        }
+        .cm-logo{
+            width:32%;
+            margin:0 auto; 
+        }
+        .common-footer{
+            width:60%;
+            position: absolute;
+            left:0;
+            right:0;
+            margin:auto;
+            bottom:3.6%;
+        }
+        .cf-btn{
+            width:100%;
+            margin:6% auto!important;
+        }
+        .common-footer>p{
+            position: relative;
+        }
+        .cf-text,.cf-channel{
+            position: absolute;
+            top: 24%;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+        .cf-text{
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .cf-channel{
+            width: 85%;
+            left:1%;
+            right:auto;
+        }
+        @media screen and (min-width:375px){
+            .cf-text{
+                font-size:1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container common-content" id="commonContent" style="background-image:url(template/bg.png)">
+        <img src="template/logo.png" alt="" class="group-logo" id="groupLogo">
+        <div class="common-footer">
+            <img src="template/cm-logo.png" alt="" class="cm-logo" id="cmLogo">
+            <p>
+                <img id="ruleBtn" src="template/btn1.png" class="cf-btn"/>
+                <span class="cf-text" id="ruleText">查看企业版细则</span>
+            </p>
+            <p>
+                <img id="appBtn" src="template/btn2.png" class="cf-btn"/>
+                <span class="cf-text cf-channel" id="appChannelText">臭美·一二三四五六七通道</span>
+            </p>
+        </div>
+    </div>
+    <script src="../../../libs/jquery-2.1.3.min.js"></script>
+    <script src="../../../config/sysConfig.js"></script>
+    <script src="../../../utils/utils.js"></script>
+    <script>
+        $(function() {
+            var groupId;
+            groupId = commonUtils.getQueryString("groupId");
+            var data = {to:"getCompanyInfo",type:"Activity",body:{
+                    "groupId":groupId
+                }
+            };
+            commonUtils.ajaxRequest({data:data,successCallback:function(data){
+                if(data.result){
+                    var groupInfoData = data.data.main;
+                    var groupArr=[];
+                    var groupBg = groupInfoData.companyBack,
+                        cmLogo = groupInfoData.choumeiLogo,
+                        companyLogo = groupInfoData.companyLogo,
+                        btnImg1 = groupInfoData.companyBtn1Img,
+                        btnImg2 = groupInfoData.companyBtn2Img,
+                        btnVal1 = groupInfoData.companyBtn1val,
+                        btnVal2 = groupInfoData.companyBtn2val;
+                        if(groupBg!=null){
+                            $('#commonContent').css('background-image','url('+groupBg+')');
+                        }
+                        if(companyLogo!=null){
+                            $('#groupLogo').attr('src',companyLogo);
+                        }
+                        if(cmLogo!=null){
+                            $('#cmLogo').attr('src',cmLogo);
+                        }
+                        if(btnImg1!=null){
+                            $('#ruleBtn').attr('src',btnImg1);
+                        }
+                        if(btnImg2!=null){
+                            $('#appBtn').attr('src',btnImg2);
+                        }
+                        if(btnVal1!=null){
+                            $('#ruleText').text(btnVal1);
+                        }
+                        if(btnVal2!=null){
+                            $('#appChannelText').text(btnVal2);
+                        }
+                }else{
+                    commonUtils.showTip(data.msg);
+                }
+
+            },url:apiConfig.userApi});
+        });
+    </script>
+</body>
+</html>

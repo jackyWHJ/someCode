@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title class="title">我的优惠机会</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美平台--个人页面" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="userStyle.min.css">
+</head>
+<body>
+<header class="header title">我的优惠机会</header>
+<section class="promocode-box">
+    <ul class="pb-tab-title" id="pbTabTitle">
+        <li class="pbtt-on">我的邀请码</li>
+        <li>激活邀请码</li>
+    </ul>
+    <div class="pb-tab-content">
+        <div class="pbtc-item pbtc-view">
+            <h2 class="pbtci-title">你的邀请码</h2>
+            <div class="pbtci-promocode" id="pbtciPromocode"></div>
+            <p class="pbtc-tips">邀请好友输入你的邀请码，你和小伙伴们<br/>都会获得臭美赠送优惠</p>
+        </div>
+        <div class="pbtc-item pbtc-activate dn">
+            <p class="activite-promocode-text-box" id="promocodeTextBox" style="display:block;!important">
+                <input type="text" name="" id="activatePromocodeText" autofocus="autofocus" placeholder="请输入推荐邀请码"/>
+            </p>
+            <a href="javascript:void(0)" class="submit-btn" id="btnActivate">提 交</a>
+            <p class="pbtc-tips">在此输入您获取的推荐邀请码，将会<br/>获得臭美赠送额外优惠</p>
+        </div>
+    </div>
+</section>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script>
+    requirejs(['module/user/couponChance.min'],function (couponChance) {
+        couponChance.init();
+    });
+</script>
+
+</body>
+</html>

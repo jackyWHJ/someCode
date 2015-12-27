@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>臭美-店铺主页</title>
+        <meta name="keywords" content="臭美"/>
+        <meta name="description" content="臭美，超爽的美发新体验"/>
+        <link rel="icon" href="../../images/logo16.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+        <link rel="stylesheet" href="../../libs/plugins/swiper/swiper.min.css" />
+        <link rel="stylesheet" type="text/css" href="salon.css">
+ 
+    </head>
+    <body>
+		<header class="header fixed">
+			<div class="title">
+			<span id="si-salonName" class="si-salonName">店铺主页</span>
+			<i class="collectStar" id="collect"></i>
+			</div>
+		</header>
+        <span class="si-star si-dist">
+			<span class="sl-xing" id="sl-xing"></span>
+			<span class="sl-stars" id="sl-stars"></span>
+		</span>
+        <div class="swiper-container small">
+            <div class="swiper-wrapper" id="smallSwiper">
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- end swiper-container -->
+        <div class="swiper-container full hide">
+            <div class="swiper-wrapper" id="fullSwiper">
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- end swiper-container full-->
+        <div class="si-contactWrap">
+            <a href="javascript:void(0)" id="jonBaiDu"><i class="salon-addrIco"></i>
+            <p class="si-addr" id="si-addr"></p><a class="salon-phoneIco" href="javascript:void(0);" id="salon-phone"></a>
+            </a>
+        </div>
+        <!-- end si-contactWrap -->
+        <div class="si-viewBranch dn" id="si-viewBranch">
+            查看<span id="si-branchNum"></span>家分店<i class="moreArrow"></i>
+        </div>
+        <div class="si-satifactionWrap dn" id="si-satifactionWrap">
+            <div class="si-satifactionInnerWrap">
+                <div class="row first">
+                    <span class="item num">
+                    <span class="label black">评价数：</span><span class="text  red-color" id="si-commentNum">0</span>
+                    </span>
+                    <span class="item degree">
+                    <span class="label black">满意度：</span><span class="text  red-color" id="si-satisfaction">0%</span>
+                    </span>
+                </div>
+                <div class="row second">
+                    <span class="item">
+                    <span class="label">很满意：</span><span class="text" id="si-s-perfect">0</span>人
+                    </span>
+                    <span class="item">
+                    <span class="label">满意：</span><span class="text" id="si-s-good">0</span>人
+                    </span>
+                    <span class="item">
+                    <span class="label">不满意：</span><span class="text" id="si-s-bad">0</span>人
+                    </span>
+                </div>
+
+            </div>
+            <i class="moreArrow"></i>
+        </div>
+        <!-- end si-satifactionWrap -->
+        <div class="si-teamIntroWrap hide" id="si-teamWrap">
+            <img  class="si-teamIntroImg lazy" id = "si-teamImg" alt="造型师" />
+            <i class="si-viewTeamArrow"></i>
+        </div>
+        <!-- end si-teamIntroWrap -->
+        <div class="si-itemCotent" id="si-itemCotent">
+            <aside>
+                <ul class="si-itemCatalog" id="si-itemCatalog">
+                </ul>
+            </aside>
+            <div class="si-itemList" id="si-itemList">
+                <label class="si-itemLabel" id="si-itemLabel"></label>
+            </div>
+            <!-- end si-itemList -->
+        </div>
+        <!-- end si-itemCotent-->
+    </body>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=F360d7e9ea3c3ecb5b9b9f2b530be8f4"></script>
+    <script src="../../libs/require.min.js"></script>
+    <script src="../../config/sysConfig.js"></script>
+    <script>
+        requirejs(['module/salon/salonIndex.min'],function (salonIndex) {
+            salonIndex.init();
+        });
+    </script>
+</html>

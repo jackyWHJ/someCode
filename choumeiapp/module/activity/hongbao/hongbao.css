@@ -1,0 +1,336 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors jieming.luo (9971414@qq.com)
+ * @date    2015-10-17 10:50:48
+ * @version $Id$
+ */
+body{
+    position: static;
+}
+.resultPage{
+    background: #f9324a;
+}
+.banner{
+    width: 100%;
+}
+.resultWrap .useTikcet{
+    color: #ff6317;
+    background: #ffdf4b;
+}
+.resultWrap .useTikcet.hide{
+    display: none;
+}
+.resultWrap .result{
+    background: #2b2143;
+}
+.resultWrap .tipWrap{
+    padding: 20px 5% 0;
+    overflow: auto;
+    z-index: 2;
+    position: relative;
+    padding-bottom: 20px;
+}
+.resultWrap .logo{
+    width: 60px;
+    border-radius: 50%;
+    float:left ;
+
+}
+.resultWrap{
+    color: #ff6317;
+}
+
+.resultWrap .getTicketTip{
+    color: #fff;
+    word-spacing: 0;
+    font-size: 14px;
+    line-height: 30px;
+    margin:0  30px 0 80px;
+    padding: 1.5rem;
+    background: #7b6e99;
+    border-radius: 5px;
+    position: relative;
+}
+.resultWrap .getTicketTip::before{
+    content: "";
+    width: 20px;
+    height: 24px;
+    top: 15px;
+    left: -20px;
+    display: inline-block;
+    background: url(images/triangle.png);
+    position: absolute;
+}
+.resultWrap .getTicketTip .bigger{
+    font-size: 18px;
+}
+.ticketList{
+    
+    position: relative;
+}
+.ticketBottom{
+    width: 100%;
+    margin-top: -66%;
+}
+.ticketWrap {
+    position: relative;
+}
+.ticketWrap .ticketImg{
+    width: 100%;
+}
+.ticketWrap .ticket{
+    width:100%;
+    text-align: center;
+    top: 50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+
+.ticket .typeWrap{
+    display: inline-block;
+    padding-right: 20px;
+    background: url(images/ticket-sep.png) no-repeat right;
+    background-size: 16px;
+}
+.ticket .ticketType{
+    font-size: 24px;
+    color: #ff6317;
+}
+.ticket .itemType{
+   color: #ff6317; 
+   font-size: 14px;
+
+}
+.ticket .sep{
+    font-size: 24px;
+    color: #ff6317;
+}
+.ticket .price{
+    color: #ff6317;
+    font-size: 36px;
+    top: -7px;
+    display: inline-block;
+    position: relative;
+}
+.ticket .price .unit{
+    font-size: 18px;
+}
+.accoutWrap {
+    text-align: center;
+}
+.accountInfo {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+.accoutWrap .help,.accoutWrap .share{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+.accoutWrap .alter{
+    color: #fff000;
+}
+.useTicketWrap{
+    text-align: center;
+}
+.useTikcet{
+    width: 80%;
+    margin: 20px auto;
+    font-size: 18px;
+    height: 45px;
+    border-radius: 10px;
+    display: block;
+}
+.historyList{
+    margin-top: 20px;
+}
+.historyList dt{
+    text-align: center;
+    color: #fff;
+    background: url(images/line.png)  center repeat-x ;
+}
+.historyList .title{
+    padding:  0 1.2rem;
+    background: #f9324a;
+}
+.historyList dd{
+    padding: 1rem;
+    position: relative;
+}
+.historyList .head{
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+}
+.historyList  .info{
+    margin-left: 60px;
+    position: relative;
+}
+.historyList .con{
+    padding-right: 55px;
+    border-bottom: 1px dashed #ddd;
+
+}
+.historyList .name{
+    color: #fff;
+    font-size: 16px;
+    padding-bottom: 3px;
+
+}
+.historyList .msg{
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 3px;
+}
+.historyList .time{
+    font-size: 12px;
+    color: #fff;
+    padding-bottom: 8px;
+}
+.historyList .price{
+    right: 0;
+    top: 50%;
+    font-size: 24px;
+    color: #ffdf4b;
+    position: absolute;
+    transform: translateY(-50%); 
+    -webkit-transform: translateY(-50%); 
+}
+
+/*start page 输入手机号 领取代金券*/
+.ticket.inputPhone{
+    background: none;
+}
+.input-phone{
+    width: 180px;
+    height: 33px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    text-align: center;
+}
+.input-phone:focus{
+    border: 1px solid #aaa;
+}
+.ipnut-phoneWrap .phoneTip{
+    width: 180px;
+    font-size: 12px;
+    color: #f9324a;
+    display: inline;
+    text-align: left;
+    position: absolute;
+}
+.ipnut-phoneWrap .phoneTip.hide{
+    display: none;
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+.ticketBtn{
+    width: 180px;
+    height: 33px;
+    color: #fff;
+    margin-top: 17px;
+    border-radius: 3px;
+    text-align: center;
+    background: #ff9c3b;
+}
+.ipnut-phoneWrap.error .input-phone{
+    border-color: #f9324a ;
+}
+.ipnut-phoneWrap.error .phoneTip{
+    display: inline;
+}
+/*end */
+
+/*start no ticket*/
+.ticket.noTicket{
+    background: none;
+}
+.noTicket .tip{
+    font-size: 12px;
+    color: #f9324a;
+}
+.noTicket .ticketBtn{
+    margin-top: 10px;
+}
+/*end no ticket*/
+
+/*start activity end page*/
+.ticket.end{
+    background: none;
+}
+.ticket.end .tip{
+    font-size: 14px;
+    color: #f9324a;
+}
+
+/*end activity end page*/
+/*start page fail*/
+.failBanner{
+    width: 100%;
+}
+.failPage .ticketBtn{
+    height: 40px;
+    width: 80%;
+    border-radius: 8px;
+    margin: 30px auto;
+    display: block;
+    background: #ff516e;
+}
+/*end apge fail*/
+
+/*start page changephone*/
+.changePhonePage{
+    width:100%;
+    height: 100%;
+    position:absolute;
+    background-color: #f3eeec;
+}
+.changePhonePage .currentPhone{
+    margin-top: 20%;
+    font-size: 16px;
+    color: #f9324a;
+    text-align: center;
+}
+.changePhonePage .tip{
+    font-size: 12px;
+    color: #aaa;
+    text-align: center;
+}
+.changePhonePage .ticketBtn{
+    height: 40px;
+    width: 80%;
+    border-radius: 8px;
+    margin: 30px auto;
+    display: block;
+}
+.changePhonePage .input-phone{
+    height: 40px;
+    width: 80%;
+    margin: 30px auto 40px;
+    display: block;
+}
+.changePhonePage .phoneTip{
+    width: 100%;
+    font-size: 12px;
+    color: #f9324a;
+    text-align: center;
+    margin-top: -30px;
+    position: absolute;
+}
+.changePhoneWrap.error .input-phone{
+    border-color: #f9324a;
+}
+.changePhoneWrap.error .phoneTip{
+    display: block;
+}
+/*end page changephone*/

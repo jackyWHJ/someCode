@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>店铺搜索</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美平台--个人页面" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="salonSearch.css">
+	<link rel="stylesheet" type="text/css" href="salon.css?v=6.0">
+</head>
+    <body>
+    <!--search box-->
+    <section>   
+		   <header class="header"><div class="title">店铺搜索</div></header>
+		  <div class="sp-search-box">
+                <input id="keywordsInput" type="text" name="keywords"  placeholder="请输入店铺名称、商圈或地址" maxlength="20" autocomplete="off"/>
+               
+            </div>
+         <div class="sp-search-btn-box">
+               <!-- <input type="button" value="搜索" id="searchSalonBtn" class="search-salon-btn sl-but" />-->
+			<span id="searchSalonBtn" class="search-salon-btn">搜索</span>
+            </div>  
+
+        <div class="select-search-box">
+            <ul></ul>
+        </div>
+    </section>
+    <script src="../../libs/require.min.js"></script>
+    <script src="../../config/sysConfig.js"></script>
+    <script>
+        requirejs(['module/salon/salonSearch.min'],function (salonSearch) {
+            salonSearch.init();
+        });
+    </script>
+    </body>
+</html>

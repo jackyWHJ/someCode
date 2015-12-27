@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors jieming.luo (9971414@qq.com)
+ * @date    2015-07-06 17:08:32
+ * @version $Id$
+ */
+/*start common*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+html{font-size: 10px;}
+body{
+    min-width: 320px !important;
+    max-width: 640px !important;
+    margin: 0 auto;
+    font-family:"微软雅黑";font-size:1.5rem;color: #2c2c2c;
+}
+a{text-decoration:none;color: inherit;}
+img{vertical-align:middle; border:0; }
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+ul{
+    list-style: none;
+}
+.hide{
+    display: none;
+}
+/*end common*/
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background: #37598b;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    outline: none;
+    border: none;
+    display: block;
+    background-color: #fff;
+}
+/*loading*/
+.loadingWrap{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: #37598b;
+    z-index: 2;
+}
+.loadingBox {
+  width: 160px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 99;
+}
+.loading {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  border: 4px solid #2c476f;
+  border-right-color: #7889a3;
+  border-bottom-color: #7889a3;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+}
+.loadingTips {
+  text-align: center;
+  color: #7889a3;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.rotate {
+  -webkit-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/*end loading*/
+/*start page*/
+.main{
+    width:55%;
+    height: 100%;
+    padding-top: 20%;
+    margin: 0 auto;
+}
+.imagesWrap{
+    margin-bottom: 30px;
+    width: 100%;
+    height: 32%;
+    min-height: 170px;
+    position: relative;
+}
+.imagesWrap img{
+    position: absolute;
+    z-index: 1;
+}
+.moon{
+    width: 90%;
+}
+.man{
+  width: 35%;
+  left: 25%;
+  top: 17%;
+}
+.cloud{
+    width: 28%;
+}
+.cloud.cloud1{
+    bottom: 5%;
+}
+.cloud.cloud2{
+    right: 10%;
+    bottom: 0;
+    z-index: 0;
+}
+.cloud.cloud3{
+    right: -10%;
+    bottom: 70px;
+    
+}
+.star{
+    width: 10%;
+}
+.star.star1{
+    top: -20px;
+    left: 25%;
+}
+.star.star2{
+    width: 6%;
+    top: 20%;
+    left: 10%;
+}
+.content{
+    width: 100%;
+}
+.dreamText{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.name{
+    border-left: 1px solid #6c85aa;
+    border-top: 1px solid #6c85aa;
+    border-bottom:1px solid #e4e9f0;
+    margin-bottom: 15px;
+}
+.phone{
+    border-left: 1px solid #7e94b4;
+    border-top: 1px solid #cad3e0;
+    border-bottom:1px solid #879bb9;
+    margin-bottom: 30px;
+}
+.link{
+    border:none;
+    border-radius: 6px;
+    background:#008aff url(images/0_button_wenzi.png) no-repeat center;
+    background-size: 80px;
+}
+.link:active{
+    background-color: #0074d7;
+}
+/*animation*/
+.man{
+    animation-delay: .5s;
+    -webkit-animation-delay: .5s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+.star{
+    animation: flash 2s infinite;
+    -webkit-animation: flash 2s infinite;
+}
+@keyframes flash{
+    0%{
+        opacity: .2;
+    }
+    30%{
+        opacity: .5;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: .7;
+    }
+    100%{
+        opacity: .2;
+    }
+}
+@-webkit-keyframes flash{
+    0%{
+        opacity: .2;
+    }
+    30%{
+        opacity: .5;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: .7;
+    }
+    100%{
+        opacity: .2;
+    }
+}
+.cloud.animated{
+    animation-duration:2s;
+    -webkit-animation-duration:2s;
+}
+.cloud.animation2{
+    animation: cloudAni 3s infinite;
+    -webkit-animation: cloudAni 3s infinite;
+}
+.cloud.cloud2{
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+}
+.cloud.cloud3{
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+@keyframes cloudAni{
+    0%{
+        transform: translate3d(0, 0, 0);
+    }
+    25%{
+        transform: translate3d(2px, 0, 0);
+    }
+    75%{
+        transform: translate3d(-2px, 0, 0);
+    }
+}
+@-webkit-keyframes cloudAni{
+    0%{
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    25%{
+        -webkit-transform: translate3d(2px, 0, 0);
+    }
+    75%{
+        -webkit-transform: translate3d(-2px, 0, 0);
+    }
+}
+/*end page*/

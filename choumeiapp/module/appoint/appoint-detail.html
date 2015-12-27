@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>预约详情</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="x5-orientation" content="portrait">
+    <meta name="keywords" content="臭美平台--预约" />
+    <meta name="description" content="臭美服务软件" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="appoint.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">预约详情</header>
+        <div class="appoint-detail-info">
+            <span class="refundableIco" id = "status">--</span>
+            <div class="appoint-row">
+                <span class="tip">预约号</span>
+                <span class="val" id="bookingSn"></span>
+            </div>
+            <div class="appoint-row">
+                <span class="tip">预约时间</span>
+                <span class="val" id="bookingDate"></span>
+            </div>
+            <div class="appoint-row">
+                <span class="tip">预约项目  </span>
+                <span class="val" id="itemName"></span>
+            </div>
+            <div class="appoint-row">
+                <span class="tip">预约人  </span>
+                <span class="val" id="bookerName"></span>
+            </div>
+        </div>
+        <!-- end detail info -->
+        <div class="appoint-section">
+            <span class="CMAddr">
+                <span class="name" id="beautyName">臭美定妆中心</span>
+                <span class="addr" id="beautyAddress">南山区科研路16号华强6楼臭美定妆中心</span>
+            </span>
+            <i class="go"></i>
+        </div>
+        <div class="appoint-detail-infoWrap" id="payInfo">
+            <div class="appoint-title">
+                支付信息
+            </div>
+            <div class="appoint-row">
+                <span class="tip">在线支付预约金  </span>
+                <span class="val" id="amount"></span>
+            </div>
+            <div class="appoint-row">
+                <span class="tip">支付时间  </span>
+                <span class="val" id="paiedTime"></span>
+            </div>
+            <div class="appoint-row">
+                <span class="tip">推荐人 </span>
+                <span class="val" id="recommendedCode"></span>
+            </div>
+        </div>
+        <!-- end infoWrap -->
+        <div class="appoint-detail-infoWrap hide" id="statusInfo">
+            <div class="appoint-title">
+                状态
+            </div>
+        </div>
+        <!--end infoWrap  -->
+        <div class="appoint-detail-infoWrap appoint-giftWrap hide" id="giftInfo">
+            <div class="appoint-title">
+                赠送说明
+            </div>
+            <p id="giftDesc">
+                
+            </p>
+        </div>
+        <!-- end infoWrap -->
+        <div class="appoint-detail-refund">
+            <input type="button" class="refund appoint-btn hide" value="申请退款" id="refund">
+            <p class="tip giftTip hide" id="giftTip">该项目为赠送项目，无需退款</p>
+            <p class="tip">温馨提示：请按照预约时间到店<br />如有疑问请拨打客服电话：<a href="tel:400-9933-800" class="tel">400-9933-800</a></p>
+        </div>
+    </div>
+    <!-- end contaier -->
+</body>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script >
+    requirejs(['module/appoint/appoint-detail.min'],function(detail){
+        detail.init();
+    })
+
+</script>
+</html>

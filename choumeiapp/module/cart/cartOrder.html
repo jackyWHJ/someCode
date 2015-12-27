@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>确认订单</title>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui"
+          name="viewport">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="keywords" content="臭美，美发，团购，O2O,微信公众号"/>
+    <meta name="description" content="臭美服务平台"/>
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="cartStyle.min.css">
+</head>
+<body>
+<div id="cartOrder">
+    <header class="header" id="header"></header>
+    <div id="submitOrderContent">
+        <div class="order-wrap" id="cartOrderList">
+            <!--<div class="order-item-box">
+                <h2 class="oib-title">win时尚造型</h2>
+                <div class="oib-list">
+                    <div class="oib-area">
+                        <div class="clearfix">
+                            <div class="order-item-name">捂被子中草药</div>
+                            <span class="order-item-price oi-price">￥0</span>
+                        </div>
+                        <div class="oip-rule">
+                            <span class="oipr-text">造型师：技术总监</span>
+                            <em class="oip-num">x1</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-item-condition">
+                    <ul class="clearfix">
+                        <li>仅首单用户可购</li>
+                        <li>输入本店邀请码可购</li>
+                        <li>单个用户限购2件</li>
+                        <li>库存仅剩500</li>
+                    </ul>
+                    <p class="cart-item-tips">每周一到周五可消费</p>
+                </div>
+
+                <div class="oib-list">
+                    <div class="oib-area">
+                        <div class="clearfix">
+                            <div class="order-item-name">捂被子中草药</div>
+                            <span class="order-item-price oi-price">￥0</span>
+                        </div>
+                        <div class="oip-rule">
+                            <span class="oipr-text">造型师：技术总监</span>
+                            <em class="oip-num">x1</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-sum">
+                    <span>共<em>2</em>个项目</span>
+                    <span>小计：<em class="oi-price">￥0</em></span>
+                </div>
+            </div>
+            <div class="order-item-box">
+                <h2 class="oib-title">win时尚造型</h2>
+                <div class="oib-list">
+                    <div class="oib-area">
+                        <div class="clearfix">
+                            <div class="order-item-name">捂被子中草药</div>
+                            <span class="order-item-price oi-price">￥0</span>
+                        </div>
+                        <div class="oip-rule">
+                            <span class="oipr-text">造型师：技术总监</span>
+                            <em class="oip-num">x1</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-sum">
+                    <span>共<em>2</em>个项目</span>
+                    <span>小计：<em class="oi-price">￥0</em></span>
+                </div>
+            </div>-->
+        </div>
+        <div class="vocher-pay-content" id="vocher-choose">
+            <!--<div class="vocher-top">-->
+                <!--<span>现金券:</span>-->
+                <!--<b></b>-->
+                <!--<span class="vocher-title vocher-choose-click">-->
+                    <!--新用户注册红包<span>&gt;</span>-->
+                <!--</span>-->
+            <!--</div>-->
+            <!--<div class="vocher-bottom">-->
+                <!--<span class="vocher-list-type">项目: <span class="vocher-list-title">特色烫染</span></span>-->
+                <!--<span class="vocher-list-con">立减 <div id="vocher-pay-num"> ￥8</div></span>-->
+            <!--</div>-->
+
+            <!--<b class='vocher-choose-click'>选择现金券 <span>&gt;</span></b>-->
+            <!--<b>无可用现金券</b>-->
+        </div>
+        <div class="order-amount-box">
+            <div class="pay-item">
+                <span>合计：</span>
+                <em id="needPay" class="oi-price">￥0</em>
+            </div>
+            <div class="pay-item">
+                <span>臭美余额：</span>
+                <em id="choumeiBalance">￥0</em>
+            </div>
+        </div>
+        <div id="otherPayWay" class="pay-way-div dn"> 选择支付方式</div>
+        <div id="otherPay">
+            <div class="pay-item" payWay="1">
+                <div class="pi-left-text">
+                    <div class="cart-sprite-img alipay-btn"></div>
+                    <div class="pay-describe">
+                        <p>支付宝支付</p>
+                        <p>推荐安装支付宝客户端的用户使用</p>
+                    </div>
+                </div>
+                <div class="selectBtn select-btn"></div>
+            </div> 
+            <div class="pay-item" payWay="2">
+                <div class="pi-left-text">
+                    <div class="wechat-btn"></div>
+                    <div class="pay-describe">
+                        <p>微信支付<img src="../../images/cart/tujian@2x.png" class="recomment"></p>
+
+                        <p>亿万用户的选择，更快更安全</p>
+                    </div>
+                </div>
+                <div class="selectBtn select-btn"></div>
+            </div>
+           <div class="pay-item" payWay="3">
+                <div class="pi-left-text">
+                    <div class="cart-sprite-img e-bank-btn"></div>
+                    <div class="pay-describe">
+                        <p>银行卡支付</p>
+                        <p>支持储蓄信用卡，无需开通网银</p>
+                    </div>
+                </div>
+                <div class="selectBtn unselect-btn"></div>
+            </div>
+        </div>
+    </div>
+    <div class="submit-pay-control-box">
+        <span>还需支付：<em id="remainPayAmount">￥0</em></span>
+        <a href="javascript:void(0)" id="submitPayBtn" class="submit-order-btn">确认支付</a>
+    </div>
+</div>
+<div id="choose-voucher">
+    <header class="header il-header">
+        <span  id="choose-voucher-cancel">取消</span>
+        <span class="salon-hName" id="h-itemName">选择现金券</span>
+        <span  id="choose-voucher-ok">确定</span>
+    </header>
+    <header class="voucher-tips">
+        <h3>温馨提示：</h3>
+
+        <p>1.现金券会被优先使用，不足支付时才会使用臭美余额;</p>
+
+        <p>2.每次结算仅可以使用一张现金券;</p>
+
+        <p>3.现金券不找零，不兑换，使用后不可退，请慎重使用;</p>
+    </header>
+    <div class="voucher-con">
+        <ul>
+            <!--<li>-->
+            <!--<div class="roll row">-->
+            <!--<div class="row-title normal"></div>-->
+            <!--<div class="row-logo normal"></div>-->
+            <!--<div class="column small-4"><span>&yen;</span><b>100</b></div>-->
+            <!--<div class="column small-8">-->
+            <!--<div class="title">新用户注册&#45;&#45;80元</div>-->
+            <!--<div class="content">项目满800元可用，首次支付可用</div>-->
+            <!--<div class="time">2014-02-15至2014-02-16</div>-->
+            <!--</div>-->
+            <!--<div class="line"></div>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li class="click">-->
+            <!--<div class="roll row">-->
+            <!--<div class="row-title normal"></div>-->
+            <!--<div class="row-logo normal"></div>-->
+            <!--<div class="column small-4"><span>&yen;</span><b>80</b></div>-->
+            <!--<div class="column small-8">-->
+            <!--<div class="title">新用户注册&#45;&#45;80元</div>-->
+            <!--<div class="content">项目满800元可用，首次支付可用</div>-->
+            <!--<div class="time">2014-02-15至2014-02-16</div>-->
+            <!--</div>-->
+            <!--<div class="clicked">-->
+            <!--<div class="clicked-bg"></div>-->
+            <!--<div class="clicked-line"></div>-->
+            <!--</div>-->
+            <!--<div class="line"></div>-->
+            <!--</div>-->
+            <!--</li>-->
+        </ul>
+    </div>
+</div>
+
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script >
+    requirejs(['module/cart/cartOrder.min'],function(cartOrder){
+        cartOrder.init();
+    })
+
+</script>
+</body>
+</html>

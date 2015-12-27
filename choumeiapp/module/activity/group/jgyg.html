@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>机构员工专属美发通道</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美--找到适合你的发型" />
+    <meta name="description" content="臭美服务平台" />
+   <style>
+       body{
+           margin: 0;
+           padding: 0;
+           background-color: #20272F;
+       }
+       #content{
+           padding-bottom:40px;
+           line-height: 0;
+       }
+        img{
+            width: 100%;
+            margin: 0;
+        }
+        .footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 66px;
+            background: rgba(0,0,0,.8);
+            text-align: center;
+        }
+       #goBackBtn{
+            width: 50%;
+            height: 40px;
+           margin: 13px auto;
+           line-height: 40px;
+           text-align: center;
+           color: #fff;
+           background: #448FFF;
+           font-size: 18px;
+           border-radius: 5px;
+       }
+       #goBackBtn:active{
+           background: #317bea;
+       }
+   </style>
+</head>
+<body>
+<div id="content">
+    <img src="imgs/jgyg1.png">
+    <img src="imgs/jgyg2.png">
+    <img src="imgs/jgyg3.png">
+    <img src="imgs/jgyg4.png">
+    <img src="imgs/jgyg5.png">
+    <img src="imgs/jgyg6.png">
+    <img src="imgs/jgyg7.png">
+    <img src="imgs/jgyg8.png">
+    <img src="imgs/jgyg9.png">
+</div>
+<div class="footer">
+    <div id="goBackBtn">我已经了解啦</div>
+</div>
+<script>
+    var goBackBtn = document.getElementById("goBackBtn");
+    goBackBtn.onclick = function(){
+        window.history.go(-1);
+    };
+</script>
+</body>
+</html>

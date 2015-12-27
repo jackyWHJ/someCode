@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>支付成功</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="x5-orientation" content="portrait">
+    <meta name="keywords" content="臭美平台--预约" />
+    <meta name="description" content="臭美服务软件" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="appoint.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">支付成功<a href="../home/homePage.html" class="appoint-finish">完成</a></header>
+        <p class="appoint-result-waitTip hide" id="delayTip">
+            臭美已收到您的付款信息，支付结果可能会有几分钟延迟，请刷<br />
+            新本页面或稍后查看“我的预约”
+        </p>
+        <!-- end wait tip -->
+        <div class="appoint-result-tip">
+            <h3 class="title" id="title">预约成功</h3>
+            <p class="content">请在预约当天到店消费。<br />
+客服将在24小时内致电与您确认预约信息，请保持手机通话畅通</p>
+            <img src="../../images/appoint/yuyue_image_yaoqing@2x.png" alt="邀请函" class="invitation hide" id="invitation" />
+        </div>
+        <div class="appoint-result-info">
+            <div class="item">
+                <div class="title">
+                已预约项目
+                </div>
+                <p class="itemName" id="itemName">
+                </p>
+            </div>
+            <!-- end item -->
+            <div class="appoint-row">
+                <span class="tip">预约号  </span>
+                <span class="val" id="bookingSn"></span>
+            </div>
+            <div class="appoint-row">
+                <span class="tip">预约时间  </span>
+                <span class="val" id="bookingDate"></span>
+            </div>
+            <div class="appoint-row">
+                <span class="tip">已支付预约金  </span>
+                <span class="val red" id="amount">¥900</span>
+            </div>
+        </div>
+        <div class="appoint-detail-opts">
+            <input type="button" class="viewTicket appoint-btn" value="查看预约单" id="viewTicket">
+            <input type="button" class="viewTicket appoint-btn refresh hide" value="刷新" id="refresh">
+            <p class="tip">如有疑问请拨打客服电话：<a href="tel:400-9933-800" class="tel">400-9933-800</a></p>
+        </div>
+    </div>
+    <!-- end contaier -->
+</body>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script >
+    requirejs(['module/appoint/appoint-result.min'],function(result){
+        result.init();
+    })
+
+</script>
+</html>

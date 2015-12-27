@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>臭美-全部评价</title>
+        <meta name="keywords" content="臭美"/>
+        <meta name="description" content="臭美，超爽的美发新体验"/>
+        <link rel="icon" href="../../images/logo16.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+        <link rel="stylesheet" type="text/css" href="homeStyle.min.css">
+    </head>
+    <body>
+        <header class="header">全部评价</header>
+        <div class="satisfaction-box"> 
+            <p class="satisfaction-degree"><em id="satisfyLabel">满意度：</em><span id="satisfactionDegree">96.6%</span></p>
+            <ul class="vc-sortList clearfix" id="vc-sortList">
+                <li class="active">全部<span id="satisfy-all">0</span></li>
+                <li>很满意<span id="satisfy-very">0</span></li>
+                <li>满意<span id="satisfy-ok">0</span></li>
+                <li>不满意<span id="satisfy-bad">0</span></li>
+            </ul>
+            <p class="sb-check" id="sbCheck" contentNotBlank="true"><i class="sbc-icon"></i>只看有内容的评价</p>
+        </div>
+        <section class="vc-commentList" id="commentList">
+            <div class="vc-cl-commentItem">
+                <!-- <div class="vc-cl-content">
+                    <div class="vc-cl-head">
+                        <img src="../../images/default_img.png" alt="个人头像" class="vc-cl-headImg" data-original="">
+                        <div class="vc-cl-info">
+                            <h1 class="vc-cl-infoHead">
+                                <span>139****0299</span>
+                                <span class="gradeWrap">
+                                    <i class="grade d"></i>
+                                </span>
+                            </h1>
+                            <div class="vc-cl-infoCon">
+                                <span class="time">2015-08-19 21:24:59</span>
+                                <span class="csi">很满意</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vc-cl-comment">
+                        <p class="vc-cl-commentDesc">
+                            以前就在他们家剪过头发哦，一直挺满意的说~
+                        </p>
+                        <ul class="vc-cl-imgList" datakey="0.9317181720398366"></ul>
+                    </div>
+                </div>
+                <div class="vc-cl-content">
+                    <div class="vc-cl-head">
+                        <img src="../../images/default_img.png" alt="个人头像" class="vc-cl-headImg" data-original="">
+                            <span class="csi">很满意</span>
+                            <span class="vc-cl-tel">139****0299</span>
+                        </div>
+                        <div class="vc-cl-comment">
+                            <p class="vc-cl-commentDesc">
+                                以前就在他们家剪过头发哦，一直挺满意的说~
+                            </p>
+                            <ul class="vc-cl-imgList" datakey="0.9317181720398366">
+                                <li><img src="../../images/default_img.png" class="vc-cl-img"/></li>
+                                <li><img src="../../images/default_img.png" class="vc-cl-img"/></li>
+                                <li><img src="../../images/default_img.png" class="vc-cl-img"/></li>
+                            </ul>
+                            
+                        </div>
+                        <p class="vc-cl-time">2015-10-09</p>
+                        <p class="vc-cl-reply">dfdf</p>
+                    </div> 
+                </div>-->
+            </div>
+        </section>
+        <!-- end vc-commentList -->
+        <div class="hide swiper-containerWrap" id="swiper-containerWrap">
+        </div>
+        <section class="no-content-tips" id="noCommentTips">
+            <img src="../../images/user/pinglun_illustration@2x.png">
+            <p>暂无此类评价</p>
+        </section>
+        <!-- end swiper-containerWrap-->
+    </body>
+    <link rel="stylesheet" href="../../libs/plugins/swiper/swiper.min.css" />
+    <script src="../../libs/require.min.js"></script>
+    <script src="../../config/sysConfig.js"></script>
+    <script>
+        requirejs(['module/home/viewComment.min'],function (viewComment) {
+            viewComment.init();
+        });
+    </script>
+</html>

@@ -1,0 +1,23 @@
+{
+    "result" : 1,
+    "data" : {
+        "main" : {
+            "priceAll" : "118.00",
+            "priceOri" : "145.00",
+            "orderSn" : "3030167611436",
+            "status" : "2",
+            "addTime" : "2015-04-29 06:01:16",
+            "itemId" : "10256",
+            "norms" : "\u65e0\u89c4\u683c",
+            "salonId" : "161",
+            "itemName" : "\u5934\u90e8\u517b\u751f\u517b\u989cD\u5957\u9910",
+            "img" : "http:\/\/sm.choumei.cn\/Uploads\/itemlogo\/2015-01-14\/14212191597826.jpg",
+            "useLimit" : "",
+            "itemType" : "1",
+            "salonName" : "classics\u7ecf\u5178\u4e3b\u4f5c",
+            "saleRule" : [],
+            "isCanPay" : 1,
+            "repertory" : 0
+        }
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的订单</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美平台--臭美优惠券" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="noPayOrder.min.css">
+</head>
+    <body>
+        <section id="orderDetail_section">
+            <header class="header">订单详情</header>
+            <section class="section-bg-color">
+                <div id="order-info">
+                    <div class="background-line"></div>
+                    <div class="order-salon-box">
+                        <div class="salon-name" id="detail_salon"></div>
+                        <div class="limit-activity" id="limit_act_flag" style="display:none">
+                            <img class="limit-flag" src='../../images/user/tongyong_xianshitejia@2x.png'>
+                        </div>  
+                    </div>
+                    <div class="gray-line"></div>
+                    <div class="order-salon-box">
+                        <div class="salon-image-box">
+                            <img id="detail_image" class="salon-image">                          
+                        </div>
+                        <div class="act-des-box">
+                            <div class="act-name"><span id="detail_itemName"></span></div>
+                            <div class="act-price">
+                                <span>
+                                    臭美价：<span class="font-color" id="detail_choumei_price"></span>
+                                </span>
+                                <span class="price-span" id="detail_ori_span">
+                                    原价：<span id="detail_ori_price"></span>
+                                </span>                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="limit_detail_info" style="display:none">
+                        <div class="gray-line"></div>
+                        <div class="order-buy-limit"></div>
+                        <p class="order-user-tip" id="orderUserTip"></p>
+                    </div>
+
+                    <div class="background-line"></div>
+                    <div class="order-detail-title">订单详情</div>
+                    <div class="gray-line"></div>
+                    <div class="order-detail">
+                        <p class="order-detail-p">订单编号：<span class="detail-p-s" id="detail_id"></span></p>
+                        <p class="order-detail-p">下单时间：<span class="detail-p-s" id="detail_time"></span></p>
+                        <p class="order-detail-p">规格：<span class="detail-p-s" id="detail_g"></span></p>
+                        <p class="order-detail-p">金额：<span class="detail-p-s" id="detail_amt"></span></p>
+                        <p></p>
+                    </div>
+                    <div style="height:1px"></div>
+                </div>
+            </section>
+            <div class="order-s-pay-btn">付款</div>
+        </section>
+        <script src="../../libs/jquery-2.1.3.min.js"></script>
+        <script src="../../config/sysConfig.js"></script>
+        <script src="../../utils/utils.min.js"></script>
+        <script src="noPayOrderDetail.min.js?v=5.5"></script>
+    </body>
+</html>

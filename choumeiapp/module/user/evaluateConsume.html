@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>评价消费体验</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美平台--臭美优惠券" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="evaluate.min.css">
+</head>
+<body>
+<header class="header evaluate-header">
+    <span id="edbItemName" class="text-overflow"></span>
+    <a href="javascript:void(0)" id="releaseEvaluateBtn">发布</a>
+</header>
+<section class="evaluate-consume-box">
+    <h1 class="ecb-title">请对本次消费体验给个评价吧！</h1>
+    <ul class="ecb-result-list clearfix">
+        <li>
+            <div class="ecbrl-status very-satistied" id="verySatistied" satisfyType=1></div>
+            <p class="satisty-text">很满意</p>
+            <p class="satisty-num"></p>
+        </li>
+        <li>
+            <div class="ecbrl-status has-satistied" id="hasSatistied" satisfyType=2></div>
+            <p class="satisty-text">满意</p>
+            <p class="satisty-num"></p>
+        </li>
+        <li>
+            <div class="ecbrl-status not-satistied" id="notSatistied" satisfyType=3></div>
+            <p class="satisty-text">不满意</p>
+            <p class="satisty-num"></p>
+            <ul class="not-satisfied-status-box" id="notSatisfiedStatusBox"></ul>
+        </li>
+    </ul>
+    <div class="write-evaluate-content falldown" id="writeEvaluateContent" style="display:none">
+        <p class="wec-select-stylist" id="selectStylist"><span class="wecss-te">选择设计师</span></p>
+        <div class="wec-textarea-box">
+            <textarea id="consumeTextarea"  class="consume-textarea" placeholder="感谢您对本次服务的认可，记录下您此时的心情吧" maxlength="140"></textarea>
+            <p class="evaluate-word-count"><span id="wordCount">140</span>字</p>
+        </div>
+        <div class="evaluate-photo-box">
+            <p class="epb-title">臭美时刻，晒出靓靓的你!</p>
+            <div id="uploadImgDiv" class="upload-img-div">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div id="uploadBtn" class="add-img-btn"></div>
+            </div>
+        </div>
+        <!--<p class="save-hairstyle" id="saveCheck" flag="true">
+            <i class="sh-icon"></i>将照片保存至发型档案
+        </p>-->
+    </div>
+</section>
+<section id="coverBg"></section>
+<section class="stylist-list-box" id="stylistListBox" style="display:none">
+    <ul class="slb-content" id="scroller"></ul>
+</section>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script>
+    requirejs(['module/user/evaluateConsume.min'],function (evaluateConsume) {
+        evaluateConsume.init();
+    });
+</script>
+</body>  
+</html>

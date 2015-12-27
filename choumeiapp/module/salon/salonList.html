@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>臭美-好店推送</title>
+        <meta name="keywords" content="臭美"/>
+        <meta name="description" content="臭美，超爽的美发新体验"/>
+        <link rel="icon" href="../../images/logo16.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../../css/animate.css">
+        <link rel="stylesheet" type="text/css" href="salon.css?v=6.0">
+    </head>
+    <body>
+	    <header class="header sl-searchWrap">			 
+				<input class="sl-search img text-overflow"  id="sl-search" type="text" placeholder="请输入店铺名称、商圈或地址"  />	 
+			    <span class="sl-h-pos" id="sl-h-pos"><span id="sl-h-posText">附近</span><i class="arrow"></i></span>
+		</header>
+		<div class="circleWrap" id="circle">
+            <div class="circle">
+                <ul class="district"></ul>
+                <ul class="zone"></ul>
+            </div>
+            <!-- end sl-circle -->
+            <div class="mask"></div>
+		</div>
+        <!-- end circleWrap -->
+		<div class=" sl-nav  ">
+            <nav class="sl-h-tab" id="sl-h-tab">
+                <ul>
+                    <li class="active">身边好店</li>
+                    <li>离我最近</li>
+					 <li>等级最高</li>
+                </ul>
+            </nav>
+        </div>
+       
+       
+     
+        <ul class="salonList" id="salonList">
+        </ul>
+        <!-- end salonList -->
+        <section class="no-content-tips" id="noResearchResult">
+            <img src="../../images/salon/sousuo_illustration@2x.png">
+            <p>
+            <span class="main-color">搜索无结果</span><br>换个关键词试试吧~
+            </p>
+        </section>
+    </body>
+    <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&amp;ak=F360d7e9ea3c3ecb5b9b9f2b530be8f4&amp;services=&amp;t=20150421174650"></script>
+    <script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+    <script src="../../libs/require.min.js"></script>
+    <script src="../../config/sysConfig.js"></script>
+    <script>
+        requirejs(['module/salon/salonList'],function (salonList) {
+            salonList.init();
+        });
+    </script>
+</html>

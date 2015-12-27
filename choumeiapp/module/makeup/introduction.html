@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <title>详情</title>
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../libs/plugins/swiper/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="makeup.min.css">
+    <link href="introduction.min.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="back"></div>
+        <div class="title"></div>
+    </div>
+    <section id="content">
+        <div class="list-item-introduction">
+            <section class="list-item-introduction-title-wrap grid-block">
+                <div class="grid-block-item active">产品介绍</div>
+                <div class="grid-block-item">预约流程</div>
+                <div class="grid-block-item" id="process"></div>
+            </section>
+            <div class="swiper-list-introduction swiper-container swiper-container-horizontal"
+                 id="swiper-list-introduction-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one">
+
+                        <!--<img src="../../images/makeup/dingzhuang_baozhe_icon@3x.png">
+                        <h3 class="pink">什么是纤体</h3>
+                        <p class="gray">
+                            纤体什么是纤体什么是纤体什么是纤体什么
+                            是纤体什么是纤体什么是纤体什么是纤体
+                        </p>-->
+
+                        <div id="product" class="product">
+
+                        </div>
+
+                        <div id="makeUpCenter">
+                            <section class="equipment-address">
+                                <div class="wrap">
+                                    <section class="makeup-center">
+                                        <h4 class="gray-big">臭美（深圳）韩式定妆中心</h4>
+                                        <address class="gray">南山区华润城，大冲商务中心C座6楼</address>
+                                        <div class="right-icon"></div>
+                                    </section>
+                                    <section class="address" id="address">
+                                        <img src="../../images/dingzhuang_map_pic@3x.png">
+                                    </section>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="swiper-slide two">
+                        <!--<section class="grid-block swiper-slide-introduction-appointment">-->
+                            <!--<section class="grid-block-item"><span>1</span>电话预约咨询<i></i></section>-->
+                            <!--<section class="grid-block-item"><span>2</span>了解项目细则<i></i></section>-->
+                            <!--<section class="grid-block-item"><span>3</span>支付预约金</section>-->
+                        <!--</section>-->
+                        <!--<h2 class="pink">
+                            预约流程说明
+                        </h2>
+
+                        <div>
+                            <p class="gray">
+                                1. 首先，可以打开丑恶没可以打开丑恶没可以打开丑恶没
+                            </p>
+
+                            <p class="gray">
+                                2. 首先，可以打开丑恶没可以打开丑恶没可以打开丑恶没
+                            </p>
+
+                            <p class="gray">
+                                3. 首先，可以打开丑恶没可以打开丑恶没可以打开丑恶没
+                            </p>
+                        </div>-->
+                    </div>
+                    <div class="swiper-slide three">
+                        <div class="product">
+                            <ul>
+                                <!--<li><span>1</span><h2>标题</h2>首</li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="call grid-block">
+            <div class="grid-block-item pink" id="call-phone">
+                <img src="../../images/fashion/dingzhuang_phone_icon.png">电话咨询
+                <div id="phone-num"></div>
+            </div>
+            <div class="grid-block-item">
+                <div class="line"></div>
+                <span class="gray">预约金</span><span class="pink">￥<i id="choumei-call-price">300</i></span>
+            </div>
+            <div class="grid-block-item">
+                <span class="call-immediately pink-bg">立即预约</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="toTop">
+        <img src="../../images/fashion/dingzhuang_top_btn_normal.png">
+    </section>
+
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=F360d7e9ea3c3ecb5b9b9f2b530be8f4"></script>
+    <script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+    <script src="../../libs/require.min.js"></script>
+    <script src="../../config/sysConfig.js"></script>
+    <script>
+        requirejs(['commonUtils', 'module/makeup/introduction.min'], function (commonUtils, introduction  ) {
+            introduction.init( commonUtils.getQueryString("itemId") );
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>申请退款</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美平台--臭美优惠券" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="order.min.css">
+</head>
+<body>
+<header class="header">申请退款</header>
+<div  class="refunds-box" id="refundsBox">
+    <section class="apply-refunds-form" class="" id="hairdressRefunds">
+        <p class="arf-tips">退款成功后，购买获得的相应成长值将会被扣除</p>
+        <h3 class="arf-title">臭美券密码</h3>
+        <div class="arf-area">
+            <p class="arfa-text" id="hairdressNo"></p>
+            <p class="arfa-text">现金：<span id="hairdressAmount" class="main-color"></span></p>
+        </div>
+        <h3 class="arf-title">现金退还方式</h3>
+        <div class="arf-area" id="hairdressRefundsStyle">
+            <p class="arfa-text select-current">原支付方退回<em class="refunds-remark">(3-5个工作日退款到原支付方)</em></p>
+            <p class="arfa-text select-normal">退至臭美账户<em class="refunds-remark">(3个工作日内到账)</em></p>
+        </div>
+        <h3 class="arf-title">退款原因<span class="refunds-remark">(至少选择一项):</span></h3>
+        <div class="arf-area refunds-reason" id="hairdressRefundsReason">
+            <p class="arfa-text select-normal" data-status="normal">去过了，不太满意</p>
+            <p class="arfa-text select-normal" data-status="normal">朋友/网上评价不好</p>
+            <p class="arfa-text select-normal" data-status="normal">买多了/买错了</p>
+            <p class="arfa-text select-normal" data-status="normal">计划有变，没时间去了</p>
+            <p class="arfa-text select-normal" data-status="normal">后悔了，不想要了</p>
+            <p class="arfa-text select-normal" data-status="normal">其他</p>
+        </div>      
+    </section>
+    <section class="apply-refunds-form" id="reservationRefunds" style="display:none">
+        <p class="arf-tips">退款成功后，预约获得的相应成长值将会被扣除</p>
+        <h3 class="arf-title">预约号</h3>
+        <div class="arf-area">
+            <p class="arfa-text" id="reservationNo"></p>
+            <p class="arfa-text">现金：<span id="reservationAmount" class="main-color"></span></p>
+        </div>
+        <h3 class="arf-title">现金退还方式</h3>
+        <div class="arf-area" id="reservationRefundsStyle">
+            <p class="arfa-text select-current">原支付方退回<em class="refunds-remark main-color">(3-10个工作日退款到原支付方)</em></p>
+        </div>
+        <h3 class="arf-title">退款原因<span class="refunds-remark">(至少选择一项):</span></h3>
+        <div class="arf-area refunds-reason" id="reservationRefundsReason">
+            <p class="arfa-text select-normal" data-status="normal">买错了/买多了</p>
+            <p class="arfa-text select-normal" data-status="normal">朋友/网上评价不好</p>
+            <p class="arfa-text select-normal" data-status="normal">担心伤害健康</p>
+            <p class="arfa-text select-normal" data-status="normal">太贵了</p>
+            <p class="arfa-text select-normal" data-status="normal">去过了，不太满意</p>
+            <div class="arfa-textarea">
+                <p>其他原因？来向臭美吐槽吧！</p>
+                <textarea name="" id="otherReason" maxlength="100" placeholder="你的美丽是我们进步的动力~"></textarea>
+            </div>
+        </div>      
+    </section>
+    <a href="javascript:;" class="btn-funds" id="confirmRefunds">确定退款</a>
+</div>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script>
+    requirejs(['module/user/applyRefunds.min'],function (applyRefunds) {
+        applyRefunds.init();
+    });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>退款单详情</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美平台--臭美优惠券" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="order.min.css">
+</head>
+<body>
+<header class="header">退款单详情</header>
+<section class="refunds-detail-box" id="refundsDetailBox">
+    <div class="order-list">
+        <div class="ol-info refunds-list-info" id="refundsDetail">
+            <img onerror="this.src='../../images/default_img.png'" class="oli-img" id="rliImg">
+            <div class="oli-right">
+                <p class="olir-text1 text-overflow" id="rliSalonName"></p>
+                <p class="olir-text2 text-overflow" id="rliItemName"></p>
+                <p class="olir-text3" id="rliText3"></p>
+            </div>
+        </div>
+        <p class="ol-bottom">
+            <span class="olb-left" id="refundStatus"></span>
+            <em class="olb-right" id="cmNo"><i class="main-color"></i></em>
+        </p>
+    </div> 
+    <div class="refund-description" id="refundingDescription">
+        <div class="rd-alipay">
+            <h2 class="rda-title" id="rdaTitle"></h2>
+            <p class="rda-money-text">退款金额：<span id="rdaMoney" class="main-color">￥0</span></p>
+        </div>
+        <div class="rd-flow" id="rdFlow">
+               <!--  <h3 class="rdf-title">退回流程:</h3>
+                <dl>
+                    <dt><span>臭美审核中</span></dt>
+                    <dd class="audit-success-border">臭美将在一到两个工作日内,审批您的退款申请。待臭美完成审核后，</dd>
+                </dl>
+                <dl>
+                    <dt class="audit-success"><span>退款成功</span></dt>
+                    <dd>退款40元将返回至您的支付宝中。。。</dd>
+                    <dd id="rdf-success-descript" class="main-color">注：若您未收到退款，请拨打支付平台客服电话，或登录官网进行账户交易查询</dd>
+                </dl> -->
+        </div>
+    </div>
+</section>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script>
+    requirejs(['module/user/refundsDetail'],function (refundsDetail) {
+        refundsDetail.init();
+    });
+</script>
+</body>  
+</html>

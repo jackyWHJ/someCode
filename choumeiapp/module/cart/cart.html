@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>购物车</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="x5-orientation" content="portrait">
+    <meta name="keywords" content="臭美平台--个人页面" />
+    <meta name="description" content="臭美服务软件" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="cartStyle.min.css">
+</head>
+<body>
+<div id="cartPage">
+    <!-- <header class="header">
+        <div class="title">购物车</div>
+    </header> -->
+    <header class="header">
+        <div class="title">购物车</div>
+        <span id="editBtn" class="cart-edit-btn">编辑</span>
+        <span id="completeBtn" class="cart-edit-btn" style="display: none;">完成</span>
+    </header>
+    <div id="cartContent">
+       <!-- <div class="shop-item-div">
+            <div class="shop-item-p">
+                <div class="selector select-icon"></div>
+                <div class="shop-name text-overflow">win时尚造型</div>
+            </div>
+            <div class="shop-item-p cart-item-info" deleteStatus="hidden">
+                <div class="selector select-icon"></div>
+                <div class="item-content">
+                    <div><div class="item-name text-overflow">五贝子中草药染发五贝子中草药染发</div><span class="price-span">￥128.00</span></div>
+                    <div class="rule-content">
+                        性别：女；发型师：首席设计师；发长：短发；产品：探索水润护发膏；
+                    </div>
+                    <div class="number-input">
+                        <span class="cart-sprite-img sub-btn"></span>
+                        <span class="number-label">1</span>
+                        <span class="cart-sprite-img add-btn"></span>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="sip-delete"></a>
+            </div>
+            <div class="cart-item-condition">
+                <ul class="clearfix" style="border-top: 0;">
+                    <li>仅首单用户可购</li>
+                    <li>输入本店邀请码可购</li>
+                    <li>单个用户限购2件</li>
+                    <li>库存仅剩500</li>
+                </ul>
+            </div>
+            <p class="cart-item-tips">每周一到周五可消费</p>
+            <div class="shop-total"><div class="item-count">共<span>10</span>个项目</div><div class="money-total">小计：<span class="price-span">￥1280.00</span></div></div>
+        </div>
+        <div class="shop-item-div" >
+            <div class="shop-item-p">
+                <div class="selector select-icon selected-icon"></div>
+                <div class="shop-name text-overflow">win时尚造型</div>
+            </div>
+            <div class="shop-item-p cart-item-info" deleteStatus="hidden">
+                <div class="selector select-icon selected-icon"></div>
+                <div class="item-content">
+                    <div><div class="item-name text-overflow">五贝子中草药染发五贝子中草药染发</div><span class="price-span">￥128.00</span></div>
+                    <div class="rule-content">
+                        性别：女；发型师：首席设计师；发长：短发；产品：探索水润护发膏；
+                    </div>
+                    <div class="number-input">
+                        <span class="cart-sprite-img sub-btn"></span>
+                        <span class="number-label">1</span>
+                        <span class="cart-sprite-img add-btn"></span>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="sip-delete"></a>
+            </div>
+            <div class="shop-item-p cart-item-info" deleteStatus="hidden">
+                <div class="selector select-icon selected-icon"></div>
+                <div class="item-content">
+                    <div><div class="item-name text-overflow">五贝子中草药染发五贝子中草药染发</div><span class="price-span">￥128.00</span></div>
+                    <div class="rule-content">
+                        性别：女；发型师：首席设计师；发长：短发；产品：探索水润护发膏；
+                    </div>
+                    <div class="number-input">
+                        <span class="cart-sprite-img sub-btn"></span>
+                        <span class="number-label">1</span>
+                        <span class="cart-sprite-img add-btn"></span>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="sip-delete"></a>
+            </div>
+            <div class="shop-total"><div class="item-count">共<span>10</span>个项目</div><div class="money-total">小计：<span class="price-span">￥1280.00</span></div></div>
+        </div>-->
+    </div>
+    <div id="noItemContent" style="display: none;">
+        <img src="../../images/cart/gouwuche_illustration@2x.png">
+        <p>你的购物车很空虚哦~</p>
+        <div id="loginOrShop" class="mid-btn id-los-btn">去登录</div>
+    </div>
+    <footer id="cartFooter" class="cart-footer">
+        <div class="all-selector">
+            <div id="allSelector" class="selector select-icon" flag="off"></div>
+            <span>全选</span>
+        </div>
+        <div id="submitDiv" class="set-account"><span>合计：</span><span id="totalMoney">￥0</span><div id="submitCartBtn" class="mid-btn cart-set-btn">结算</div></div>
+         <div id="deleteDiv" class="set-account" style="display: none;"><div id="deleteBtn" class="mid-btn continue-shop-btn">删除</div></div>
+    </footer>
+</div>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+
+<script >
+
+    requirejs(['module/cart/cart.min'],function(cart){
+        cart.init();
+    })
+
+</script>
+
+</body>
+</html>

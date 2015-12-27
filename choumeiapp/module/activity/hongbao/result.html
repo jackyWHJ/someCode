@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>臭美</title>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui" name="viewport">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美，美发，团购，O2O,微信公众号" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="hongbao.css">
+</head>
+<body class="resultPage">
+    <div class="container hide" id="resultPage">
+        <div class="bannerWrap">
+            <img src="images/banner.png" alt="banner" class="banner"  id="banner" />
+        </div>
+        <!-- end bannerWrap -->
+        <div class="resultWrap">
+            <div class="result">
+                <div class="tipWrap" id="resultTip">
+                    <img src="images/cmlogo.png" alt="logo" class="logo" id="logo" />
+                    <p class="getTicketTip"><span class="bigger">我是臭美</span><br />送你一张现金券，下次美发试试臭美呗！</p>
+                </div>
+                <!-- end tipWrap -->
+                <div class="ticketList" id="ticketList">
+                    <div class="ticketWrap hide" id="end">
+                        <div class="ticket end">
+                            <p class="tip">红包过期了，下次早点来哟</p>
+                            <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.app.choumei.hairstyle"><input type="button" class="ticketBtn" value="去臭美拿更多红包" /></a>
+                        </div>
+                        <img src="images/ticket.png" alt="券" class="ticketImg" />
+                    </div>
+                    <div class="ticketWrap hide" id="noTicket">
+                        <div class="ticket noTicket">
+                            <p class="tip">呜呜，红包已经被小伙伴们抢光啦~<br />
+                            人家等你那么久，下次记得早点来哦~</p>
+                            <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.app.choumei.hairstyle"><input type="button" class="ticketBtn" value="去臭美拿更多红包" /></a>
+                        </div>
+                        <img src="images/ticket.png" alt="券" class="ticketImg" />
+                    </div>
+                    <div class="ticketWrap hide" id="inputPhoneOuterWrap">
+                        <div class="ticket inputPhone">
+                            <div class="ipnut-phoneWrap" id="ipnut-phoneWrap">
+                                <input type="phone" class="input-phone"  placeholder="输入手机号" id="input-phone" value="" /><br />
+                                <p class="phoneTip hide">请输入11位有效手机号</p>
+                                <input type="button" class="ticketBtn"  value="领取现金券" id="getTicketBtn" />
+                            </div>
+                        </div>
+                        <img src="images/ticket.png" alt="券" class="ticketImg" />
+                    </div>
+                    <div class="ticketWrap hide">
+                        <div class="ticket resultTicket">
+                            <span class="typeWrap">
+                                <span class="ticketType">现金券</span><br /><span class="itemType">(洗剪吹专111用)</span>
+                            </span>
+                            <span class="price">169<span class="unit">元</span></span>
+                        </div>
+                        <img src="images/ticket.png" alt="券" class="ticketImg" />
+                    </div>
+                    <img src="images/ticketBottom.png" alt="图片底" class="ticketBottom" />
+                </div>
+                <!-- end ticketList -->
+            </div>
+            <!-- end result -->
+            <div class="accoutWrap">
+                <p class="accountInfo hide" id="accountInfo">
+                    现金券已放入账户:<span class="phone" id="ticket-phone">-</span>
+                </p>
+                <p class="help hide" id="help">
+                    账户不对？<a href="javascript:void(0)" class="alter" id="changePhone">修改号码&gt;</a>
+                </p>
+                <p class="help hide" id="noTicket-accountTip">【秘籍】只要使用臭美App到店消费并评价，<br />
+                    红包就会疯了一样的冲向你!</p>
+                <p class="share">“点击右上角分享红包”</p>
+            </div>
+            <!-- end accountWrap -->
+            <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.app.choumei.hairstyle" class="useTicketWrap hide" id="useTicket"><input type="button" value="使用现金券" class="useTikcet"  /></a>
+        </div>
+        <!-- end resultWrap -->
+        <div class="historyWrap">
+            <dl class="historyList" id="historyList">
+                <dt><span class="title">看看小伙伴手气如何</span></dt>
+            </dl>
+        </div>
+        <!-- end historyWrap -->
+    </div>
+    <!-- end container -->
+    <div class="container changePhonePage hide" id="changePhonePage">
+        <div class="changePhoneWrap" id="changePhoneWrap">
+            <div class="currentPhone">当前手机号：<span id="currentPhone"></span></div>
+            <input type="text" class="input-phone"  placeholder="输入新手机号" id="change-input-phone" />
+            <p class="phoneTip hide">请输入11位有效手机号</p>
+            <input type="button" class="ticketBtn" value="提交" id="changePhoneBtn" />
+            <div class="tip">修改手机号后，下次领券时将自动放入新账户。</div>
+        </div>
+        <!-- end changePhoneWrap -->
+    </div>
+</body>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../../../libs/require.min.js"></script>
+<script src="../../../config/sysConfig.js"></script>
+<script>
+    requirejs.config({
+        baseUrl: '.',
+
+        shim: {
+            'jquery.lazyLoad': {
+                deps: ['jquery'],
+                exports: 'jQuery.fn.lazyLoad'
+            },
+            'swiper':{
+                deps:['jquery'],
+                exports: 'Swiper'
+            }
+        },
+        paths: {
+            'jquery': '../../../libs/jquery-2.1.3.min',
+            'commonUtils':'../../../utils/utils.min',
+            'jquery.lazyLoad': '../../../libs/jquery.lazyload.min',
+        },
+        urlArgs : "v=6.0"
+    });
+    requirejs(['./hongbao.min'],function (hongbao) {
+        hongbao();
+    });
+</script>
+</html>

@@ -1,0 +1,451 @@
+/********no content tips*********/
+.no-content-tips{
+    display: none;
+    margin:30% auto;
+}
+.no-content-tips>img{
+    width:34%;
+    margin: 0 auto;
+    display: block;
+}
+.no-content-tips>p{
+    margin-top:15px;
+    text-align: center;
+    color:#aaa;
+    font-size:1.2rem;
+    line-height:18px;
+}
+/******************order list*******************************/
+.order-box{
+    overflow:hidden;
+    padding-bottom:15px;
+}
+/**common order list start**/
+.order-list{
+    margin-top:15px;
+    background-color:rgb(255,255,255);
+    position: relative;
+}
+.ol-header{
+    height:40px;
+    line-height:40px;
+    padding:0 15px;
+}
+.ol-header span{
+    display: block;
+    float: left;
+    width:80%;
+    font-size:1.5rem;
+}
+.ol-header em{
+    float:right;
+    font-size:1.3rem;
+    color:#777;
+}
+.ol-info{
+    padding:15px;
+    height:65px;
+    position:relative;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+.oli-img{
+    width:65px;
+    height:65px;
+    float:left;
+}
+.refunds-list-info:after{
+    content:'';
+    position:absolute;
+    top:44%;
+    right:15px;
+    background:url(../../images/user/user-sprite-img.png) no-repeat;
+    background-size:102px;
+    background-position: -84px -44px;
+    width:7px;
+    height:12px;  
+}
+.oli-right{
+    position: relative;
+    margin-left:75px;
+}
+.oli-right>p{
+    max-width:90%;
+}
+.olir-top{
+    height: auto;
+    overflow: hidden;
+}
+.olir-top .olir-text1{
+    max-width:75%;
+    float: left;
+}
+/**common order list end**/
+.olir-text1{
+    font-size:1.5rem;
+    color:#2c2c2c;
+    margin-bottom:7px;
+    position:relative;
+    max-width:100%;
+}
+.oli-right>p.olir-text1{
+    max-width: 80%;
+}
+.olir-text1 span{
+    display: inline-block;
+    max-width: 76%;
+    float: left;
+}
+.gift-tips{
+   /* position: absolute;
+    top: 3px;
+    right: 0;*/
+    color:#fff;
+    font-size:1.2rem;
+    text-align: center;
+    display: inline-block;
+    padding:0 10px;
+    background-color:#f83b5f;
+    border-radius:2px;
+    margin-left:5px;
+}
+.oblit-valid-time{
+    color:#aaa;
+    font-size:12px;
+    margin-top:10px;
+}
+.olir-text2,.olir-text3{
+    font-size:1.2rem;
+    color:#777;
+}
+.olir-text2{
+    margin-bottom:2px;
+}
+.olir-text2>span{
+    font-size: 1.6rem;
+    color:#000;
+    margin-left:5px;
+}
+.ol-bottom{
+    padding:0 15px;
+    position:relative;
+    height:50px;
+    line-height: 50px;
+    font-size:1.3rem;
+    color:#777;
+}
+.olb-left{
+   float:left;
+}
+.olb-right{
+    float:right;
+}
+.olb-right>i{
+    font-size:1.6rem;
+}
+.olb-valid{
+   font-size:1.2rem;
+   color:#777;
+}
+.olb-btn{
+    width:76px;
+    height:26px;
+    line-height:26px;
+    text-align:center;
+    float:right;
+    font-size:1.2rem;
+    border:1px solid #999;
+    margin:10px 0 0 8px;
+    border-radius:6px;
+    color:#777;
+}
+.ol-valid{
+    display: inline-block;
+    font-size:1.2rem;
+}
+.evaluate-btn{
+    border-color:#f83b5f;
+    color:#f83b5f;
+}
+.ticket-no{
+    font-size:1.8rem;
+    position:relative;
+    top:2px;
+    margin-left:8px;
+    color:#e83260;
+}
+.overdue-ticket .mtbli-img{
+     background-position:-162px 0;;
+}
+.overdue-ticket .mtbl-ticket-status,.overdue-ticket .ticket-no{
+    color:#aaa;
+}
+#myRefundsBox .ticket-no{
+    color:#aaa;
+}
+/*special price icon*/
+.special-price:after{
+    content:'';
+    display:block;
+    position: absolute;
+    top:-3px;
+    right: 16px;
+    width:28px;
+    height:29px;
+    background: url(../../images/sprite-img.png) no-repeat;
+    background-size:245px;
+    background-position:-130px 0;
+}
+/****
+****refunds detail *******
+*******/
+.rdb-list{
+    background-color:#fff;
+}
+.refund-description{
+    margin-top:15px;
+    padding-left:15px;
+    background-color: #fff;
+}
+.rd-alipay{
+    padding:12px 0 12px 20px;
+    border-bottom:1px solid #e0e0e0;
+    position:relative;
+}
+.rd-alipay:after{
+    content:'';
+    position:absolute;
+    left:2px;
+    top:34%;
+    width:18px;
+    height:18px;
+    background:url(../../images/user/user-sprite-img.png) no-repeat;
+    background-size:102px;
+    background-position: -28px 0px;
+    width:28px;
+    height:26px;
+}
+.rda-title{
+    color:#444;
+    font-size:1.5rem;
+    font-weight:bold; 
+    padding-left:27px;
+}
+.rda-money-text{
+    color:#999;
+    font-size:1.3rem;
+    margin:5px 0 0 28px;
+}
+#rdaMoney{
+    color:#444;
+    font-size:14px;
+    font-weight:bold;
+}
+.rd-flow{
+    padding:15px 0 20px 0;
+}
+.rdf-title{
+    color:#666;
+    font-size:1.3rem;
+    margin-bottom: 10px;
+}
+.rd-flow dl{
+    padding:0 0 0 10px;
+}
+.rd-flow dl dt{
+    font-size:1.5rem;
+    color: #444;
+    position: relative;
+    padding-left:20px;
+    margin-bottom:-10px;
+}
+.rd-flow dl:last-of-type dd{
+    padding-bottom:0;
+    border-left:0;
+}
+
+.rd-flow dl:first-of-type dt{
+    margin-bottom:-5px;
+    color:#000;
+}
+.icon-circle{
+    display: inline-block;
+    width:16px;
+    height:16px;
+    background-color:#f83b5f;
+    border-radius:50%;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 9;
+    left:-0.6rem;
+}
+.rd-flow dl dd{
+    font-size:1.2rem;
+    color: #999;
+    border-left:1px solid #e83260;
+    padding: 10px 10px 15px 16px;
+    position: relative;
+}
+.rd-flow dl dt>span{
+    position:relative;
+    top:-4px;
+}
+.rd-flow dl:first-of-type dt>span{
+    top:0;
+}
+.freeze{
+    opacity: .6;
+}
+.grey{
+    color:#777;
+    font-size:1.2rem;
+}
+.mt20{
+    margin-top:20px;
+}
+/**
+***reservation refunds***
+***/
+.apply-refunds-form{
+    width:100%;
+}
+.arf-tips{
+    width: 100%;
+    height:34px;
+    line-height:30px;
+    font-size:1.3rem;
+    color:#fff;
+    text-align: center;
+    background:url(../../images/user/tuikuang_tishi_bg@2x.png) no-repeat center;
+    background-size:100% 34px;
+}
+.arf-title{
+    width: 100%;
+    height:40px;
+    line-height:40px;
+    color:#2c2c2c;
+    font-size:1.5rem;
+    text-indent:15px;
+    border-top:1px solid #dadada;
+    border-bottom:1px solid #dadada;
+}
+.arf-title:first-of-type{
+    border-top:none;
+}
+.arf-ticket-num{
+    height:40px;
+    line-height: 40px;
+    color:#2c2c2c;
+    font-size:1.6rem;
+    font-weight:bold;
+}
+.color-999{
+    color:#999;
+}
+#refundAmount{
+    color:#f64141;
+}
+#arfAmount{
+    font-size:1.6rem;
+}
+.arf-area{
+    padding:0 15px;
+    background-color: #fff;
+}
+.refunds-remark{
+    color:#999;
+    font-size:1.3rem;
+    margin-left:5px;
+}
+.arfa-text{
+    height:auto;
+    line-height:40px;
+    color:#2c2c2c;
+    font-weight:normal;
+    font-size:1.4rem;
+    position:relative;
+    border-bottom:1px solid #e0e0e0;
+}
+.arfa-text:last-of-type{
+    border-bottom:none;
+}
+.select-normal:after,.select-current:after{
+    content:'';
+    width:19px;
+    height:19px;
+    position:absolute;
+    right:-1%;
+    top:9px;
+}
+.select-normal:after{
+    border:1px solid #e0e0e0;
+    -webkit-border-radius:26px;
+    border-radius:26px;
+}
+.select-current:after{
+    content:'';
+    width:21px;
+    height:21px;
+    position:absolute;
+    right:-1%;
+    top:10px;
+    background:url(../../images/user/user-sprite-img.png) no-repeat;
+    background-size:102px;
+    background-position:-20px -50px;
+}
+.btn-funds{
+    display:block;
+    padding:10px 0;
+    text-align: center;
+    color:#fff;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    font-size:1.6rem;
+    margin:20px 15px;
+    background-color:#e83260;
+}
+#reservationRefunds .arf-tips{
+    background-color:#fff6e0;
+    color:#d78900;
+    background-image:none;
+}
+#reservationRefunds .arf-title{
+    background-color:#ddd;
+}
+.arfa-textarea{
+    color:#2c2c2c;
+    font-weight:normal;
+    font-size:1.4rem;
+    position:relative;
+    border-top:1px solid #ddd;
+}
+.arfa-textarea>p{
+    margin-top:10px;
+}
+.arfa-textarea>textarea{
+    border:none;
+    width:100%;
+    height:60px;
+    margin:5px 0;
+}
+.arfa-textarea>textarea::-webkit-input-placeholder{
+    font-size:1.3rem;
+}
+/***send packet share cover**/
+.cover-share{
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+    background-color:rgba(0,0,0,.75);
+}
+.cover-share>img{
+    display: block;
+    max-width: 85%;
+    margin: 5% 0 0 10%;
+}

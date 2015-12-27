@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <title>详情</title>
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../../libs/plugins/swiper/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="makeup.min.css">
+    <link href="listItem.min.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        <div class="back"></div>
+        <div class="title"></div>
+    </div>
+
+    <section id="content">
+
+        <div class="head-img">
+            <div class="head-people-liked gray-big">
+                <img src="../../images/fashion/zhuanjia_renshu_icon@3x.png"><span class="pink"></span>已预约
+            </div>
+            <div class="swiper-list-head swiper-container swiper-container-horizontal" id="swiper-container">
+                <div class="swiper-wrapper">
+                    <!--<div class="swiper-slide"></div>-->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="section introduction">
+            <h3><span></span><i></i></h3>
+            <section id="description" class="gray"></section>
+
+            <section class="price">
+                <b>臭美会员价：<span class="pink">￥<i id="choumei-price"></i></span></b>
+                <span id="choumei-price-origin">原价：￥<span></span></span>
+            </section>
+            <section class="guaranteed grid-block">
+                <div class="grid-block-item grayer">未消费随时退</div>
+                <div class="grid-block-item grayer">设计满意再付款</div>
+            </section>
+        </div>
+
+        <div class="section expert">
+            <h3>韩式定妆专家<span class="right-icon"></span></h3>
+
+            <div class="needle-shop"></div>
+                <!--<span class="detail">-->
+                    <!--查看介绍-->
+                <!--</span>-->
+
+            <!--<div class="needle-shop-description">-->
+                <!--&lt;!&ndash;<span class="pink">100</span>名韩国定妆师为你提供最专业的定妆服务&ndash;&gt;-->
+            <!--</div>-->
+        </div>
+
+        <div class="section">
+            <h3>臭美向您承诺</h3>
+            <section class="promise grid-block">
+
+                <div class="grid-block-item gray"><span class="pink">自建中心</span>2500平米超大规模韩式定妆中心</div>
+                <div class="grid-block-item gray"><span class="pink">O2O爆品</span>超凡品质+超低价，臭美VIP专享</div>
+                <div class="grid-block-item gray"><span class="pink">韩国专家</span>100位韩籍定妆院长亲自施术</div>
+                <div class="grid-block-item gray"><span class="pink">进口色料</span>ISO9001认证德国AMIEA色料</div>
+                <div class="grid-block-item gray"><span class="pink">免费补色</span>贴心呵护您的完美妆容</div>
+            </section>
+        </div>
+
+        <div class="section">
+            <h3>预约须知</h3>
+            <section class="appointment grid-block">
+                <!--<div class="grid-block-item">-->
+                    <!--<div class="title">-->
+                        <!--预约时间:-->
+                    <!--</div>-->
+                    <!--<div class="title-description">-->
+                        <!--可预约一周内时间-->
+                    <!--</div>-->
+                <!--</div>-->
+            </section>
+        </div>
+
+        <div class="section end">
+            <section class="makeup-center grid-block">
+                <div class="grid-block-item">
+                    <img src="../../images/makeup/dingzhuang_logo_icon.png">
+                </div>
+                <div class="grid-block-item">
+                    <div class="gray-big">
+                        臭美（深圳）韩式定妆中心
+                    </div>
+                    <div class="gray">
+                        南山区华润城，大冲商务中心C座6楼
+                    </div>
+                    <div class="right-icon"></div>
+                </div>
+            </section>
+            <section class="learn-makeup-center">
+                了解臭美韩式定妆中心 <span>></span>
+            </section>
+
+            <section class="product-details">
+                <span class="gray-big">点击查看产品详情</span>
+            </section>
+        </div>
+
+        <div class="call grid-block">
+            <div class="grid-block-item pink" id="call-phone">
+                <img src="../../images/fashion/dingzhuang_phone_icon.png">电话咨询
+                <div id="phone-num"></div>
+            </div>
+            <div class="grid-block-item">
+                <div class="line"></div>
+                <span class="gray">预约金</span><span class="pink">￥<i id="choumei-call-price"></i></span>
+            </div>
+            <div class="grid-block-item">
+                <span class="call-immediately pink-bg">立即预约</span>
+            </div>
+        </div>
+
+        <!--<section id="toTop">
+            <img src="../../images/fashion/dingzhuang_top_btn_normal.png">
+        </section>-->
+
+    </section>
+
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=F360d7e9ea3c3ecb5b9b9f2b530be8f4"></script>
+    <script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+    <script src="../../libs/require.min.js"></script>
+    <script src="../../config/sysConfig.js"></script>
+    <script>
+        requirejs(['commonUtils', 'module/makeup/listItem.min'], function ( commonUtils, listItem) {
+
+            listItem.init( commonUtils.getQueryString("itemId") );
+        });
+    </script>
+
+
+</body>
+</html>

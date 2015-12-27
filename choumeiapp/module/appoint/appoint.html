@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>预约</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="x5-orientation" content="portrait">
+    <meta name="keywords" content="臭美平台--预约" />
+    <meta name="description" content="臭美服务软件" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="appoint.min.css">
+</head>
+<body class="appointPage">
+    <div class="container " id="appointPage">
+        <header class="header">预约</header>
+        <div class="appoint-itemListContainer" id="itemListContainer">
+        </div>
+        <!-- end listContainer -->
+        <div class="appoint-timeWrap appoint-section" id="selectTime">
+            <span class="tip">选择预约时间</span><span class="date" id="appoint-date"></span><i class="go"></i>
+        </div>
+        <!-- end timeWrap -->
+        <div class="appoint-nameWrap appoint-section">
+            <input type="text" class="name" placeholder="请输入预约人姓名" id="bookerName" />
+            <i class="gender male "></i>
+            <i class="gender female selected"></i>
+        </div>
+        <!-- end appoint-name -->
+        <div class="appoint-referrerWrap appoint-section" id="recommendedCodeWrap">
+            <span class="tip">我有推荐人</span><span class="recommendedCode" id="recommendedCode"></span><i class="go"></i>
+        </div>
+        <!-- end appoint-section -->
+        <input type="button" value="提交预约" class="appoint-btn"  id="submitAppoint" />
+    </div>
+    <!-- end contaier -->
+    <div class="container slide-page datePage animated " id="datePage">
+        <header class="header"><span class="back"></span>预约时间</header>
+        <div class="appoint-title">预约您的到店时间</div>
+        <div class="appoint-calendar" id="calendar">
+        </div>
+        <!-- end dateWrap -->
+    </div>
+    <!-- enc container -->
+    <div class="container slide-page  referrerPage animated " id="referrerPage">
+        <header class="header"><span class="back"></span>我有推荐人</header>
+        <div class="appoint-reffererWrap">
+            <input type="text" class="referrer" placeholder="请输入推荐邀请码"  id="inputCode" />
+            <p class="tip">在此输入您获取的推荐邀请码，将会获得臭美赠送额外优惠</p>
+            <input type="button"  class="appoint-btn" value="确定"  id="validateCode" />
+        </div>
+    </div>
+    <!-- end contaier -->
+</body>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script >
+    requirejs(['module/appoint/appoint.min'],function(appoint){
+        appoint.init();
+    })
+
+</script>
+<link rel="stylesheet" type="text/css" href="../../css/animate.min.css">
+</html>

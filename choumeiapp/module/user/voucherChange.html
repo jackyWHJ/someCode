@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <title>兑换现金券</title>
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="voucher.css">
+	   <link rel="stylesheet" type="text/css" href="../cart/cartStyle.min.css">
+</head>
+<body>
+    <header class="header il-header">
+        <span class="salon-hName" id="h-itemName">兑换现金券</span>
+    </header>
+	<div class="vou-frame">
+		 <div class="voucher voucher-enable" id="voucherDiv">
+				<input type="text" placeholder="请输入现金券密码" class="changeInput" id="voucher-tit" />		 
+				<a id="voucherBtn" class="changeBtn changeBtn-enable">兑换</a>             			  
+		</div>
+		<blockquote  class="record">兑换记录</blockquote>
+   </div>   
+    <div class="voucher-big">
+	<li>
+						<div class="row-titles">
+							<span class="row-get">密码</span>
+							<span class="row-pas">现金券</span>		   
+						</div>
+						</li>
+		<ul>
+		<!--<li >		 
+            <div class="row1 text-overflow">
+                <span class="row-pas text-overflow">密码</span>
+		        <span class="row-get text-overflow"> 344edd </span>
+            </div>
+            <div class="row2 text-overflow">
+               <span class="row-pas text-overflow">现金券</span>
+		       <span class="row-get text-overflow"> value.ctutuyiyiytyiyytuytiyhjiytik</span>         
+            </div> 
+<li>
+						 <div class="row2">
+								<span class="row-get"> 344edd </span>
+							   <span class="row-pas"> value.ctutuyiyiytyiyytuytiyhjiytik</span>         
+						</div>    		 
+				   </li>  			
+		</li>-->
+							
+		</ul>		
+	<!--<div class="shop-item-div row1">
+            <div class="shop-item-p">
+                <span class="row-get">密码</span>
+				<span class="row-pas">现金券</span>	
+            </div>
+            <div class="shop-item-p cart-item-info row2" deletestatus="hidden">
+                 <span class="row-get text-overflow"> 344edd </span>
+							   <span class="row-pas text-overflow"> value.ctutuyiyiytyiyytuyt24365768ryryeru</span>  
+            </div>
+            <div class="shop-item-p cart-item-info" deletestatus="hidden">
+                 <span class="row-get text-overflow"> 344edd </span>
+							   <span class="row-pas text-overflow"> value.ctutuyiyiytyiyytuytiyhjiytik7879i</span>  
+        </div>
+		-->
+       <div class="no-content">
+            <img src="../../images/user/daijinquan_wudaijinquan.png">
+            <div>暂无现金券可用</div>
+        </div>
+    </div>  
+	<script src="../../libs/require.min.js"></script>	
+    <script src="../../config/sysConfig.js"></script>
+     <script>
+        requirejs(['module/user/voucherChange.min'],function (voucherChange) {
+                    voucherChange.init();
+                });
+    </script>
+</body>
+</html>

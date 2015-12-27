@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的订单</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美平台--臭美优惠券" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="order.min.css">
+</head>
+<body>
+<header class="header" id="orderTitle">全部订单</header>
+<div class="cover-share" id="coverShare" style="display:none">
+    <img src="../../images/user/h5_fenxiang.png" alt="">
+</div>
+<section class="order-box" id="orderBox"></section>
+<section class="no-content-tips" id="noContentTips" style="display:none">
+    <img src="../../images/user/dingdan_kong_pic@2x.png">
+    <p>暂无相关订单</p>
+</section>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script>
+    requirejs(['module/user/allOrder'],function (allOrder) {
+        allOrder.init();
+    });
+</script>
+</body>  
+</html>

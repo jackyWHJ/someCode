@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>我的收藏</title>
+        <meta name="keywords" content="臭美"/>
+        <meta name="description" content="臭美，超爽的美发新体验"/>
+        <link rel="icon" href="../../images/logo16.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+        <link rel="stylesheet" type="text/css" href="userStyle.min.css">
+    </head>
+    <body>
+        <header class="header">
+            我的收藏
+        </header>
+        <nav>
+            <ul class="twoTab nav" id="nav">
+                <li class="navTab active">
+                    店铺&nbsp;(<span id="salonNum">0</span>)
+                </li>
+                <li class="navTab">
+                    项目&nbsp;(<span id="itemNum">0</span>)
+                </li>
+            </ul>
+        </nav>
+        <section class="tabItem">
+            <ul class="salonList" id="salonList">
+            </ul>
+            <!-- end salonList -->
+            <section class="no-content-tips">
+                <img src="../../images/user/shoucang_illustration@2x.png">
+                <p>靠谱儿的店要收藏起来才好找哦~</p>
+            </section>
+        </section>
+        <!-- end tabItem -->
+        <section class="tabItem hide">
+            <ul class="itemList" id="itemList">
+            </ul>
+            <!-- end itemList -->
+            <section class="no-content-tips">
+                <img src="../../images/user/shoucang_illustration@2x.png">
+                <p>满意的项目收藏起来下次就直接购买啦~</p>
+            </section>
+        </section>
+        <!-- end tabItem -->
+
+    </body>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=F360d7e9ea3c3ecb5b9b9f2b530be8f4"></script>
+<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script>
+    requirejs(['module/user/collect.min'],function () {
+
+    });
+</script>
+</html>

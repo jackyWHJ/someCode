@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>评价详情</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美平台--臭美优惠券" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="evaluate.min.css">
+    <link rel="stylesheet" href="../../libs/plugins/swiper/swiper.min.css" />
+</head>
+<body>
+<header class="header">
+    <span>评价详情</span>
+    <a href="javascript:void(0)" id="modifyReputationBtn" style="display:none">改好评</a>
+    <a href="javascript:void(0)" id="releaseEvaluateBtn" class="main-color"  style="display:none">发布</a>
+</header>
+<div class="cover-share hide" id="coverShare">
+    <img src="../../images/user/h5_fenxiang.png" alt="">
+</div>
+<section class="evaluate-detail-box">
+    <div class="edb-title">
+        <p class="edbt-store-name clearfix">
+            <span id="edbtSalonName"></span>
+            <!-- <em id="edbtEvaluateTime"></em> -->
+        </p>
+        <p class="edbt-item-name">
+            <span id="edbtItemName"></span>
+            <!-- <em id="edbtEvaluateResult" class="edbt-has-satisfied"></em> -->
+        </p>
+    </div>
+    <div id="edbWrap">
+        <div class="detail-evaluate-content">
+            <p id="edbtEvaluateResult" class="edbt-has-satisfied"></p>
+            <p id="edbText"></p>
+            <p id="edbNoImgTips" style="display:none">本次评价未上次靓照哦，期待您下一次消费体验的“臭美照”~</p>
+            <div id="edbImgBox"></div>
+            <p id="edbtEvaluateTime"></p>
+        </div>
+        <div class="edb-merchant-text" id="replyContent"></div>
+    </div>
+    
+    <div class="modify-reputation-wrap"  id="modifyReputationWrap" style="display:none">
+        <ul class="mrw-result-list clearfix">
+            <!-- <li>
+                <div class="ecbrl-status very-satistied" id="verySatistied" satisfyType=1><p></p></div>
+            </li>
+            <li>
+                <div class="ecbrl-status has-satistied ecbrl-on" id="hasSatistied" satisfyType=2><p></p></div>
+            </li> -->
+            <li>
+                <div class="ecbrl-status very-satistied" id="verySatistied" satisfyType=1></div>
+                <p class="satisty-text">很满意</p>
+                <p class="satisty-num"></p>
+            </li>
+            <li>
+                <div class="ecbrl-status has-satistied ecbrl-on" id="hasSatistied" satisfyType=2></div>
+                <p class="satisty-text">满意</p>
+                <p class="satisty-num"></p>
+            </li>
+        </ul>
+        <div class="wec-textarea-box">
+            <textarea id="consumeTextarea"  class="consume-textarea" placeholder="非常好的服务，剪发棒棒哒！下次还再来！" maxlength="140"></textarea>
+            <p class="evaluate-word-count"><span id="wordCount">140</span>字</p>
+        </div>
+        <div class="evaluate-photo-box">
+            <p class="epb-title">臭美时刻，晒出靓靓的你!</p>
+            <div id="uploadImgDiv" class="upload-img-div">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div id="uploadBtn" class="add-img-btn"></div>
+            </div>
+        </div>
+    </div>
+    <div class="edb-redpacket-btn dn" id="edbRedpacketBtn">查看红包</div>
+</section>
+<div class="hide swiper-containerWrap" id="swiper-containerWrap"></div>
+<!--end-->
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script>
+    requirejs(['module/user/evaluateDetail.min'],function (evaluateDetail) {
+        evaluateDetail.init();
+    });
+</script>
+</body>  
+</html>

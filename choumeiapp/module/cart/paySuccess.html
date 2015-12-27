@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>支付结果</title>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui" name="viewport">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美，美发，团购，O2O,微信公众号" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="cartStyle.min.css">
+</head>
+<body>
+<div id="paySuccess">
+    <header class="header" id="headerTitle">支付结果</header>
+    <div id="paySuccessContent" style="margin-bottom: 60px;">
+        <div class="pay-result-info" id="paySuccessInfo" style="display:none">
+            <span class="buy-success-icon"></span>
+            <span>购买成功，获得<em id="point">0</em>点成长值!</span>
+        </div>
+        <div class="pay-result-info pri-overtime" id="payOvertimeInfo" style="display:none">
+            <i>臭美已经收到您的支付信息</i>
+        </div>
+        <div id="ticketList">
+            <!--<div class="clear" style="height: 15px;"></div>
+            <div class="oib-list">
+                <div class="oib-area">
+                    <span class="oib-label">臭&nbsp;&nbsp;美&nbsp;&nbsp;券：</span>
+                    <span class="order-no">3756 3232</span>
+                </div>
+                <div class="oib-area">
+                    <span class="oib-label">商品名称：</span>
+                    <span >五贝子中草药</span>
+                    <div class="oip-rule">
+                        <span class="oipr-text">造型师：技术总监</span>
+                    </div>
+                </div>
+                <div class="oib-area">
+                    <span class="oib-label">店铺名称：</span><span>美瞳一百</span>
+                </div>
+            </div>
+            <div class="dashed-border-bottom"></div>
+            <p class="cart-item-tips">每周一到周五可消费</p>
+            <div class="clear" style="height: 15px;"></div>
+            <div class="oib-list">
+                <div class="oib-area">
+                    <span class="oib-label">臭&nbsp;&nbsp;美&nbsp;&nbsp;券：</span>
+                    <span class="order-no">3756 3232</span>
+                </div>
+                <div class="oib-area">
+                    <span class="oib-label">商品名称：</span>
+                    <span >五贝子中草药</span>
+                    <div class="oip-rule">
+                        <span class="oipr-text">造型师：技术总监</span>
+                    </div>
+                </div>
+                <div class="oib-area">
+                    <span class="oib-label">店铺名称：</span><span>美瞳一百</span>
+                </div>
+            </div>-->
+        </div>
+        <div class="success-tip-div red-color" id="successTips" style="display:none">
+            <span class="success-tip-icon"></span>无需短信通知，直接出示臭美券即可消费
+        </div>
+        <div id="singleTicketAdded" class="item"><p class="header item-icon-left"><i class="icon icon-big icon-checked"></i>到店可享免费增值服务</p></div>
+        <div class="item-icon-right stand-bg" id="serviceCall">
+            <p class="si-addr" id="si-addr">如果您没有享受到上述服务或者有其他疑问<br/>请拨打投诉电话<span class="assertive">400-9933-800</span></p><a class="icon salon-phoneIco" href="tel:400-9933-800" id="salon-phone"></a>
+        </div>
+        <p class="comment-gift-pic"></p>
+        <div class="overtime-tips-box" id="overtimeTips" style="display:none">
+            <p>臭美券密码可能会有几分钟延迟，您可以刷新结果或稍后查看臭美券</p>
+            <p>如何疑问，请拨打客服电话：<a href="tel:400-9933-800" class="main-color">400-9933-800</a></p>
+        </div>
+    </div>
+    <div id="payResultFooter">
+        <a id="getAllTicketBtn" class="mid-btn find-all-btn">我的臭美券</a>
+        <a id="refreshBtn" class="mid-btn find-all-btn" style="display:none">刷新</a>
+        <a id="continueShopBtn" class="mid-btn continue-shop-btn">随便看看</a>
+    </div>
+</div>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script >
+    requirejs(['module/cart/paySuccess.min'],function(paySuccess){
+        paySuccess.init();
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>臭美-项目列表</title>
+        <meta name="keywords" content="臭美"/>
+        <meta name="description" content="臭美，超爽的美发新体验"/>
+        <link rel="icon" href="../../images/logo16.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="../../css/style.css">
+        <link rel="stylesheet" type="text/css" href="homeStyle.min.css">
+    </head>
+    <body>
+	  <header class="header">
+       <a href="javascript:" onclick="history.back(); "><span class="back" id="back"></span></a>	  
+        <img class="salon-hIco" id="h-itemImg" src="../../images/default_store_img.png" alt="好店推送"><span class="salon-hName" id="h-itemName"></span>
+            <span class="sl-h-pos" id="sl-h-pos"><span id="sl-h-posText">全城</span><i class="arrow"></i></span>
+	  </header>       
+        <p id="ilAddress"></p>
+        <ul class="il-navList" id="priceList">
+        </ul>
+        <!-- end  districtList-->
+        <div class="il-banner hide" id="il-banner">
+            <span class="sl-h-pos" id="sl-h-pos"><span id="sl-h-posText">全城</span><i class="arrow"></i></span>
+        </div>
+        <!-- end il-banner -->
+        <ul class="itemList" id="itemList">
+        </ul>
+        <!-- end itemList -->
+        <section class="no-content-tips" id="noItemList">
+            <img src="../../images/home/dingdan_illustration@2x.png">
+            <p>当前所选区间，没有项目噢~</p>
+        </section>
+
+        <div class="circleWrap" id="circle">
+            <div class="circle">
+                <ul id="district" class="district"></ul>
+                <ul id="zone" class="zone"></ul>
+            </div>
+            <!-- end sl-circle -->
+            <div class="mask"></div>
+        </div>
+        <!-- end nothing -->
+        <!--<div class="il-popDistrict" id="il-popDistrict">
+            <div class="il-mask"></div>
+            <div class="il-popContent">
+                <div class="il-p-pos clearfix">
+                    <span class="text">选择地理位置</span>
+                    <span class="pos position" id="il-p-hideDistrict">全城</span>
+                </div>
+                &lt;!&ndash; end il-p-pos&ndash;&gt;
+                <ul class="il-navList district" id="districtList">
+                   
+                </ul>
+                &lt;!&ndash; end  district&ndash;&gt;
+            </div>
+        </div>-->
+        <!-- end  il-popDistrict-->
+    </body>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=F360d7e9ea3c3ecb5b9b9f2b530be8f4"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&amp;ak=F360d7e9ea3c3ecb5b9b9f2b530be8f4&amp;services=&amp;t=20150421174650"></script>
+    <script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+    <script src="../../libs/require.min.js"></script>
+    <script src="../../config/sysConfig.js"></script>
+    <script>
+        requirejs(['module/home/itemList'],function (itemList) {
+            itemList.init();
+        });
+    </script>
+</html>

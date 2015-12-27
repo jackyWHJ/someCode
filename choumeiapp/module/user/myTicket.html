@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的臭美券</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美平台--臭美优惠券" />
+    <meta name="description" content="臭美服务平台" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="myTicket.min.css">
+</head>
+<body>
+<header class="header">我的臭美券</header>
+<section class="my-ticket-box" id="myTicketBox"></section>
+<section class="no-content-tips" id="noTicketTips">
+    <img src="../../images/user/choumeijuan_illustration@2x.png">
+    <p>臭美券去哪儿啦？快去买一个吧！</p>
+</section>
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script>
+    requirejs(['module/user/myTicket.min'],function (myTicket) {
+        myTicket.init();
+    });
+</script>
+</body>  
+</html>

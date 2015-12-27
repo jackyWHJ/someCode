@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>不要怀疑它的真实性，毕竟它就是真的!</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美" />
+    <meta name="description" content="" />
+    <link rel="icon" href="../../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="scratchCard.css">
+    <div style="display:none;">
+        <img src="../../../images/activity/scratchCard/share_img.png">
+        <p>不要怀疑它的真实性，毕竟它就是真的!</p>
+    </div>
+    <script src="//hm.baidu.com/hm.js?6b4ee2b1f6f3e440858736260b594e48"></script>
+</head>
+<body>
+<div id="loadingBox">
+    <div id="loading" class="rotate"></div>
+    <p id="loadingTips">正在加载中，请稍候...</p>
+</div>
+<div class="lock-wrap" id="lock">
+    <div class="lock">
+        <img src="../../../images/activity/scratchCard/phone_147x219.png"/>
+        <p>为了更好的体验，请使用竖屏浏览</p>
+    </div>
+</div>
+<div id="scratchCardBox">
+    <section class="cover-bg" id="coverBg" style="display:none">
+        <div class="win-box result-box" id="winBox">
+            <p class="sprite-img wb-text"></p>
+            <a href="javascript:void(0)" class="btn-common  btn-get-ticket" id="btnGetTicket"></a>
+        </div>
+        <div class="lose-box result-box" id="loseBox">
+             <p class="sprite-img lb-text"></p>
+             <a href="javascript:void(0)" class="btn-common btn-share  btn-share1" id="btnShare1"></a>
+        </div>
+        <div class="no-chance-box result-box" id="noChanceBox">
+            <p class="ncb-text"></p>
+            <a href="javascript:void(0)" class="btn-common btn-share btn-share2" id="btnShare2"></a>
+        </div>
+        <div class="share-tips" id="shareTips"><img src="../../../images/activity/scratchCard/share_tips.png"/></div>
+    </section>
+    <section class="scratch-box" id="scratchBox">
+        <div class="sb-bg">
+            <div class="sbb-status-img  simg-win" id="scratchImg"> 
+                 <canvas id="scratchCanvas">你的设备不支持Canvas</canvas>
+            </div>
+        </div>
+    </section>
+    <section class="get-ticket-process" id="getTicketProcess" style="display:none" >
+        <p class="gtp-img" id="gtpImg"></p>
+        <div class="gtp-content" id="gtpContent">
+            <img src="../../../images/activity/scratchCard/process_img.jpg" alt="">
+            <p class="gtp-btn">
+                <a href="javascript:void(0)" class="btn-share btn-share3" id="btnShare3"></a>
+                <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.app.choumei.hairstyle" class="btn-download" id="btnDownload"></a>
+            </p>
+        </div>
+    </section>
+</div>
+<script src="../../../libs/jquery-2.1.3.min.js"></script>
+<script src="../../../utils/utils.js"></script>
+<!-- <script src="scratch.js"></script> -->
+<script src="scratchCard.js"></script>
+</body>
+</html>

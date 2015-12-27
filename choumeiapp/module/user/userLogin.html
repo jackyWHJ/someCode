@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>快捷登录</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="keywords" content="臭美，团购，平台" />
+    <meta name="description" content="臭美，美发会员平台！" />
+    <link rel="icon" href="../../images/logo16.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="userStyle.min.css">
+</head>
+
+<body>
+<header class="header"><div class="title">快捷登录</div></header>
+<section id="loginContent" >
+    <div class="common-style-div common-margin-top">
+        <div class="lg-input-text">
+            <input type="tel" class="text1" name="phone" id="phone" value="" placeholder="请输入11位手机号码"><div class="btn-div">
+            <div id="getCode" class="get-code-btn get-code-btn-enable">获取验证码</div>
+        </div>
+        </div>
+        <div class="gray-line"></div>
+        <div class="lg-input-text">
+            <input type="tel" class="text2" id="code" value="" placeholder="请输入4位验证码">
+        </div>
+    </div>
+    <div class="clear" style="height: 25px;"></div>
+    <div style="text-align: center;">
+        <div id="loginBtn" class="big-btn btn-bg-red enable-btn-color">完成登录</div>
+    </div>
+    <div class="lg-tip">收不到短信？&nbsp;&nbsp;<a href="javascript:void(0)" class="lg-voice" id="voice">试试语音验证码</a></div>
+</section>
+<div class="lg-voiceTipWrap hide" id="showVoiceTip">
+    <div class="lg-voiceTip">
+        电话拨打中...请留意来电号码<br />
+        <span id="lg-vt-phone" class="lg-vt-phone"></span>
+    </div>
+    <!-- end lg-voiceTip -->
+</div>
+
+<script src="../../libs/require.min.js"></script>
+<script src="../../config/sysConfig.js"></script>
+<script>
+    requirejs(['module/user/userLogin.min'],function (userLogin) {
+                userLogin.init();
+            });
+</script>
+</body>
+</html>

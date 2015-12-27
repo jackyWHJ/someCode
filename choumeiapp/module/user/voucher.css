@@ -1,0 +1,469 @@
+header {
+    display: block;
+      padding: 10px 12px 10px 12px;
+    background-color: #F8F7F6;
+    border: 1px solid #dadada;
+}
+
+header h3 {
+    font-size: 13px;
+    padding: 0px;
+    color: #e83260;
+}
+
+header p {
+    font-size: 12px;
+    margin: 4px;
+    margin-left: 0px;
+    color: #2c2c2c;
+}
+
+.header > .title {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+/**********************************\
+        grid 布局
+/***********************************/
+.row {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 90px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row .row {
+    max-width: none;
+    width: auto;
+}
+
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.column, .columns {
+    position: relative;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.small-1 {
+    width: 8.333335%;
+}
+
+.small-2 {
+    width: 16.66667%;
+}
+
+.small-3 {
+    width: 25.000005%;
+}
+
+.small-4 {
+    width: 33.33334%;
+}
+
+.small-5 {
+    width: 41.666675%;
+}
+
+.small-6 {
+    width: 50.00001%;
+}
+
+.small-7 {
+    width: 58.333345%;
+}
+
+.small-8 {
+    height: 100%;
+    width: 66.66668%;
+}
+
+.small-10 {
+    width: 83.33333%;
+}
+
+/**********************************\
+        现金券内容
+/***********************************/
+.voucher-con {
+    padding: 5px 12px;
+}
+
+.voucher-con li {
+    margin-bottom: 16px;
+}
+
+.voucher-con .roll {
+    position: relative;
+    height: 110px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.roll .line {
+    position: absolute;
+    top: 13px;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    border: 1px solid #dad6d4;
+    border-top: none;
+    background-color: white;
+}
+
+.roll .row-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 13px;
+    -webkit-border-radius: 4px 4px 0px 0px;
+    -moz-border-radius: 4px 4px 0px 0px;
+    border-radius: 4px 4px 0px 0px;
+    border: none;
+}
+
+.row-title {
+    background: url('../../images/user/youhuiquan_quan_normal.png') repeat-x top left;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.ed .row-title, .invalid .row-title {
+    background: url('../../images/user/youhuiquan_quan_disabled.png') repeat-x top left;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.roll .row-logo {
+    position: absolute;
+    bottom: 10px;
+    right: 1px;
+    width: 100px;
+    height: 50px;
+    -webkit-border-radius: 4px 4px 0px 0px;
+    -moz-border-radius: 4px 4px 0px 0px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.not .row-title {
+    background: url('../../images/user/youhuiquan_quan_normal.png') repeat-x top left;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.not .row-logo {
+    background: url('../../images/user/youhuiquan_choumei_normal.png') no-repeat top right;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.ed .row-logo, .invalid .row-logo {
+    background: url('../../images/user/youhuiquan_choumei_disabled.png') no-repeat top right;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.voucher-ed {
+    position: absolute;
+    bottom: 10px;
+    right: 10%;
+    width: 100px;
+    height: 80px;
+    background: url('../../images/user/youhuiquan_yishiyong@2x.png') no-repeat top right;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.column .title {
+    margin-top: 23px;
+    font-size: 16px;
+    color: #2c2c2c;
+}
+
+.ed .title, .ed .small-4 span, .ed .small-4 b, .invalid .title, .invalid .small-4 span, .invalid .small-4 b {
+    color: #AAAAAA;
+}
+
+.voucher-invalid {
+    position: absolute;
+    bottom: 10px;
+    right: 10%;
+    width: 100px;
+    height: 80px;
+    background: url('../../images/user/youhuiquan_yishixiao@2x.png') no-repeat top right;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.clicked {
+    position: absolute;
+    bottom: 0px;
+    right: 0%;
+    width: 70px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.click .line {
+    border: 1px solid #e83260;
+    border-top: none;
+}
+
+.clicked .clicked-bg {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 0;
+    height: 0;
+    border: 30px solid;
+    border-color: #e83260 #ffffff #ffffff #ffffff;
+    background-color: #e83260;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.clicked .clicked-line{
+    position: absolute;
+    bottom: 12px;
+    right: 4px;
+    width: 11px;
+    height: 5px;
+    border: 2px solid white;
+    border-top-color: #e83260;
+    border-right-color: #e83260;
+    background-color: transparent;
+    transform: rotate(-45deg);
+}
+
+.clicked .clicked-line-left {
+    width: 5px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    left: 54px;
+    top: 26px;
+    z-index: 1;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.clicked .clicked-line-right {
+    width: 47px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background-color: #A5DC86;
+    display: block;
+    border-radius: 2px;
+    z-index: 2;
+}
+
+
+
+.roll .small-4 {
+    margin-top: 30px;
+    color: #e83260;
+    padding-left: 10px;
+}
+
+.roll .small-4 span {
+    position: absolute;
+    left: 13px;
+    bottom: 9px;
+    font-size: 16px;
+}
+
+.roll .small-4 b {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    /* margin-left: 10%; */
+    font-weight: normal;
+}
+
+.column .content {
+    font-size: 12px;
+    color: #AAAAAA;
+    margin-top: 5px;
+}
+
+.column .time {
+    font-size: 12px;
+    color: #AAAAAA;
+    margin-top: 8px;
+    /*position: absolute;*/
+    /*left: 0px;*/
+    /*bottom: 5px;*/
+}
+
+/**********************************\
+        现金券无
+/***********************************/
+.no-content{
+    display: none;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.no-content img{
+    width: 35%;
+}
+
+.no-content div{
+    padding-top: 20px;
+    font-size: 13px;
+    color: #AAAAAA;
+}
+
+
+@media screen and (max-width: 330px){
+
+    .roll .row-logo {
+        width: 80px;
+        height: 45px;
+    }
+
+}
+
+/**********************************\
+        兑换记录
+/***********************************/
+.vou-frame{
+    border-top: 1px solid #dadada;
+
+}
+.voucher{
+    height: 37px;
+    border: 1px solid #e83260;
+    margin:15px;
+    border-radius: 4px;
+    margin-bottom:30px;
+	background-color: #fff;
+}
+.voucher .changeBtn{
+    width: 17%;
+    height: 37px;
+    float:right;
+    line-height:33px;
+    display: inline-block;
+    text-align:center;
+    background:#e83260;
+    color:white;
+	
+}
+.voucher .changeInput{
+    width: 82%;
+    height: 37px;
+    padding-left:10px;
+    box-sizing: border-box;
+    border-radius: 4px  0px  0px  4px;
+    background-size: 16px;  
+}
+.voucher  .changeBtn-enable{
+    background:gray;
+    color:white;
+	
+}
+.record{
+    color:#333333;
+    line-height:2em;
+    font-weight: normal;
+    font-size:12px;
+    margin-left:15px;
+    margin-bottom:4px;
+}
+
+.vou-change{
+    display:block;
+    margin:10px 0;
+    height:35px;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    color:#f83b5f;
+    font-weight:normal;
+    border-radius: 5px;
+    background-color:#fff;
+    border:1px solid #ddd;
+}
+.header>a {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    font-weight:normal;
+    font-size: 1.5rem;
+}
+.row-pas{  
+	width:70%;     
+    font-size: 12px;
+    display: inline-block;
+}
+.row-get{
+    width:30%;   
+    font-size: 12px;    
+    display: inline-block;	 
+}
+.voucher-big{
+    margin-bottom:15px;
+}
+.voucher-big li{
+	height:34px;
+	background:#fff;
+	line-height:2em;
+	margin-bottom:2px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-left:15px;
+	padding-right:15px;
+}
+.row-titles{
+    
+	color:#333333;
+}
+.row2{
+  
+	color:#999999;
+}
+.voucher-input {
+    height:34px;
+    padding-left: 15px;
+    vertical-align:middle;
+    line-height:2em;
+    background-color: #fff;
+    margin-bottom:2px;
+}
+.voucher-enable{
+    border:1px solid gray;
+    color:white;
+	background-color: #fff;
+}
+ .text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

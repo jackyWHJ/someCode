@@ -1,0 +1,16 @@
+.m-info-list{
+	color:black;
+  .zn-list-item .zn-list-item-left{display:none;}
+  .zn-list-item .zn-list-item-right h2{display: none;}
+  .zn-list-item .zn-list-item-right h3{font-size:0.32rem;color:black;}
+  .zn-list-item .zn-list-item-right h4{color:black;}
+  .zn-list-item .zn-list-item-right{margin-left: 0px;}
+}
+.m-info-det{
+  iframe{border:0px;box-sizing: border-box;height:100%;width:100%;}
+}
+.h-p-fixed{
+  position: fixed;
+}
+
+.test-bottom{position:fixed;height:150px;bottom:0px;width:100%;background-color:red;}

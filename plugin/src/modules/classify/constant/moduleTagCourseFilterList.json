@@ -1,0 +1,178 @@
+{
+  "body": {
+    "courseArr": [
+      {
+        "courseId": "N031210",
+        "courseImg": "http://mlearn.pingan.com.cn/learn/app/image/cwtools/courseware/2015-09-25/356417B78BB740C39781A8BF4147E5C6/resource/left_img/9h144314545591167677.jpg",
+        "courseLab": "",
+        "courseName": "高管面对面-孙建平董事长谈合规",
+        "hornName": "",
+        "isCompleted": "0",
+        "rating": "4.9",
+        "totalComments": "8845",
+        "totalLike": "21818"
+      },
+      {
+        "courseId": "N178786",
+        "courseImg": "http://mlearn.pingan.com.cn/learn/app/image/20170213/ef8ef16e9aa54d269e2704d1a09d45f6/9f446102caef43d686248c6074d5b8d4.jpg",
+        "courseLab": "",
+        "courseName": "车生活送礼啦",
+        "hornName": "",
+        "isCompleted": "0",
+        "rating": "4.2",
+        "totalComments": "19",
+        "totalLike": "0"
+      },
+      {
+        "courseId": "N161555",
+        "courseImg": "http://mlearn.pingan.com.cn/learn/app/image/20161216/4fa0f9b841a84d148cc396582de47df5/0275e39a56ce4b84bcb65f1edc74c95f.jpg",
+        "courseLab": "",
+        "courseName": "千万奖学金，拳拳赤子心",
+        "hornName": "",
+        "isCompleted": "0",
+        "rating": "4.7",
+        "totalComments": "185",
+        "totalLike": "0"
+      },
+      {
+        "courseId": "N155737",
+        "courseImg": "http://mlearn.pingan.com.cn/learn/app/image/20161201/425f4a1b33294f65ae7a9ea2aeddb840/0ffd0cd8a144402990b1b8996c49c315.jpg",
+        "courseLab": "",
+        "courseName": "中国保险业最高度",
+        "hornName": "",
+        "isCompleted": "0",
+        "rating": "4.8",
+        "totalComments": "363",
+        "totalLike": "0"
+      },
+      {
+        "courseId": "N154254",
+        "courseImg": "http://mlearn.pingan.com.cn/learn/app/image/cwtools/courseware/2016-11-29/D357F6D41BC64412AB330DA2B9BC3382/resource/left_img/left.jpg",
+        "courseLab": "",
+        "courseName": "总部帐户管理",
+        "hornName": "",
+        "isCompleted": "0",
+        "rating": "5.0",
+        "totalComments": "0",
+        "totalLike": "0"
+      },
+      {
+        "courseId": "N146027",
+        "courseImg": "http://mlearn.pingan.com.cn/learn/app/image/20161111/19499dc39a8e484085b556b00a9d068d/af070acb9343422db552a261969fe23b.jpg",
+        "courseLab": "",
+        "courseName": "17. 财产保险-机动车辆险",
+        "hornName": "",
+        "isCompleted": "0",
+        "rating": "4.6",
+        "totalComments": "34",
+        "totalLike": "0"
+      },
+      {
+        "courseId": "N145985",
+        "courseImg": "http://mlearn.pingan.com.cn/learn/app/image/20161111/86c27d2dace34fac950d964ebee83560/d8e9df0066644e22ad9ef7dc05bdd083.jpg",
+        "courseLab": "",
+        "courseName": "16. 财产保险-家庭财产险",
+        "hornName": "",
+        "isCompleted": "0",
+        "rating": "4.4",
+        "totalComments": "30",
+        "totalLike": "0"
+      },
+      {
+        "courseId": "N145897",
+        "courseImg": "http://mlearn.pingan.com.cn/learn/app/image/20161111/48a092c5d9854958a1b24d4d07a36b77/c45c90fbe07441edbb975a802b6081e1.jpg",
+        "courseLab": "",
+        "courseName": "15. 财产保险-企业财产险",
+        "hornName": "",
+        "isCompleted": "0",
+        "rating": "4.5",
+        "totalComments": "28",
+        "totalLike": "0"
+      },
+      {
+        "courseId": "N145790",
+        "courseImg": "http://mlearn.pingan.com.cn/learn/app/image/20161111/665922d0ea274e0cb59c14290edeb677/c09a3dbcfc774933b0435bcdd76cac05.jpg",
+        "courseLab": "",
+        "courseName": "12. 保险合同",
+        "hornName": "",
+        "isCompleted": "0",
+        "rating": "4.5",
+        "totalComments": "30",
+        "totalLike": "0"
+      },
+      {
+        "courseId": "N145816",
+        "courseImg": "http://mlearn.pingan.com.cn/learn/app/image/20161111/33c9e46cb8b24adbb32e44870a67f6c0/4640365e0a784dfbb4a791183329f62c.jpg",
+        "courseLab": "",
+        "courseName": "13. 客户服务与合同变更",
+        "hornName": "",
+        "isCompleted": "0",
+        "rating": "4.6",
+        "totalComments": "26",
+        "totalLike": "0"
+      },
+      {
+        "courseId": "N146582",
+        "courseImg": "http://mlearn.pingan.com.cn/learn/app/image/20161114/6c94aaf5ba5d4b26abb1a2b25082ba42/e52659a9f2e649e690092b07fbef04f4.jpg",
+        "courseLab": "",
+        "courseName": "18. 财产保险-货物运输险等",
+        "hornName": "",
+        "isCompleted": "0",
+        "rating": "4.5",
+        "totalComments": "29",
+        "totalLike": "0"
+      },
+      {
+        "courseId": "N146596",
+        "courseImg": "http://mlearn.pingan.com.cn/learn/app/image/20161114/5ca3f154220e44cd991a9f74a4e0c3c8/2c14c1a48f6443f38859802ed72c9d3b.jpg",
+        "courseLab": "",
+        "courseName": "19. 保险从业人员职业道德",
+        "hornName": "",
+        "isCompleted": "0",
+        "rating": "4.5",
+        "totalComments": "25",
+        "totalLike": "0"
+      },
+      {
+        "courseId": "N145840",
+        "courseImg": "http://mlearn.pingan.com.cn/learn/app/image/20161111/c853fb8f4bf047799d427f6a3dc2e655/edb84e7fb2f94a608b930daa685ea69e.jpg",
+        "courseLab": "",
+        "courseName": "14. 保险理赔",
+        "hornName": "",
+        "isCompleted": "0",
+        "rating": "4.5",
+        "totalComments": "31",
+        "totalLike": "0"
+      },
+      {
+        "courseId": "N145620",
+        "courseImg": "http://mlearn.pingan.com.cn/learn/app/image/20161111/3c1fa741bd5e4375ae031dc6f312b354/0f46e33f243e4a06afbfb811b6edb370.jpg",
+        "courseLab": "",
+        "courseName": "11. 核保与承保",
+        "hornName": "",
+        "isCompleted": "0",
+        "rating": "4.5",
+        "totalComments": "21",
+        "totalLike": "0"
+      },
+      {
+        "courseId": "N145579",
+        "courseImg": "http://mlearn.pingan.com.cn/learn/app/image/20161111/96b9861d43924326b34fb6e0aa1ecf59/d8b013d43e6341e9bf077113d66e0374.jpg",
+        "courseLab": "",
+        "courseName": "10. 保险销售",
+        "hornName": "",
+        "isCompleted": "0",
+        "rating": "4.5",
+        "totalComments": "26",
+        "totalLike": "0"
+      }
+    ],
+    "courseNum": "15",
+    "fansNum": "80",
+    "hasFilter": "1",
+    "moduleTagId": "pa2tob12",
+    "subscribe": "1"
+  },
+  "code": 0,
+  "message": "操作成功"
+}

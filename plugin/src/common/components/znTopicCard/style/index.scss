@@ -1,0 +1,39 @@
+@import '../../../../theme/global.scss';
+
+.toppicCard {
+  
+  border-radius: 12px;
+  background: #FFF;
+  padding: 30px 18px 24px;
+  color: #000;
+  margin-top: 30px;
+
+  &>h1,h2,h4,h5,h6,p {
+    font-family: '\9ED1\4F53',Helvetica,Arial,sans-serif;
+  }
+
+  &>.toppicCard-title{
+    font-size: 28px;
+    text-align: left;
+    padding-left: 18px;
+    margin-left: -18px;
+  }
+
+  &>.toppicCard-des {
+      margin-top: 48px;
+      font-size: 24px
+  }
+
+  &>.toppicCard-img {
+      padding-top: 48px
+  }
+
+  &>.toppicCard-img img {
+      width: 100%
+  }
+
+  &>.toppicCard-icon {
+    width: 12px; height: 42px; background: black; position: absolute; left: 24px;
+  }
+}
+

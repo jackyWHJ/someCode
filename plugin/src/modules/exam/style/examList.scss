@@ -1,0 +1,72 @@
+.exam-tabs{
+  .am-tabs-ink-bar{
+    background-color: rgba(245,95,79,1);
+  }
+  .am-tabs-bar .am-tabs-tab-active{
+    color: rgba(250,165,157,1);
+  }
+
+  .row-div{
+    padding: 0.2rem 0.3rem 0.2rem 0.2rem;
+    background-color: white;
+    color: rgba(73,73,73,1);
+    .row-flex{
+      display: -webkit-flex;
+      display: flex;
+      line-height: 1.1em;
+      .row-img{
+        width:1.1rem;
+        height: 1.1rem;
+        background:url(../../../img/examImg/examList-icon.png) no-repeat center;
+        background-color:rgba(0,180,249,1);
+        &.passed{
+          background-color:rgba(168,249,113,1);
+        }
+        &.no-pass{
+          background-color:rgba(204,204,204,1);
+        }
+        background-size: 60%;
+        margin-right: 0.2rem;
+      }
+      .row-text{
+        display: -webkit-flex;
+        display: flex;
+        flex-grow:1;
+        .row-text-p{
+          flex-grow:1;
+          align-self:center;
+          overflow:hidden;
+          white-space:nowrap;
+          text-overflow:ellipsis;
+          -o-text-overflow:ellipsis;
+          span{
+            font-size: 0.12em;
+            &.passed{
+              color:rgba(168,249,113,1);
+            }
+            &.no-pass{
+              color:rgba(204,204,204,1);
+            }
+          }
+        }
+        .row-text-img{
+          align-self:center;
+          width:0.5rem;
+          height: 0.5rem;
+        }
+      }
+    }
+  }
+  .my-body{
+    background-color: inherit;
+    &:after{
+      border-width:0;
+    }
+  }
+  .list-wrap{
+    .fortest{
+      overflow: auto;
+    }
+
+  }
+}

@@ -1,0 +1,139 @@
+@import '../../../../theme/global.scss';
+
+.zn-list-item{
+	padding: pxToRem(10);
+	display: flex;
+	/* display: flex; */
+	.zn-list-item-left{
+		width: pxToRem(100);
+		/* float: left; */
+		position: relative;
+		img{
+			width: pxToRem(100);
+			height: pxToRem(68);
+			vertical-align: top;
+		}
+	}
+	.zn-list-item-right{
+		flex-grow: 1;
+		margin-left: pxToRem(10);
+		h2,h3,h4{
+			font-weight: normal;
+			 
+			overflow:hidden; 
+			text-overflow:ellipsis;
+			display: -webkit-box;
+		    -webkit-box-orient: vertical;
+		    -webkit-line-clamp: 1;
+		}
+		h2{
+			font-size: pxToRem(14);
+			color: #333;
+			line-height: pxToRem(20);
+			height: pxToRem(20);
+		}
+		h3{
+			font-size: pxToRem(12);
+			color: #999;
+			line-height: pxToRem(32);
+			height: pxToRem(32);
+		}
+		h4{
+			font-size: pxToRem(12);
+			color: #999;
+			line-height: pxToRem(16);
+			height: pxToRem(16);
+			
+			&.h4-right{
+				.comment-bottom span:last-child{
+					min-width: pxToRem(56);
+				}
+			}
+		}
+	}
+}
+
+
+/*背景图片*/
+.zn-list-item{
+	.zn-list-item-left{
+		.studied-icon {
+		    background: url(../../../../img/bgImg/learned.png) center center no-repeat;
+		    background-size: 100% auto;
+		    display: block;
+		    width: pxToRem(20);
+		    height: pxToRem(40);
+		    position: absolute;
+		    right: pxToRem(3);
+		    top: pxToRem(-4);
+		}
+	}
+	.zn-list-item-right{
+		h4{
+			.course-comment, .course-heart, .course-score, .course-view {
+			    display: inline-block;
+			    min-width: pxToRem(54);
+			    height: pxToRem(16);
+			    position: relative;
+			    padding: 0 pxToRem(18);
+			    line-height: pxToRem(20);
+			    box-sizing: border-box;
+			    text-align: left;
+			    i{
+			    	display: block;
+			    	position: absolute;
+			    	top: 0;
+			    	left: 0;
+			    	width: pxToRem(16);
+			    	height: pxToRem(16);
+			    }
+			}
+			.course-comment, .course-heart{
+				padding: 0 pxToRem(16);
+			}
+			.course-score i {
+			    background: url(../../../../img/bgImg/feature_score.png) no-repeat;
+			    background-size: 100% auto;
+			}
+			.course-heart i {
+			    background: url(../../../../img/bgImg/heart.png) no-repeat;
+			    background-size: 100% auto;
+			}
+			.course-comment i {
+			    background: url(../../../../img/bgImg/comment.png) no-repeat;
+			    background-size: 100% auto;
+			}
+			.course-view{
+				padding-left: pxToRem(22);
+			}
+			.course-view i {
+				width: pxToRem(20);
+				height: pxToRem(13);
+			    background: url(../../../../img/eye-outline.png) no-repeat center center;
+			    background-size: 100% auto;
+			    top:pxToRem(2);
+			}
+		}
+	}
+}
+
+
+.zn-list{
+	.zn-list-item{
+		border-bottom: pxToRem(1) solid #ddd;
+	}
+}
+
+
+.zn-list .list-view-section-body a:last-child .zn-list-item{
+	border-bottom: none;
+}
+
+
+.zn-list .list-view-section-body>.zn-list-item:last-child{
+	border-bottom: none;
+}
+
+
+
+

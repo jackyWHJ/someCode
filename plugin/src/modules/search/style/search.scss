@@ -1,0 +1,61 @@
+.search-result-box {
+	margin-top: .2rem;
+	background-color: #fff;
+
+	.search-result-category,
+	.search-result-category-footer {
+		padding-left: .2rem;
+		height: .8rem;
+		line-height: .8rem;
+		color: #989898;
+		border: 1px solid #ddd;
+		border-left: none;
+		border-right: none;
+	}
+
+	.search-result-category-footer {
+		a {
+			color: #989898;
+			text-decoration: none;
+		}
+
+		svg {
+			height: .8rem;
+			margin-right: .2rem;
+			vertical-align: bottom;
+		}
+	}
+}
+
+.course-rate {
+	display: inline-block;
+	margin-right: .1rem;
+	width: .3rem;
+	height: .3rem;
+	background: url('../../../img/coursecell_list_score@2x.png') no-repeat;
+	background-size: .3rem;
+	vertical-align: baseline;
+}
+
+.course-comments {
+	display: inline-block;
+	width: .3rem;
+	height: .3rem;
+	background: url('../../../img/discuss_comment_gray@2x.png') no-repeat;
+	background-size: .3rem;
+	vertical-align: baseline;	
+}
+
+.search-match {
+	em {
+		color: rgb(248, 88, 65);
+	}
+}
+.course-finished {
+	position: absolute;
+    z-index: 1;
+    right: .2rem;
+	height: .8rem;
+    width: .4rem;
+	background: url('../../../img/bgImg/learned.png') no-repeat;
+}

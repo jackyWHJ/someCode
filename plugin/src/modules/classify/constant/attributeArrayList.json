@@ -1,0 +1,98 @@
+{
+  "body": [
+    {
+      "ArrType": [
+        {
+          "id": "",
+          "isDefault": "1",
+          "name": "全部"
+        },
+        {
+          "id": "2",
+          "isDefault": "0",
+          "name": "互动小游戏"
+        },
+        {
+          "id": "0",
+          "isDefault": "0",
+          "name": "图文"
+        },
+        {
+          "id": "1",
+          "isDefault": "0",
+          "name": "混合"
+        },
+        {
+          "id": "3",
+          "isDefault": "0",
+          "name": "纯视频"
+        },
+        {
+          "id": "3",
+          "isDefault": "0",
+          "name": "纯视频"
+        },
+        {
+          "id": "3",
+          "isDefault": "0",
+          "name": "纯视频"
+        },
+        {
+          "id": "3",
+          "isDefault": "0",
+          "name": "纯视频"
+        },
+        {
+          "id": "3",
+          "isDefault": "0",
+          "name": "纯视频"
+        },
+        {
+          "id": "3",
+          "isDefault": "0",
+          "name": "纯视频"
+        },
+        {
+          "id": "3",
+          "isDefault": "0",
+          "name": "纯视频"
+        }
+      ],
+      "ArrTypeName": "ArrTypeId3",
+      "typeName": "类型"
+    },
+    {
+      "ArrType": [
+        {
+          "id": "",
+          "isDefault": "1",
+          "name": "全部"
+        },
+        {
+          "id": "2",
+          "isDefault": "0",
+          "name": "互动小游戏"
+        },
+        {
+          "id": "0",
+          "isDefault": "0",
+          "name": "图文"
+        },
+        {
+          "id": "1",
+          "isDefault": "0",
+          "name": "混合"
+        },
+        {
+          "id": "3",
+          "isDefault": "0",
+          "name": "纯视频"
+        }
+      ],
+      "ArrTypeName": "ArrTypeId4",
+      "typeName": "类型4"
+    }
+  ],
+  "code": "0",
+  "message": "操作成功！"
+}

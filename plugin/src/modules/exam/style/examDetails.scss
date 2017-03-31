@@ -1,0 +1,176 @@
+.exam-details{
+  background-color: rgba(255,255,255,1);
+  .remainder-time{
+    text-align: center;
+    padding: 0.2rem 0.3rem;
+    font-size: 0.26rem;
+    .time-span{
+      display: inline-block;
+      width: 0.4rem;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      vertical-align: middle;
+      color: rgba(103,103,103,1);
+      background-color: rgba(229,229,229,1);
+    }
+    .parting-span{
+      display: inline-block;
+      margin: 0 0.1rem;
+      color: rgba(193,193,193,1);
+    }
+  }
+  .exam-question-carousel{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.7rem;
+    bottom: 1rem;
+    border-top:0.02rem solid rgba(251,251,251,1);
+    border-bottom:0.02rem solid rgba(217,217,217,1);
+    background-color: rgba(247,247,247,1);
+    .my-carousel{
+      min-height: 100%;
+      max-height: 100%;
+      .slider-list{
+        min-height: 8rem;
+      }
+      .exam-question{
+        .exam-question-title{
+          padding: 0.3rem 0.2rem;
+          /* height: 0.3rem;
+           line-height: 0.3rem;
+           vertical-align: middle;*/
+          border-bottom:0.02rem solid rgba(246,246,246,1);
+          background-color: rgba(255,255,255,1);
+        }
+        .exam-question-content{
+          border-top:0.02rem solid rgba(238,238,238,1);
+          overflow: hidden;
+          .exam-checked{
+            img.is-correct{
+              float: left;
+              width: 0.25rem;
+              height: 0.25rem;
+              margin:0.1rem 0.1rem;
+            }
+          }
+          .my-radio{
+            &.checked{
+              color: rgba(249,148,138,1);
+            }
+            margin: 0.5rem 0 0 0.5rem;
+            display: block;
+            .am-radio,.am-checkbox {
+              padding: 0.05rem;
+              border: 0.02rem solid rgba(202,199,197,1);
+              border-radius: 50%;
+              margin-right: 0.1rem;
+              background-color: rgba(234,229,226,1);
+              width: 0.3rem;
+              height: 0.3rem;
+              line-height: 0.3rem;
+              text-align: center;
+            }
+            .am-radio.am-radio-checked{
+              .am-radio-inner{
+                background-color: rgba(249,148,138,1);
+                width: 0.24rem;
+                height: 0.24rem;
+                display: inline-block;
+                position: inherit;
+                border-radius: 50%;
+                &:after{
+                  display: none;
+                }
+              }
+            }
+            .am-checkbox{
+              .am-checkbox-inner {
+                border-width: 0;
+              }
+            }
+            .am-checkbox.am-checkbox-checked{
+              .am-checkbox-inner{
+                border-width: 0;
+                background-color: rgba(249,148,138,1);
+                width: 0.24rem;
+                height: 0.24rem;
+                display: inline-block;
+                position: inherit;
+                border-radius: 50%;
+                &:after{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .exam-pagination{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    padding: 0.2rem 0;
+    display: -webkit-flex;
+    display: flex;
+    color: rgba(249,148,138,1);
+    background-color: rgba(255,255,255,1);
+    .left{
+      min-width: 0.2rem;
+      padding: 0 0.8rem 0 0.1rem;
+      .left-show.disabled{
+        color: rgba(204,204,204,1);
+      }
+      img{
+        width: 0.6rem;
+        height: 0.6rem;
+        vertical-align: middle;
+      }
+      span.pre-disabled{
+        color: rgba(204,204,204,1);
+      }
+    }
+    .middle{
+      flex-grow:1;
+      text-align: center;
+      border-left: 0.02rem solid rgba(235,235,235,1);
+      border-right: 0.02rem solid rgba(235,235,235,1);
+    }
+    .right{
+      min-width: 0.2rem;
+      padding: 0 0.1rem 0 0.8rem;
+      .right-show.disabled{
+        color: rgba(204,204,204,1);
+      }
+      img{
+        width: 0.6rem;
+        height: 0.6rem;
+        vertical-align: top;
+      }
+      span.next-disabled{
+        color: rgba(204,204,204,1);
+      }
+    }
+  }
+
+}
+.am-toast.am-toast-mask{
+  background-color: rgba(0, 0, 0, 0.5);
+  .am-toast-notice{
+    max-width: 90%;
+  }
+  .am-toast-text{
+    color: rgba(103,103,103,1);
+    background-color: rgba(255, 255, 255, 1);
+    div:only-child{
+      overflow: hidden; /*自动隐藏文字*/
+      text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+      white-space: nowrap;/*强制不换行*/
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.am-flexbox-align-middle.comment-box {
+	-webkit-box-align: start;
+	align-items: flex-start;
+}
+.comment-box {
+	padding: .2rem .2rem 0 .2rem;
+	background-color: #fff;
+
+	.comment-image-box {
+		text-align: center;
+
+		.comment-user-image {
+			width: 1rem;
+			height: 1rem;
+			border: 1px solid #ddd;
+			border-radius: 100%;
+		}
+	}
+
+	.comment-body {
+		-webkit-box-flex: 4;
+		flex: 4;
+		border-bottom: 1px solid #ddd;	
+
+		img {
+			height: .5rem;
+			vertical-align: middle;
+		}
+	}
+
+	.comment-host-name {
+		height: .5rem;
+		line-height: .5rem;
+	}
+	.comment-name {
+		color: #11c1f3;
+	}
+
+	.comment-content {
+		padding: .1rem 0;
+	}
+
+	.comment-default-footer {
+		padding: .1rem 0;
+		height: .4rem;
+		line-height: .4rem;
+		font-size: .24rem;
+		color: #999;
+	}
+
+	.comment-agreement {
+		float: right;
+		padding-right: .5rem;
+		background: url('../../../img/c_like@3x.png') no-repeat;
+		background-size: .35rem;
+		background-position: right;
+
+		&.like {
+			background: url('../../../img/c_like_select.png') no-repeat;
+			background-size: .35rem;
+			background-position: right;
+		}
+	}
+
+	.comment-feedback {
+		border-top: 1px solid #ddd;
+
+		.comment-feedback-item {
+			min-height: .5rem;
+			line-height: .5rem;
+			font-size: .26rem;
+		}
+	}
+}

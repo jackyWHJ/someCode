@@ -1,0 +1,32 @@
+{
+  "name": "zn-mobile",
+  "version": "3.4.6",
+  "description": "zhiniao h5 plugin",
+  "entry": {
+    "vendor": [
+      "./src/common/lib/react-redux-container",
+      "./src/common/utils/ajax",
+      "./src/common/utils/util",
+      "./src/common/constants",
+      "./src/common/components/znImage",
+      "./src/common/components/znListItem",
+      "./src/common/components/znListView",
+      "./src/common/components/znNavBar",
+      "./src/common/components/znSimpleListView",
+      "./src/common/components/znNoResultTip",
+      "./src/common/components/znMessage"
+    ],
+    "index": "./src/entries"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack-dev-server --config ./webpack/development --inline --hot --progress",
+    "test": "webpack --config ./webpack/production --progress --profile --json > stats.json --te 1",
+    "build": "webpack --config ./webpack/production --progress --te 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "main": "index.js"
+}

@@ -1,0 +1,37 @@
+@import '../../../theme/global.scss';
+.subject-cell{
+    position: relative;
+    height: pxToRem(172);
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: pxToRem(172);
+    }
+
+    .subject-cell-info{
+        width: 100%;
+        height: pxToRem(30);
+        line-height: pxToRem(30);
+        background: rgba(0,0,0,0.5);
+        color: #fff;
+        font-size: pxToRem(16);
+        position: absolute;
+        bottom: 0;
+        .cell-title{
+            float: left;
+            margin-left: pxToRem(20);
+        }
+        .view-cell{
+            float: right;
+            margin-right: pxToRem(20);
+            i{
+                background: url('../../../img/eye-outline.png') no-repeat;
+                background-size: 100% auto;
+                width: pxToRem(20);
+                height: pxToRem(13);
+                display: inline-block;
+                margin-right: pxToRem(5);
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "body":
+    {
+      "cateId":"goodcourse",
+      "cateName":"好课榜",
+      "pageId":"RANK_GOOD_COURSE",
+      "type":"5"
+    },
+    "code":0,
+    "message":"操作成功"
+}

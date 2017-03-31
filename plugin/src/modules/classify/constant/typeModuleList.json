@@ -1,0 +1,695 @@
+{
+  "body": {
+    "moduleArr": [
+      {
+        "canSubscribe": 0,
+        "moduleId": "pa2tob001",
+        "moduleName": "行业领域",
+        "moduleTagArr": [
+          {
+            "moduleTagId": "pa2tob11",
+            "moduleTagName": "银行",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob12",
+            "moduleTagName": "产险",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob13",
+            "moduleTagName": "寿险",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob14",
+            "moduleTagName": "养老险",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob15",
+            "moduleTagName": "普惠",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob16",
+            "moduleTagName": "健康险",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob17",
+            "moduleTagName": "证券",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob18",
+            "moduleTagName": "信托",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob19",
+            "moduleTagName": "资产",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob110",
+            "moduleTagName": "不动产",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob111",
+            "moduleTagName": "基金",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob112",
+            "moduleTagName": "融资租赁",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob113",
+            "moduleTagName": "直通",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob114",
+            "moduleTagName": "代理人",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob115",
+            "moduleTagName": "平安壹钱包",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "170259",
+            "moduleTagName": "陆金所",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "170261",
+            "moduleTagName": "数科",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "170262",
+            "moduleTagName": "科技",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "170263",
+            "moduleTagName": "金科",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "170343",
+            "moduleTagName": "好房",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "188116",
+            "moduleTagName": "综拓",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "197074",
+            "moduleTagName": "前交所",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "197076",
+            "moduleTagName": "众筹",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "241856",
+            "moduleTagName": "重金所",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "242901",
+            "moduleTagName": "分类",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "250570",
+            "moduleTagName": "健康互联网",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "253386",
+            "moduleTagName": "万家",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob001",
+            "moduleTagName": "全部",
+            "moduleTagUrl": ""
+          }
+        ]
+      },
+      {
+        "canSubscribe": 0,
+        "moduleId": "173079",
+        "moduleName": "集团中心",
+        "moduleTagArr": [
+          {
+            "moduleTagId": "173096",
+            "moduleTagName": "财企中心",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "173097",
+            "moduleTagName": "人力中心",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "173098",
+            "moduleTagName": "内控中心",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "173099",
+            "moduleTagName": "行政中心",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "173100",
+            "moduleTagName": "战略中心",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "251604",
+            "moduleTagName": "安全中心",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "173079",
+            "moduleTagName": "全部",
+            "moduleTagUrl": ""
+          }
+        ]
+      },
+      {
+        "canSubscribe": 0,
+        "moduleId": "pa2tob002",
+        "moduleName": "通用职能",
+        "moduleTagArr": [
+          {
+            "moduleTagId": "pa2tob21",
+            "moduleTagName": "市场",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob22",
+            "moduleTagName": "销售",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob23",
+            "moduleTagName": "产品",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob24",
+            "moduleTagName": "战略企划",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob25",
+            "moduleTagName": "两核",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob26",
+            "moduleTagName": "再保精算",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob27",
+            "moduleTagName": "运营客服",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob28",
+            "moduleTagName": "对公",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob29",
+            "moduleTagName": "零售",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob210",
+            "moduleTagName": "中小微",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob211",
+            "moduleTagName": "研究分析",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob212",
+            "moduleTagName": "投资",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob213",
+            "moduleTagName": "财务",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob214",
+            "moduleTagName": "HR",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob215",
+            "moduleTagName": "行政",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob216",
+            "moduleTagName": "培训",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob217",
+            "moduleTagName": "风控合规",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob218",
+            "moduleTagName": "IT",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob219",
+            "moduleTagName": "品牌文化",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "236516",
+            "moduleTagName": "分类",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob002",
+            "moduleTagName": "全部",
+            "moduleTagUrl": ""
+          }
+        ]
+      },
+      {
+        "canSubscribe": 0,
+        "moduleId": "pa2tob005",
+        "moduleName": "健康频道",
+        "moduleTagArr": [
+          {
+            "moduleTagId": "pa2tob51",
+            "moduleTagName": "体质",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob52",
+            "moduleTagName": "节气",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob53",
+            "moduleTagName": "经络",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob54",
+            "moduleTagName": "头颈",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob58",
+            "moduleTagName": "皮肤",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob59",
+            "moduleTagName": "骨骼",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob510",
+            "moduleTagName": "睡眠",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob511",
+            "moduleTagName": "饮食",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob512",
+            "moduleTagName": "运动",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob513",
+            "moduleTagName": "护理",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob514",
+            "moduleTagName": "卫生",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob515",
+            "moduleTagName": "预防",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob517",
+            "moduleTagName": "心理",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "pa2tob005",
+            "moduleTagName": "全部",
+            "moduleTagUrl": ""
+          }
+        ]
+      },
+      {
+        "canSubscribe": 0,
+        "moduleId": "18",
+        "moduleName": "案例中心",
+        "moduleTagArr": [
+          {
+            "moduleTagId": "1000",
+            "moduleTagName": "销售",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "1003",
+            "moduleTagName": "专业",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "1001",
+            "moduleTagName": "领导力",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "1002",
+            "moduleTagName": "个人成长",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "18",
+            "moduleTagName": "全部",
+            "moduleTagUrl": ""
+          }
+        ]
+      },
+      {
+        "canSubscribe": 0,
+        "moduleId": "204280",
+        "moduleName": "综合金融",
+        "moduleTagArr": [
+          {
+            "moduleTagId": "204282",
+            "moduleTagName": "产险",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "204284",
+            "moduleTagName": "健康险",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "204285",
+            "moduleTagName": "证券",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "204286",
+            "moduleTagName": "信用卡",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "204287",
+            "moduleTagName": "银行",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "204288",
+            "moduleTagName": "信托",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "204289",
+            "moduleTagName": "陆金所",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "204290",
+            "moduleTagName": "普惠",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "204291",
+            "moduleTagName": "好房",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "204293",
+            "moduleTagName": "好医生",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "204295",
+            "moduleTagName": "基金",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "204297",
+            "moduleTagName": "其他",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "204280",
+            "moduleTagName": "全部",
+            "moduleTagUrl": ""
+          }
+        ]
+      },
+      {
+        "canSubscribe": 0,
+        "moduleId": "22",
+        "moduleName": "鸟窝",
+        "moduleTagArr": [
+          {
+            "moduleTagId": "27",
+            "moduleTagName": "管理技能",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "28",
+            "moduleTagName": "办公技能",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "29",
+            "moduleTagName": "专业技能",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "30",
+            "moduleTagName": "工作汇其他",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "31",
+            "moduleTagName": "旅游",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "32",
+            "moduleTagName": "养生",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "33",
+            "moduleTagName": "数码",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "34",
+            "moduleTagName": "音乐",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "35",
+            "moduleTagName": "教育",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "36",
+            "moduleTagName": "生活小窍门",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "37",
+            "moduleTagName": "体育",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "38",
+            "moduleTagName": "时尚",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "39",
+            "moduleTagName": "生活荟其他",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "262678",
+            "moduleTagName": "分类",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "22",
+            "moduleTagName": "全部",
+            "moduleTagUrl": ""
+          }
+        ]
+      },
+      {
+        "canSubscribe": 0,
+        "moduleId": "260666",
+        "moduleName": "21项胜任素质",
+        "moduleTagArr": [
+          {
+            "moduleTagId": "260667",
+            "moduleTagName": "商业敏感",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260668",
+            "moduleTagName": "创新突破",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260669",
+            "moduleTagName": "战略前瞻",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260670",
+            "moduleTagName": "追求卓越",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260671",
+            "moduleTagName": "落地规划",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260672",
+            "moduleTagName": "变革管理",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260673",
+            "moduleTagName": "结果导向",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260674",
+            "moduleTagName": "学习领悟",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260675",
+            "moduleTagName": "逻辑分析",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260676",
+            "moduleTagName": "量化思维",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260677",
+            "moduleTagName": "组织领导",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260678",
+            "moduleTagName": "团队建设",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260679",
+            "moduleTagName": "人才培养",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260680",
+            "moduleTagName": "推动执行",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260681",
+            "moduleTagName": "客户意识",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260682",
+            "moduleTagName": "沟通影响",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260683",
+            "moduleTagName": "团队协作",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260684",
+            "moduleTagName": "冲突管理",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260685",
+            "moduleTagName": "抗压能力",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260686",
+            "moduleTagName": "动手能力",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260688",
+            "moduleTagName": "严谨细致",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "262569",
+            "moduleTagName": "21项胜任素质概览",
+            "moduleTagUrl": ""
+          },
+          {
+            "moduleTagId": "260666",
+            "moduleTagName": "全部",
+            "moduleTagUrl": ""
+          }
+        ]
+      }
+    ],
+    "moduleNum": "8"
+  },
+  "code": 0,
+  "message": "操作成功"
+}

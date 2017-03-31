@@ -1,0 +1,56 @@
+$height: .7rem;
+
+.comment-inputer-box {
+	.comment-inputer {
+		padding: .1rem .2rem;
+		background-color: #fff;
+	}
+
+	.comment-input {
+		-webkit-box-flex: 5;
+		flex: 5;		
+
+		.am-input-item {
+			min-height: $height;
+			height: $height;
+			line-height: $height;
+			border: 1px solid #ddd;
+		}
+	}
+
+	.comment-submit {
+		.am-button {
+			height: $height;
+			min-height: $height;
+			line-height: $height;
+			font-size: .3rem;
+			color: #fff;
+		}
+	}
+
+	.comment-switcher {
+		div {
+			height: $height;
+		}
+	}
+	.img-keyboard {
+		background: url('../../../img/keyboard.png') no-repeat;
+		background-size: .6rem;
+		background-position: center;
+	}
+	.img-smeil {
+		background: url('../../../img/smeil.png') no-repeat;
+		background-size: .6rem;
+		background-position: center;
+	}
+
+	.comment-content-inputer {
+		box-sizing: border-box;
+		padding: .1rem;
+		width: 100%;
+		height: .7rem;
+		line-height: .4rem;
+		border: 1px solid #ddd;
+		resize: none;
+	}
+}

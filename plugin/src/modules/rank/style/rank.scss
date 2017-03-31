@@ -1,0 +1,52 @@
+.trunk{
+  padding: 0.1rem;
+  background-color: white;
+}
+
+.rank-01-img{
+  width:100%;
+}
+
+.rank-content-img{
+  height: 0.9rem;
+  margin-right: 0.08rem;
+}
+
+.discuss{
+  width:0.4rem;
+  // height:0.32rem;
+}
+
+.rank-flower{
+  margin-right: 1rem;
+}
+
+.rank-top-1r{
+  margin-top: 1rem;
+}
+
+.first-trunk{
+  height: 1rem;
+}
+
+.rank-list-item.zn-list-item{
+  align-items: flex-end;
+  padding: 0;
+  .zn-list-item-left{
+    width: 0.8rem;
+    margin-left:0.3rem;
+    img{
+      width: 0.8rem;
+      height: auto;
+    }
+  }
+  .zn-list-item-right{
+    margin-left:0.5rem;
+    h3{
+      display: none;
+    }
+    h4{
+      padding-top: 0.05rem;
+    }
+  }
+}

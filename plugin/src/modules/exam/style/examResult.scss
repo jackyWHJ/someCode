@@ -1,0 +1,119 @@
+@mixin common_1($baseSize: 1,$baseFontSize:1) {
+  .exam-name{
+    margin-top: 0.2rem*$baseSize;
+    padding: 0.1rem*$baseSize;
+    font-size: 0.32rem*$baseFontSize;
+  }
+  .exam-number{
+    padding: 0.1rem*$baseSize;
+    font-size: 0.24rem*$baseFontSize;
+  }
+  .exam-score{
+    padding: 0.4rem*$baseSize 0.2rem*$baseSize 0.5rem*$baseSize;
+    font-size: 0.8rem*$baseFontSize;
+    span{
+      font-size: 0.24rem*$baseFontSize;
+    }
+  }
+  .exam-tip{
+    font-size: 0.24rem*$baseFontSize;
+  }
+}
+
+.exam-result{
+  width: 100%;
+  /*height: 100%;*/
+  position: absolute;
+  top: 0.9rem;
+  bottom: 1.1rem;
+  background-color: rgba(255,255,255,1);
+  overflow-y: auto;
+  .exam-result-top{
+    .exam-result-img{
+      width: 100%;
+      height: auto;
+      max-height: 50%;
+    }
+  }
+  .exam-result-middle{
+    text-align: center;
+    &.no-pass .exam-score{
+      color: rgba(255,0,0,1);
+    }
+    &.pass .exam-score,&.pass .exam-tip{
+      color: rgba(0,255,0,1);
+    }
+    .exam-name{
+      margin-top: 0.2rem;
+      padding: 0.1rem;
+      font-size: 0.32rem;
+    }
+    .exam-number{
+      padding: 0.1rem;
+      font-size: 0.24rem;
+      color: rgba(243,106,92,1);
+    }
+    .exam-score{
+      padding: 0.4rem 0.2rem 0.5rem;
+      font-size: 0.8rem;
+      span{
+        font-size: 0.24rem;
+      }
+    }
+    .exam-tip{
+      font-size: 0.24rem;
+    }
+    @media screen and (max-device-width:320px){
+      @include common_1(0.5,0.9);
+    }
+    @media screen and (max-device-width:320px)and(min-device-height:540px){
+      @include common_1(0.9,1);
+    }
+    @media screen and (min-device-width:321px)and(max-device-width:360px){
+      @include common_1(0.9,1);
+    }
+
+    @media screen and (min-device-width:360px)and(max-device-width:375px){
+      @include common_1(1,1);
+    }
+
+    @media screen and (min-device-width:375px)and(max-device-width:414px){
+      @include common_1(1.1,1.1);
+    }
+    @media screen and (min-device-width:414px){
+      @include common_1(1.2,1.1);
+    }
+  }
+
+  .exam-result-bottom{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right:0;
+    /*height: 0.84rem;*/
+    background-color: rgba(255,255,255,1);
+    padding: 0.2rem 0.3rem;
+    display: -webkit-flex;
+    display: flex;
+    justify-content:space-between;
+    .exam-result-own-button{
+      height: 0.7rem;
+      line-height: 0.7rem;
+      font-size: 0.3rem;
+      color: rgba(254,244,243,1);
+    }
+    .exam-result-bottom-left{
+      flex-grow:1;
+      margin-right:0.3rem ;
+      .exam-result-own-button-left{
+        background-color: rgba(255,190,68,1);
+      }
+    }
+    .exam-result-bottom-right{
+      flex-grow:1;
+      .exam-result-own-button-right{
+        background-color: rgba(72,198,206,1);
+      }
+    }
+  }
+}

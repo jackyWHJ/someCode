@@ -1,0 +1,37 @@
+@import '../../../theme/global.scss';
+
+.zn-no-result-tip{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	.zn-no-result-main{
+		height: pxToRem(200);
+		/* background: #f00; */
+		text-align: center;
+		h2{
+			padding-top: pxToRem(10);
+			height: pxToRem(150);
+			position: relative;
+			&:after{
+				content:"";
+				width:pxToRem(174);
+				height: pxToRem(150);
+				background: url("../../../img/bgImg/image@2x.png") no-repeat center center;
+				background-size: pxToRem(87) pxToRem(138);
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				margin-left: pxToRem(-87);
+			}
+		}
+		h3{
+			text-align: center;
+			font-size: pxToRem(12);
+			line-height: pxToRem(20);
+			height: pxToRem(20);
+			padding-bottom:pxToRem(20);
+			color: #a8a8a8;
+		}
+	}
+	
+}

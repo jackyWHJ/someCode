@@ -1,0 +1,17 @@
+.zn-slide-item {
+	float: left;
+	margin: 0 0 .15rem .1rem;
+	width: .15rem;
+	height: .15rem;
+	border-radius: 100%;
+	background-color: #fff;
+	opacity: .3;
+
+	&.zn-slide-active {
+		opacity: 1;
+	}
+}
+
+.zn-slide-box {
+	padding-right: .2rem;
+}

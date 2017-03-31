@@ -1,0 +1,29 @@
+.emoji-line {
+	margin-top: .15rem;
+	height: .6rem;
+	text-align: center;
+
+	.emoji-item {
+		height: 100%;
+
+		img {
+			height: 100%;
+		}
+	}
+}
+
+.emoji-panel {
+	.zn-slide-item {
+		background-color: #000;
+		opacity: .2;
+
+		&.zn-slide-active {
+			background-color: #000;
+			opacity: .6;
+		}
+	}
+}
+
+.emoji-hidden {
+	display: none;
+}

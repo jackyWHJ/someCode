@@ -1,0 +1,95 @@
+{
+  "body": {
+    "imgUrl": "http://localhost:8000/img/test.jpg",
+    "intgId": "1234567890",
+    "intgTitle": "2015科普知识调查问卷",
+    "introduction": "您的问卷内容将完全匿名，请放心回答，感谢哦亲!",
+    "tested" : true,
+    "questionArr": [
+      {
+        "question": "噪声对人体哪个系统有害：(单选)",
+        "questionId": "1234567891",
+        "questionType": "1",
+        "sectionArr": [
+          {
+            "isUserSelected": "Y",
+            "sectionId": "A",
+            "sectionText": "心血管系统",
+            "suggestScore": 0
+          },
+          {
+            "isUserSelected": "N",
+            "sectionId": "B",
+            "sectionText": "消化系统",
+            "suggestScore": 0
+          },
+          {
+            "isUserSelected": "N",
+            "sectionId": "C",
+            "sectionText": "呼吸系统",
+            "suggestScore": 0
+          }
+        ]
+      },{
+        "question": "哺乳动物是最高等的脊椎动物，靠母体的乳腺分泌乳汁哺育幼体。下面哪种是哺乳动物？（多选）",
+        "questionId": "1234567892",
+        "questionType": "2",
+        "sectionArr": [
+          {
+            "isUserSelected": "Y",
+            "sectionId": "24C8F45679E4260EE05400144F67CA43",
+            "sectionText": "海豚",
+            "suggestScore": 0
+          },
+          {
+            "isUserSelected": "N",
+            "sectionId": "24C8F45679E5260EE05400144F67CA43",
+            "sectionText": "海星",
+            "suggestScore": 0
+          },
+          {
+            "isUserSelected": "N",
+            "sectionId": "24C8F45679E6260EE05400144F67CA43",
+            "sectionText": "海马",
+            "suggestScore": 0
+          },
+          {
+            "isUserSelected": "N",
+            "sectionId": "24C8F45679E6260EE05400144F67CV43",
+            "sectionText": "海牛",
+            "suggestScore": 0
+          }
+        ]
+      },
+      {
+        "question": "地球上的人观看晴朗的天空呈现蓝色这是因为：（小问答）",
+        "questionId": "1234567893",
+        "questionType": "3",
+        "sectionArr": [
+          {
+            "isUserSelected": "Y",
+            "sectionId": "11",
+            "sectionText": "xdfsaiewrhjkdt",
+            "suggestScore": 0
+          }
+        ]
+      },{
+        "question": "请描述下你对未来的设想?（大问答）",
+        "questionId": "1234567894",
+        "questionType": "4",
+        "sectionArr": [
+          {
+            "isUserSelected": "Y",
+            "sectionId": "22",
+            "sectionText": "xdfsaiewrhjkdt",
+            "suggestScore": 0
+          }
+        ]
+      }
+    ],
+    "tested": true,
+    "validate": true
+  },
+  "code": 0,
+  "message": "操作成功"
+}

@@ -1,0 +1,214 @@
+@mixin common_1($baseSize: 1,$baseFontSize:1) {
+    height: 3.6rem*$baseFontSize;
+    .exam-introduction-text{
+      margin-top: 0.4rem*$baseSize;
+      font-size: 0.32rem*$baseFontSize;
+    }
+    .exam-introduction-tip{
+      margin-top: 0.24rem*$baseSize;
+      font-size: 0.28rem*$baseFontSize;
+    }
+    .exam-introduction-people{
+      bottom: 0.06rem*$baseSize;
+      right:0.4rem*$baseSize;
+      .exam-introduction-name{
+        margin-right: 0.2rem*$baseSize;
+      }
+      .exam-introduction-img{
+        width:1rem*$baseSize;
+        height: 1rem*$baseSize;
+        border-radius:2rem;
+      }
+    }
+}
+@mixin common_2($baseSize: 1,$baseFontSize:1) {
+  .exam-introduction-message-card:first-child{
+    margin-top: 0.1rem*$baseSize;
+  }
+  .am-card{
+    .am-card-header{
+      .am-card-header-content{
+        font-size: 0.32rem*$baseFontSize;
+        img{
+          width: 0.35rem*$baseSize;
+          height: 0.35rem*$baseSize;
+        }
+      }
+    }
+    .am-card-body{
+      padding: 0 0.3rem*$baseSize 0.15rem*$baseSize;
+      .exam-introduction-message-text{
+        padding-top:0.3rem*$baseSize;
+        p{
+          font-size: 0.28rem*$baseFontSize;
+          .left{
+            margin-right:0.6rem*$baseSize ;
+          }
+          &:last-child{
+            margin-top: 0.2rem*$baseSize;
+          }
+        }
+      }
+    }
+  }
+}
+.exam-introduction-div{
+  .exam-introduction-show{
+    position: absolute;
+    width: 100%;
+    top:0.9rem;
+    bottom: 1rem;
+    background-color: rgba(255,255,255,1);
+    overflow: auto;
+    .exam-introduction-top{
+      position: relative;
+      height: 3.6rem;
+      background:url(../../../img/examImg/examing.jpg) no-repeat;
+      background-size: 100% 100%;
+      overflow: hidden;
+      .exam-introduction-text{
+        margin-top: 0.4rem;
+        text-align: center;
+        font-size: 0.32rem;
+        letter-spacing: 0.02rem;
+        color: rgba(47,52,53,1);
+      }
+      .exam-introduction-tip{
+        margin-top: 0.24rem;
+        text-align: center;
+        font-size: 0.28rem;
+        color: rgba(243,106,92,1);
+      }
+      .exam-introduction-people{
+        position: absolute;
+        bottom: 0.06rem;
+        right:0.4rem;
+        display: -webkit-flex;
+        display: flex;
+        .exam-introduction-name{
+          color: rgba(243,106,92,1);
+          margin-right: 0.2rem;
+          font-size: 0.26rem;
+          align-self:center;
+        }
+        .exam-introduction-img{
+          width:1rem;
+          height: 1rem;
+          border: 0.04rem solid #fff;
+          border-radius:2rem;
+          box-shadow: 0px 0px 0.04rem 0.02rem rgba(0,0,0,0.3);
+          align-self:center;
+        }
+      }
+      @media screen and (max-device-width:320px){
+        @include common_1(0.9,0.9);
+      }
+      @media screen and (max-device-width:320px)and(min-device-height:540px){
+        @include common_1(1,1);
+      }
+      @media screen and (min-device-width:321px)and(max-device-width:360px){
+        @include common_1(0.9,1);
+      }
+
+      @media screen and (min-device-width:360px)and(max-device-width:375px){
+        @include common_1(1,1);
+      }
+
+      @media screen and (min-device-width:375px)and(max-device-width:414px){
+        @include common_1(1,1);
+      }
+      @media screen and (min-device-width:414px){
+        @include common_1(1,1);
+      }
+    }
+    .exam-introduction-message{
+      .exam-introduction-message-card:first-child{
+        margin-top: 0.1rem;
+      }
+      .am-card{
+        border-width: 0;
+        margin-top: 0rem;
+        padding-bottom: 0;
+        .am-card-header{
+          .am-card-header-content{
+            color:rgba(246,101,86,1);
+            font-size: 0.32rem;
+            img{
+              width: 0.35rem;
+              height: 0.35rem;
+            }
+          }
+        }
+        .am-card-body{
+          padding: 0 0.3rem 0.15rem;
+          border-top: 0;
+          .exam-introduction-message-text{
+            padding-top:0.3rem;
+            border-top:0.02rem solid rgba(245,94,78,1);
+            p{
+              color:rgba(155,155,155,1);
+              font-size: 0.28rem;
+              .left{
+                margin-right:0.6rem ;
+              }
+              .right{
+
+              }
+              &:last-child{
+                margin-top: 0.2rem;
+              }
+            }
+          }
+        }
+      }
+      @media screen and (max-device-width:320px){
+        @include common_2(0.9,0.9);
+      }
+      @media screen and (max-device-width:320px)and(min-device-height:540px){
+        @include common_2(1,1);
+      }
+      @media screen and (min-device-width:321px)and(max-device-width:360px){
+        @include common_2(1,1);
+      }
+
+      @media screen and (min-device-width:360px)and(max-device-width:375px){
+        @include common_2(1,1);
+      }
+
+      @media screen and (min-device-width:375px)and(max-device-width:414px){
+        @include common_2(1,1);
+      }
+      @media screen and (min-device-width:414px){
+        @include common_2(1,1);
+      }
+    }
+  }
+  .exam-introduction-bottom{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    padding: 0.2rem 0.3rem;
+    background-color: rgba(255,255,255,1);
+    display: -webkit-flex;
+    display: flex;
+    justify-content:space-between;
+    .own-button{
+      flex-grow:1;
+      margin-right:0.3rem ;
+      height: 0.7rem;
+      width: 30%;
+      line-height: 0.7rem;
+      background-color: rgba(245,88,72,1);
+      border: 1PX solid rgba(245,88,72,1);
+      font-size: 0.3rem;
+      &:last-child{
+        margin-right:0rem ;
+      }
+      &.own-button-disabled{
+        background-color: rgba(221,221,221,1);
+        border: 1PX solid rgba(221,221,221,1);
+      }
+    }
+  }
+}
